@@ -1,0 +1,155 @@
+body {
+	background: #eee;
+}
+
+.wrapper {
+	width: 995px;
+	height: 557px;
+	margin: 100px auto 0;
+}
+
+.toplogo {
+	display: block;
+	width: 170px;
+	height: 56px;
+	background: url("/assets/images/pc/LOGO.png") no-repeat 0 0;
+	margin: 0 auto;
+}
+
+.wrapper .content {
+	width: 328px;
+	background: #fff;
+	margin: 0 auto;
+	border: 1px solid #d9d9d9;
+	margin-top: 33px;
+	padding: 47px 55px 63px 52px;
+	margin-bottom: 45px;
+}
+
+.content h2 {
+	font-size: 18px;
+	color: #666;
+	font-weight: normal;
+}
+
+.content ul {
+	margin-top: 20px;
+}
+
+.content ul li {
+	width: 328px;
+	height: 48px;
+	border: 1px solid #d6d6d6;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	position: relative;
+}
+
+.content ul li span {
+	display: block;
+	width: 19px;
+	height: 21px;
+	float: left;
+	margin: 13px 16px 0 9px;
+}
+
+.content ul li .user-icon {
+	background: url("/assets/images/pc/user-icon.png") no-repeat;
+}
+
+.content ul li .password-icon {
+	background: url('/assets/images/pc/password-icon.png') no-repeat;
+}
+
+.content ul li input {
+	float: right;
+	width: 275px;
+	height: 48px;
+	line-height: 48px;
+	font-size: 14px;
+	color: #c0c0c0;
+	margin-right: 5px;
+	_margin-right: 0;
+}
+
+.content ul li div {
+	width: 84px;
+	height: 30px;
+	position: absolute;
+	top: 15px;
+	right: 0;
+	color: #f00;
+	display: none;
+}
+
+.content ol {
+	height: 30px;
+}
+
+.content ol li {
+	color: #666;
+}
+
+.content ol li a {
+	color: #ff5203;
+}
+
+.content ol li .forget {
+	color: #0f64c2;
+	margin-left: 20px;
+}
+
+.content .loginBtn {
+	display: block;
+	cursor: pointer;
+	width: 100%;
+	height: 50px;
+	background: #ff5203;
+	font-size: 20px;
+	font-family: "Microsoft Yahei", sans-serif;
+	color: #fff;
+	border-radius: 5px;
+	line-height: 50px;
+	text-align: center;
+}
+
+.other {
+	margin-top: 15px;
+}
+
+.other dl dd {
+	float: left;
+}
+
+.other dl dd a {
+	float: left;
+	padding-left: 20px;
+	margin-right: 10px;
+	color: #848484;
+}
+
+.other dl dd .qq {
+	background: url('../img/qq.png') no-repeat;
+}
+
+.other dl dd .weibo {
+	background: url('../img/weibo.png') no-repeat;
+}
+
+.success,
+.fail {
+	width: 150px;
+	height: 60px;
+	background: #000;
+	color: #fff;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: -30px;
+	margin-left: -75px;
+	text-align: center;
+	line-height: 60px;
+	border-radius: 10px;
+	font-size: 20px;
+	display: none;
+}

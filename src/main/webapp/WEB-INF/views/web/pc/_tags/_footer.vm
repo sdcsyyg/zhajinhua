@@ -1,0 +1,39 @@
+<div class="wrapper">
+    <div class="footerwrap">
+    ##        <div class="hotcity"><b>热门城市：</b>
+    ##            <div class="hotcity-list clearfix">
+    ##                <a target="_blank" title="南京" href="http://nj.wanjiafdc.com">原州区</a>
+    ##                <a target="_blank" title="上海" href="http://sh.wanjiafdc.com">西吉县</a>
+    ##                <a target="_blank" title="武威" href="http://ww.wanjiafdc.com">隆德县</a>
+    ##                <a target="_blank" title="北京" href="http://bj.wanjiafdc.com">泾源县</a>
+    ##                <a target="_blank" title="广州" href="http://gz.wanjiafdc.com">彭阳县</a>
+    ##                <a target="_blank" title="深圳" href="http://sz.wanjiafdc.com">海原县</a>
+    ##                <a target="_blank" title="济南" href="http://jn.wanjiafdc.com">同心县</a>
+    ##                <a href="/?all">更多</a>
+    ##            </div>
+    ##        </div>
+        <div class="friendlink"><b>友情链接：</b>
+            <ul class="friendlink-list clearfix">
+                <li style="margin: 10px 20px 0 0;">
+                    <a href="http://wpa.qq.com/msgrd?v=3&amp;uin=466482887&amp;site=qq&amp;menu=yes" rel="nofollow" target="_blank"><img border="0" title="点击交谈" alt="点击交谈" src="http://wpa.qq.com/pa?p=2:466482887:41"></a>
+                </li>
+                <li>
+                    <a hidefocus="true" target="_blank" title="黎平吧" href="http://kllp.ohqly.com">黎平吧</a>
+                </li>
+                <li>
+                    <a hidefocus="true" target="_blank" title="固原分类信息" href="http://guyuan.kuyiso.com">固原分类信息</a>
+                </li>
+                <li>
+                    <a hidefocus="true" target="_blank" title="固原信息网" href="http://guyuan.ganchang.cn">固原信息网</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="if" class="copyright">
+        <p>
+            客服热线：0954-666666 邮箱：wanjiafc@qq.com 经营性ICP证：
+            <a target="_blank" rel="nofollow" href="http://wanjiafc.com">宁ICP备16001441号-1</a>
+        </p>
+        <p>Copyright &copy; 2016 www.wanjiafdc.com All Rights Reserved</p>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+#set($layout = '/admin/_tags/_layout.vm')
+
+#set($menu = "menu_user")
+
+#set($submenu = 'submenu_user_blackList')
+#parse("/admin/users/_tabs.vm")
+
+<div class="main_bd">
+    <table id="model-table-view"></table>
+</div>
+
+<script src="/assets/js/admin/users/blackList.js"></script>

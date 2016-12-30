@@ -1,0 +1,9 @@
+#set($layout = '/admin/_tags/_layout.vm')
+#set($menu = "menu_fashion")
+#set($submenu = 'submenu_fashion_list')
+#parse("/admin/fashions/_tabs.vm")
+
+<div class="main_bd">
+    <table id="model-table-view" data-type="${type}"></table>
+</div>
+<script src="/assets/js/admin/fashions/list.js"></script>

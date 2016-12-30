@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="format-detection" content="telephone=no">
+		<title>福田人口密度逼近"饱和" 2030年人口将增至218.60万-固原楼盘网</title>
+		<meta name="Keywords" content="福田人口密度逼近&quot;饱和&quot; 2030年人口将增至218.60万">
+		<meta name="description" content="[摘要]据悉，到2030年，福田区实际管理人口将增至218.60万，人口密度升至2.8万人/平方公里，人口密度将逼近“饱和”。人口问题成为深圳中心城区须面对的重大紧迫现实问题。8月20日深莞双城看房b">
+		<link rel="stylesheet" media="all" href="/assets/css/pc/base.css">
+		<link rel="stylesheet" media="all" href="/assets/css/pc/news-list-detail.css">
+		<script type="text/javascript" src="/assets/js/pc/jquery.js"></script>
+		<link rel="stylesheet" href="/assets/css/pc/share_style1_16.css">
+		<script type="text/jscript" src="/assets/js/pc/push.js"></script>
+		<script type="text/jscript" src="/assets/js/pc/hm.js"></script>
+	</head>
+
+	<body>
+		
+		<div class="logo-search">
+			<div class="wrapper logo-search-box">
+				<div class="logo-box clearfix">
+					<h1><a class="logo" href="img/loupan.png" title="在线表决系统网" hidefocus="true">在线表决系统网</a></h1>
+					<div class="citywrap">
+						<div id="city_hover_id" class="curcity clearfix">
+							<i class="city">${cityName}</i>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="search-box">
+					<!-- js before submit validate and submit-->
+					<div class="searchwrap clearfix">
+						<form id="search_form_id" action="" method="post">
+							<div id="search_pos_combox_id" class="combox" style="display:none">
+								<p class="combox-text"><span data-search-type="4" id="search_combox_type_id">新闻</span></p>
+							</div>
+							<p>
+								<input id="search_field_id" name="q" maxlength="20" class="key" type="text" placeholder="请输入新闻关键字">
+								<input id="citypinyin" value="guyuan" type="hidden">
+							</p>
+							<p id="search_house_id"><i></i>搜索</p>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="nav">
+			<div class="wrapper">
+				<ul class="main-nav clearfix">
+					<li>
+						<a href="/news/" title="资讯首页" hidefocus="true">资讯首页</a>
+					</li>
+					<li class="cur">
+						<a href="/news/list-14.html" title="新闻资讯" hidefocus="true">新闻资讯</a>
+					</li>
+					<li>
+						<a href="/news/list-15.html" title="新房资讯" hidefocus="true">新房资讯</a>
+					</li>
+					<li>
+						<a href="/news/list-16.html" title="二手房资讯" hidefocus="true">二手房资讯</a>
+					</li>
+					<li>
+						<a href="/news/list-114.html" title="专题报道" hidefocus="true">专题报道</a>
+					</li>
+					<li>
+						<a href="/news/list-117.html" title="商业地产资讯" hidefocus="true">商业地产资讯</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="sub-nav-box">
+			<div class="wrapper">
+				<ul class="sub-news-nav clearfix">
+					<li>
+						<a href="/news/list-34.html">业界访谈</a>
+					</li>
+					<li class="cur">
+						<a href="/news/list-36.html">本地楼市</a>
+					</li>
+					<li>
+						<a href="/news/list-37.html">行业动态</a>
+					</li>
+					<li>
+						<a href="/news/list-38.html">政策法规</a>
+					</li>
+					<li>
+						<a href="/news/list-42.html">土地市场</a>
+					</li>
+					<li>
+						<a href="/news/list-45.html">国内动态</a>
+					</li>
+					<li>
+						<a href="/news/list-98.html">房产时评</a>
+					</li>
+					<li>
+						<a href="/news/list-101.html">其他资讯</a>
+					</li>
+					<li>
+						<a href="/news/list-118.html">本网原创</a>
+					</li>
+					<li>
+						<a href="/news/list-129.html">房贷政策</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="wrapper">
+			<div class="news clearfix">
+				<!--详情左边开始-->
+				<div class="main-news">
+					<!--你所在的网站位置-->
+					<div class="new-sider-nav">
+						<ul>
+							<li>
+								<a href="/">固原房地产</a> &gt; </li>
+							<li>
+								<a href="/news/">固原房产新闻</a> &gt;</li>
+							<li>
+								<a href="/news/list-36.html">本地楼市</a>
+							</li>
+						</ul>
+					</div>
+					<!--你所在的网站位置-->
+					<!--新闻详情开始-->
+					<div class="new-text clearfixed border">
+						<h1 class="news-title">福田人口密度逼近"饱和" 2030年人口将增至218.60万</h1>
+						<p class="time-form">2016年08月18日 来源：</p>
+						<div class="daoyu">
+							<p>[摘要]据悉，到2030年，福田区实际管理人口将增至218.60万，人口密度升至2.8万人/平方公里，人口密度将逼近“饱和”。人口问题成为深圳中心城区须面对的重大紧迫现实问题。8月20日深莞双城看房b</p>
+						</div>
+						<div class="ad">
+							<div class="g" id="A12622"></div>
+						</div>
+						<div id="A713" class="g250 ad"></div>
+						<div id="news_content_box_id" class="new-text-p">
+							<p class="titdd-Article">[<strong>摘要</strong>]据悉，到2030年，福田区实际管理人口将增至218.60万，人口密度升至2.8万人/平方公里，人口密度将逼近“饱和”。人口问题成为深圳中心城区须面对的重大紧迫现实问题。</p>
+							<p style="TEXT-INDENT: 2em">昨天，福田区委理论中心组召开“人口政策解读和人口形势分析”专题讲座。</p>
+							<p style="TEXT-INDENT: 2em">福田区委书记肖亚非主持讲座时表示，目前福田区78平方公里的土地上，常住人口144万，实际管理人口200多万，人口密度“非常高”（2.56万人/平方公里）。据悉，到2030年，福田区实际管理人口将增至218.60万，人口密度升至2.8万人/平方公里，人口密度将逼近“饱和”。人口问题成为深圳中心城区须面对的重大紧迫现实问题。</p>
+							<p style="TEXT-INDENT: 2em"><strong>年均净增加人口将达3.45万</strong></p>
+							<p style="TEXT-INDENT: 2em">南开大学经济学院人口与发展研究所教授、博士生导师原新现场公布了福田区全面二孩政策效果测算情况。预计2016~2030年，该区实际管理人口将从186.63万增至218.60万，其中“十三五”期间增长最为显著，到2020年实际管理人口将增至200.42万，年均净增加人口3.45万人，年均增长率17.99％。</p>
+							<p style="TEXT-INDENT: 2em">据广东省统计局公布的2015年全国1%人口抽样调查初步汇总数据显示，截至2015年年底，广东省人口密度每平方公里604人，广东人口密度已相当于全国人口密度的4倍，超过一半人口集聚在珠三角。其中，深圳已超过上海，成为全国人口密度最高的超大城市。而深圳全市市域 </p>
+							<p align="center"></p>
+							<p align="center">新鲜的楼市资讯，购房优惠折扣，尽在新闻客户端“房产”-页卡。点击右上角的定位符号，可定位至深圳。</p>
+							<p id="ajax_all"></p>
+						</div>
+						<!--分页开始-->
+						<!--分页结束-->
+						<!--分享开始-->
+						<div class="share clearfixed">
+							<div class="shareBtn fl">
+								<div class="bdsharebuttonbox bdshare-button-style1-16" data-bd-bind="1473999874749">
+									<a href="#" class="bds_more" data-cmd="more"></a>
+									<a title="分享到QQ空间" href="#" class="bds_qzone" data-cmd="qzone"></a>
+									<a title="分享到新浪微博" href="#" class="bds_tsina" data-cmd="tsina"></a>
+									<a title="分享到腾讯微博" href="#" class="bds_tqq" data-cmd="tqq"></a>
+									<a title="分享到人人网" href="#" class="bds_renren" data-cmd="renren"></a>
+									<a title="分享到微信" href="#" class="bds_weixin" data-cmd="weixin"></a>
+								</div>
+								<script>
+									window._bd_share_config = {
+										"common": {
+											"bdSnsKey": {},
+											"bdText": "",
+											"bdMini": "2",
+											"bdMiniList": false,
+											"bdPic": "",
+											"bdStyle": "1",
+											"bdSize": "16"
+										},
+										"share": {}
+									};
+									with(document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];
+								</script>
+							</div>
+							<p>责任编辑：zhangyunxiang</p>
+						</div>
+						<!--分享结束-->
+					</div>
+					<!--新闻详情结束-->
+					<div class="ad">
+						<div class="g" id="A12623"></div>
+
+					</div>
+
+					<!--关于xxx的新闻开始-->
+					<div class="aboutnews clearfixed border">
+						<h4>关于 <span>福田人口密度逼近"饱和" 2030年人口将增至218.60万</span> 的新闻</h4>
+						<ul>
+							<li class="clearfix">
+								<a href="/html/news/201608/2392668.html"><span>福田人口密度逼近"饱和" 2030年人口将增至218.60万</span></a><span>2016-08-18</span></li>
+							<li class="clearfix">
+								<a href="/html/news/201608/2374530.html"><span>台风"妮妲"明日登陆 深圳今夜进入"强风暴雨"模式</span></a><span>2016-08-01</span></li>
+							<li class="clearfix">
+								<a href="/html/news/201607/2365845.html"><span>东进战略深东部将雄起 二手房均价涨幅超20%</span></a><span>2016-07-22</span></li>
+							<li class="clearfix">
+								<a href="/html/news/201607/2360266.html"><span>农民房被"忽悠"成格格府 中介欺诈不能没惩罚</span></a><span>2016-07-18</span></li>
+							<li class="clearfix">
+								<a href="/html/news/201607/2356211.html"><span>传泰禾尖岗山地王明年推出市场 别墅价或高至30万/平</span></a><span>2016-07-13</span></li>
+							<li class="clearfix">
+								<a href="/html/news/201607/2350449.html"><span>深圳工资将有这些变化 到手是变多还是变少了?</span></a><span>2016-07-08</span></li>
+						</ul>
+					</div>
+					<!--关于xxx的新闻开始-->
+					<div class="ad">
+						<div class="g" id="A12624"></div>
+
+					</div>
+					<!--选项卡新闻开始-->
+					<div class="tab-new clearfix border" id="tabnew">
+						<dl class="tab-new-ul clearfix">
+							<dd class="cur">精彩推荐</dd>
+							<dd>地产资讯</dd>
+							<dd>新房资讯</dd>
+							<a href="/" target="_blank" class="toIndex">楼盘网首页</a>
+						</dl>
+						<div class="tab-new-box-wrap clearfix" style="display:block;">
+							<div class="pics-list">
+								<ul>
+									<li>
+										<a href="/html/news/201408/1387311.html"><img src="http://static.wanjiafdc.com/upfile/media/20140815/20140815171038_76086.png">
+											<p>郑州金地置业擅自加高</p>
+										</a>
+									</li>
+									<li>
+										<a href="/html/news/201408/1387310.html"><img src="http://static.wanjiafdc.com/upfile/media/20140815/20140815170804_10419.png">
+											<p>朱进康：泰禾投资瞄准城</p>
+										</a>
+									</li>
+									<li>
+										<a href="/html/news/201408/1387308.html"><img src="http://static.wanjiafdc.com/upfile/media/20140815/20140815170555_73057.jpg">
+											<p>网传房价暴跌可能性最</p>
+										</a>
+									</li>
+									<li>
+										<a href="/html/news/201408/1387305.html"><img src="http://static.wanjiafdc.com/upfile/media/20140815/20140815170132_31775.png">
+											<p>大亚湾海伦堡.爱Me城</p>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="text-list">
+								<ul>
+									<li>
+										<a href="/html/news/201408/1387311.html">郑州金地置业擅自加高楼盘高度</a>
+									</li>
+									<li>
+										<a href="/html/news/201408/1387310.html">朱进康：泰禾投资瞄准城市核心资产</a>
+									</li>
+									<li>
+										<a href="/html/news/201408/1387308.html">网传房价暴跌可能性最大的城市 陇南排第一</a>
+									</li>
+									<li>
+										<a href="/html/news/201408/1387305.html">大亚湾海伦堡.爱Me城市楼盘</a>
+									</li>
+									<li>
+										<a href="/html/news/201408/1387217.html">限购松绑逢楼市淡季 武汉推盘呈原地踏步局面</a>
+									</li>
+									<li>
+										<a href="/html/news/201408/1386905.html">秦皇岛一小区新房全是积水</a>
+									</li>
+									<li>
+										<a href="/html/news/201408/1386900.html">宁波某在售销冠楼盘开发商被曝破产</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="tab-new-box-wrap clearfixed">
+							<div class="pics-list">
+								<ul>
+									<li>
+										<a href="/html/news/201606/2317307.html"><img src="http://static.wanjiafdc.com/upfile/media/20160608/20160608150544_4540964.jpg">
+											<p>开发商一房三卖 原房</p>
+										</a>
+									</li>
+									<li>
+										<a href="/html/news/201408/1386862.html"><img src="http://static.wanjiafdc.com/upfile/media/20140815/20140815135115_37508.png">
+											<p>牛刀：崩盘影子笼罩在中</p>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="text-list">
+								<ul>
+									<li>
+										<a href="/html/news/201608/2392668.html">福田人口密度逼近"饱和" 2030年人口将增至218.60万</a>
+									</li>
+									<li>
+										<a href="/html/news/201608/2392644.html">8月深圳新推房源商务公寓占半 不限购吸引投资客入市</a>
+									</li>
+									<li>
+										<a href="/html/news/201608/2388329.html">从“零首付”到“负首付” 房价的泡沫眼看就要破</a>
+									</li>
+									<li>
+										<a href="/html/news/201608/2374530.html">台风"妮妲"明日登陆 深圳今夜进入"强风暴雨"模式</a>
+									</li>
+									<li>
+										<a href="/html/news/201607/2372600.html">龙华新区下半年有望增加4000个幼儿学位</a>
+									</li>
+									<li>
+										<a href="/html/news/201607/2365845.html">东进战略深东部将雄起 二手房均价涨幅超20%</a>
+									</li>
+									<li>
+										<a href="/html/news/201607/2360277.html">温哥华欲推房产空置税 遏止中国买家囤房炒楼</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="tab-new-box-wrap clearfixed">
+							<div class="pics-list">
+								<ul>
+									<li>
+										<a href="/html/news/201408/1386905.html"><img src="http://static.wanjiafdc.com/upfile/media/20140815/20140815141051_75785.png">
+											<p>秦皇岛一小区新房全是</p>
+										</a>
+									</li>
+									<li>
+										<a href="/html/news/201408/1386900.html"><img src="http://static.wanjiafdc.com/upfile/media/20140815/20140815140830_38436.png">
+											<p>宁波某在售销冠楼盘开</p>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<div class="text-list">
+								<ul>
+									<li>
+										<a href="/html/news/201604/2274011.html">5月起公积金缴存比例禁超12% 对深圳人影响不大</a>
+									</li>
+									<li>
+										<a href="/html/news/201604/2260022.html">将农村住宅卖给城里人 反悔后应否支付差价损失</a>
+									</li>
+									<li>
+										<a href="/html/news/201604/2257621.html">购买经济适用住房减半征收契税</a>
+									</li>
+									<li>
+										<a href="/html/news/201603/2232573.html">价格低不等于质量低 质量有保障的安居房才能安人心</a>
+									</li>
+									<li>
+										<a href="/html/news/201603/2224188.html">想申请深圳“安居房” 这些资格你得具备</a>
+									</li>
+									<li>
+										<a href="/html/news/201408/1386905.html">秦皇岛一小区新房全是积水</a>
+									</li>
+									<li>
+										<a href="/html/news/201408/1386900.html">宁波某在售销冠楼盘开发商被曝破产</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!--选项卡新闻结束-->
+					<!--热点推荐开始-->
+					<div class="hot-tui">
+						<span>热点推荐</span>
+						<ul>
+							<li>
+								<a href="/loupan/guyuanhuafuhaoting" target="_blank">固原华福豪庭</a>
+							</li>
+							<li>
+								<a href="/loupan/guyuanmicheng" target="_blank">固原COCO蜜城二期·睿谷</a>
+							</li>
+							<li>
+								<a href="/loupan/guyuandonghaitaiyangcheng" target="_blank">固原东海太阳城</a>
+							</li>
+							<li>
+								<a href="/loupan/guyuanjingyuanshengshihuadou" target="_blank">固原景园·盛世华都</a>
+							</li>
+							<li>
+								<a href="/loupan/zhongbojiatianxia" target="_blank">中博嘉天下</a>
+							</li>
+							<li>
+								<a href="/loupan/guyuanlijingcheng" target="_blank">固原丽景城</a>
+							</li>
+							<li>
+								<a href="/loupan/guyuanzheshangguoji" target="_blank">固原浙商国际</a>
+							</li>
+							<li>
+								<a href="/loupan/guyuanjiadaoyinzuo" target="_blank">固原家道银座</a>
+							</li>
+							<li>
+								<a href="/loupan/guyuanlushujinyuan" target="_blank">固原绿墅锦园</a>
+							</li>
+							<li>
+								<a href="/loupan/nanfengjiayuan12hao" target="_blank">南凤嘉园12号</a>
+							</li>
+						</ul>
+					</div>
+					<!--热点推荐结束-->
+				</div>
+				<!--详情左边结束-->
+				<!--详情右边开始-->
+				<div class="east-news">
+					<!--活动开始-->
+					<!--活动结束-->
+					<!--导购开始-->
+					<div class="daogou mb20">
+						<h3>楼盘导购</h3>
+						<div>
+							<ol>
+								<li>
+									<a href="/html/news/201408/1386900.html">
+										<img src="http://static.wanjiafdc.com/upfile/media/20140815/20140815140830_38436.png">
+										<p>宁波某在售销冠楼盘开发商被曝破产[查看详情]</p>
+									</a>
+								</li>
+							</ol>
+						</div>
+						<div class="new-list">
+							<ul>
+								<li>
+									<a href="/html/news/201408/1385988.html">四环内首个自住房下月申购 单价22000元/平</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!--导购结束-->
+					<!--最新资讯开始-->
+					<div class="new-list mb20">
+						<h3 style="margin-left:-20px;">最新资讯</h3>
+						<ul>
+							<li>
+								<a href="/html/news/201608/2399008.html">深圳房价飞涨 广东住建厅：深圳房价不会永远升</a>
+							</li>
+							<li>
+								<a href="/html/news/201608/2392668.html">福田人口密度逼近"饱和" 2030年人口将增至218.60</a>
+							</li>
+							<li>
+								<a href="/html/news/201608/2392644.html">8月深圳新推房源商务公寓占半 不限购吸引投资客入</a>
+							</li>
+							<li>
+								<a href="/html/news/201608/2388329.html">从“零首付”到“负首付” 房价的泡沫眼看就要破</a>
+							</li>
+							<li>
+								<a href="/html/news/201608/2374530.html">台风"妮妲"明日登陆 深圳今夜进入"强风暴雨"模式</a>
+							</li>
+							<li>
+								<a href="/html/news/201607/2372600.html">龙华新区下半年有望增加4000个幼儿学位</a>
+							</li>
+							<li>
+								<a href="/html/news/201607/2365845.html">东进战略深东部将雄起 二手房均价涨幅超20%</a>
+							</li>
+						</ul>
+					</div>
+					<!--最新资讯结束-->
+					<!--热门楼盘开始-->
+					<div class="hot mb20">
+						<h3>热门楼盘</h3>
+						<dl>
+							<a href="/loupan/guyuanhuafuhaoting" target="_blank">
+								<dt class="no1">1</dt>
+								<dd class="lpname">固原华福豪庭</dd>
+								<dd class="price">3100元/㎡</dd>
+								<dd class="quyu">原州区</dd>
+							</a>
+						</dl>
+						<dl>
+							<a href="/loupan/guyuanmicheng" target="_blank">
+								<dt class="no1">2</dt>
+								<dd class="lpname">固原COCO蜜城二期·睿谷</dd>
+								<dd class="price">3400元/㎡</dd>
+								<dd class="quyu">原州区</dd>
+							</a>
+						</dl>
+						<dl>
+							<a href="/loupan/guyuandonghaitaiyangcheng" target="_blank">
+								<dt class="no1">3</dt>
+								<dd class="lpname">固原东海太阳城</dd>
+								<dd class="price">3359元/㎡</dd>
+								<dd class="quyu">原州区</dd>
+							</a>
+						</dl>
+						<dl>
+							<a href="/loupan/guyuanjingyuanshengshihuadou" target="_blank">
+								<dt>4</dt>
+								<dd class="lpname">固原景园·盛世华都</dd>
+								<dd class="price">3200元/㎡</dd>
+								<dd class="quyu">原州区</dd>
+							</a>
+						</dl>
+						<dl>
+							<a href="/loupan/zhongbojiatianxia" target="_blank">
+								<dt>5</dt>
+								<dd class="lpname">中博嘉天下</dd>
+								<dd class="price">3250元/㎡</dd>
+								<dd class="quyu">原州区</dd>
+							</a>
+						</dl>
+						<dl>
+							<a href="/loupan/guyuanlijingcheng" target="_blank">
+								<dt>6</dt>
+								<dd class="lpname">固原丽景城</dd>
+								<dd class="price">3500元/㎡</dd>
+								<dd class="quyu">原州区</dd>
+							</a>
+						</dl>
+						<dl>
+							<a href="/loupan/guyuanzheshangguoji" target="_blank">
+								<dt>7</dt>
+								<dd class="lpname">固原浙商国际</dd>
+								<dd class="price">5200元/㎡</dd>
+								<dd class="quyu">原州区</dd>
+							</a>
+						</dl>
+						<dl>
+							<a href="/loupan/guyuanjiadaoyinzuo" target="_blank">
+								<dt>8</dt>
+								<dd class="lpname">固原家道银座</dd>
+								<dd class="price">价格待定</dd>
+								<dd class="quyu">原州区</dd>
+							</a>
+						</dl>
+						<dl>
+							<a href="/loupan/guyuanlushujinyuan" target="_blank">
+								<dt>9</dt>
+								<dd class="lpname">固原绿墅锦园</dd>
+								<dd class="price">3250元/㎡</dd>
+								<dd class="quyu">原州区</dd>
+							</a>
+						</dl>
+						<dl>
+							<a href="/loupan/nanfengjiayuan12hao" target="_blank">
+								<dt>10</dt>
+								<dd class="lpname">南凤嘉园12号</dd>
+								<dd class="price">5000元/㎡</dd>
+								<dd class="quyu">隆德县</dd>
+							</a>
+						</dl>
+					</div>
+					<!--热门楼盘结束-->
+				</div>
+				<!--详情右边结束-->
+			</div>
+		</div>
+		<div class="footer clearfixed">
+			<div class="wrapper">
+
+				<div class="copyright">
+					<p>
+						<a target="_blank" href="http://www.wanjiafdc.com/about/index" rel="nofollow">公司简介</a> |
+						<a target="_blank" href="http://www.wanjiafdc.com/about/culture" rel="nofollow">企业文化</a> |
+						<a target="_blank" href="http://www.wanjiafdc.com/about/partners" rel="nofollow">合作伙伴</a> |
+						<a target="_blank" href="http://www.wanjiafdc.com/about/contact" rel="nofollow">联系我们</a> |
+						<a target="_blank" href="http://www.wanjiafdc.com/about/hezuo" rel="nofollow">市场合作</a> |
+						<a href="javascript:void(0)" target="_self" class="showFlBox">友情链接申请</a>
+					</p>
+					<p>广告投放热线：<i class="red"></i> 客服热线： 邮箱： 经营性ICP证：
+						<a href="http://www.wanjiafdc.com/about/icp" rel="nofollow" target="_blank">湘B2-20130102</a>
+					</p>
+					<p>Copyright © 2016 www.wanjiafdc.com All Rights Reserved</p>
+				</div>
+			</div>
+		</div>
+		<!--友联结束-->
+		<script src="/assets/js/pc/lpw.js"></script>
+		<script src="/assets/js/pc/base.js"></script>
+	</body>
+
+</html>

@@ -1,0 +1,78 @@
+#set($layout = '/admin/_tags/_layout.vm')
+
+#set($menu = "menu_edu")
+
+#set($submenu = 'submenu_edu_create')
+#parse("/admin/edus/_tabs.vm")
+
+<div class="main_bd">
+    <div class="panel panel-default">
+        <div class="panel-heading">基本信息</div>
+        <ul class="list-group">
+            <form id="model-form" action="/admin/edus/save" method="post">
+                <li class="list-group-item">
+                    <h4><em>*</em>类型</h4>
+                    <div class="meta_content">
+                        <select id="select-cid" name="type" data-placeholder="选择分类" style="width:300px;" class="form-control chzn-select">
+                            <option value="-1"></option>
+                            #foreach($type in $!types)
+                                <option value="$!type.value" data-type="$!type.value">$!type.name</option>
+                            #end
+                        </select>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <h4><em>*</em>名称</h4>
+                    <div class="meta_content">
+                        <input type="text" name="title" class="form-control" style="width:500px;"/>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <h4>地址</h4>
+                    <div class="meta_content">
+                        <input type="text" name="addr" class="form-control" style="width:500px;"/>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <h4>费用</h4>
+                    <div class="meta_content">
+                        <input type="text" name="price" class="form-control" style="width:500px;"/>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <h4><em>*</em>电话</h4>
+                    <div class="meta_content">
+                        <input type="text" name="phone" class="form-control" style="width:500px;"/>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <h4>标签</h4>
+                    <div class="meta_content">
+                        <input name="labels" id="tags-labels" value="保障"/>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <h4><em>*</em>图片</h4>
+                    <div class="meta_content">
+                        #parse('/admin/_widgets/upload_con.vm')
+                        <p class="fnote">建议尺寸：600 x 300 像素，200k以内；您可以通过箭头调整图片顺序；第一张图片默认为封面图。</p>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <h4>内容</h4>
+                    <div class="meta_content">
+                        <textarea class="form-control" id="editor-content" style="width:700px;"></textarea>
+                        <input type="hidden" name="content" id="editor-input">
+                        <p class="fnote">建议：图片上传数量不宜超过5张，宽度在640像素以内，高度任意，大小在200k以内。</p>
+                    </div>
+                </li>
+            </form>
+        </ul>
+        <div class="panel-footer">
+            <button id="model-form-save" type="button" class="btn btn-success" >立即保存</button>
+            <button id="model-form-reset" type="button" class="btn btn-default" >重置</button>
+        </div>
+    </div>
+</div>
+#include('/admin/_widgets/upload_view.vm')
+<script src="/assets/js/admin/edus/create.js"></script>

@@ -1,0 +1,12 @@
+#set($layout = '/admin/_tags/_layout.vm')
+
+#set($menu = "menu_company")
+
+#set($submenu = 'submenu_company_list_' + $!type)
+#parse("/admin/companies/_tabs.vm")
+
+<div class="main_bd">
+    <table id="model-table-view" data-type="$!type"></table>
+</div>
+
+<script src="/assets/js/admin/companies/list.js"></script>

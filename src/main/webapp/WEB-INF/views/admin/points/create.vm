@@ -1,0 +1,64 @@
+<head>
+    #parse("/admin/_tags/_meta.vm")
+    <title>$!title - 后台管理</title>
+</head>
+<body>
+#parse("/admin/_tags/_header.vm")
+<div class="body">
+    <div class="container-box row">
+
+        #set($menu = "menu_points")
+        #parse("/admin/_tags/_menus.vm")
+
+        <div class="col-main">
+
+            #set($submenu = 'submenu_user_form')
+            #parse("/admin/points/_tabs.vm")
+
+            <div class="main_bd">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <ol class="breadcrumb">
+                            <li>
+                                <a href="javascript:window.history.back();">
+                                    <i class="glyphicon glyphicon-chevron-left"></i>返回
+                                </a>
+                            </li>
+                            <li class="active">添加积分</li>
+                        </ol>
+                    </div>
+                    <ul class="list-group">
+                        <form id="model-form" action="/admin/pointitem/u/$!user.id" method="post">
+                            <li class="list-group-item">
+                                <h4>用户</h4>
+                                <div class="meta_content">
+                                    <img style="width:64px;" src="$!user.avatar"/>
+                                    <input type="hidden" name="uid" value="$!user.id" class="form-control input-lg" placeholder="请填写昵称"/>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <h4>积分</h4>
+                                <div class="meta_content">
+                                    <input type="text" name="score" class="form-control input-lg" placeholder="请填写积分数量"/>
+                                </div>
+                            </li>
+                            <li class="list-group-item">
+                                <h4>备注</h4>
+                                <div class="meta_content">
+                                    <textarea name="note" class="form-control input-lg" cols="65" rows="4"></textarea>
+                                </div>
+                            </li>
+                        </form>
+                    </ul>
+                    <div class="panel-footer">
+                        <button id="form-save" type="button" class="btn btn-success" >立即保存</button>
+                        <button id="form-reset" type="button" class="btn btn-default" >重置</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+#parse("/admin/_tags/_footer.vm")
+<script src="/assets/js/admin/points/create.js"></script>
+</body>

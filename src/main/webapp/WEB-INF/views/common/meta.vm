@@ -1,0 +1,12 @@
+<meta charset="utf-8" />
+<title>$!{seo-title}</title>
+<meta name="keywords" content="$!{seo-keywords}">
+<meta name="description" content="$!{seo-descriptions}">
+
+<link href="/assets/libs/h-ui/css/H-ui.css" rel="stylesheet">
+<link href="/assets/libs/h-ui/css/iconfont.css" rel="stylesheet">
+<link rel="stylesheet" href="/css/pc/nav.css" />
+<link rel="stylesheet" href="/css/pc/logo_search.css" />
+<link rel="stylesheet" href="/css/pc/top_bar.css" />
+
+

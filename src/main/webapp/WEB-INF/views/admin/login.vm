@@ -1,0 +1,88 @@
+<head>
+    #parse("/admin/_tags/_meta.vm")
+    <title>$!title</title>
+    <style>
+        .panel {
+          max-width: 500px;
+          margin: 10% auto;
+          padding: 0;
+          background-color: #FFF;
+          border: 1px solid #DDD;
+          box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.2);
+          border-radius: 6px;
+        }
+        .panel-heading {
+            padding: 15px 20px 15px;
+            background: #EDF3FE;
+            border-bottom: 1px solid #e5e5e5;
+            border-radius: 6px 6px 0 0;
+            font-size: 18px;
+            color: #444;
+            font-weight: 600;
+            text-align: center;
+        }
+        .panel-body {
+            padding: 25px 15px;
+        }
+        .left {
+            text-align: center;
+        }
+        .left img {
+            max-width: 100%;
+        }
+        .right{
+            padding-top: 8px;
+            padding-right: 30px;
+        }
+        .right label {
+            padding: 0 !important;
+            line-height: 34px;
+        }
+        .btn-login {
+            width: 100px;
+        }
+        .copyright {
+          text-align: center;
+          font-size: 12px;
+          color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="panel">
+            <div class="panel-heading">$!title后台管理系统</div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-xs-4 left">
+                        <img src="/assets/images/logo.png">
+                    </div>
+                    <div class="col-xs-8 right">
+                        <form class="form-horizontal" id="form-login" action="/admin/login" method="post">
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">用户名</label>
+                                <div class="col-sm-10">
+                                  <input type="text" name="name" class="form-control" placeholder="请输入用户名">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">密码</label>
+                                <div class="col-sm-10">
+                                  <input type="password" name="password" class="form-control" placeholder="请输入密码">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-offset-2 col-sm-10">
+                                    <a id="form-submit-btn" class="btn btn-primary btn-login">登录</a>
+                                </div>
+                              </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-footer copyright">Copyright 2016-2020 © $!title</div>
+         </div>
+    </div>
+    <script src="/assets/libs/jquery-2.1.3.min.js"></script>
+    <script src="/assets/js/admin/login.js"></script>
+</body>

@@ -1,0 +1,395 @@
+body {
+	_behavior: url("/public/assets/css/hover.htc")
+}
+
+.site-nav-left a {
+	display: inline-block;
+	margin-right: 10px
+}
+
+.site-nav-right a {
+	display: inline-block;
+	margin: 0 3px
+}
+
+.news {
+	margin: 20px 0;
+	overflow: hidden
+}
+
+.news .main-news {
+	float: left;
+	*display: inline;
+	display: block;
+	width: 860px;
+	margin-right: 20px
+}
+
+.news .east-news {
+	float: right;
+	*display: inline;
+	display: block;
+	width: 300px
+}
+
+.main-news .west-news {
+	float: left;
+	*display: inline;
+	display: block;
+	width: 380px;
+	height: 282px;
+	margin-right: 20px
+}
+
+.main-news .center-news {
+	float: left;
+	*display: inline;
+	display: block;
+	width: 460px
+}
+
+.news-swiper,
+.news-swiper .swiper-container {
+	width: 380px;
+	height: 282px
+}
+
+.news-swiper .swiper-container .swiper-wrapper {
+	width: 380px;
+	height: 282px
+}
+
+.news-swiper .swiper-container .swiper-slide {
+	width: 380px;
+	height: 282px
+}
+
+.news-swiper .swiper-slide img {
+	width: 380px;
+	height: 282px
+}
+
+.news-swiper .prev,
+.news-swiper .next {
+	position: absolute;
+	top: 50%;
+	width: 31px;
+	height: 44px;
+	margin-top: -22px;
+	cursor: pointer;
+	background-image: url(/assets/images/pc/base-sprites.png)
+}
+
+.news-swiper .prev {
+	left: 0;
+	background-position: -112px -57px;
+	_background-position: 0 0;
+	_background: none;
+	_filter: progid: DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop, src="http://public.loupan.com/public/assets/images/home-news/news-pre-ie6.png")
+}
+
+.news-swiper .next {
+	right: 0;
+	background-position: -81px -57px;
+	_background-position: 0 0;
+	_background: none;
+	_filter: progid: DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=crop, src="http://public.loupan.com/public/assets/images/home-news/news-next-ie6.png")
+}
+
+.main-news .center-news h3 {
+	overflow: hidden;
+	white-space: nowrap;
+	word-break: break-all;
+	text-overflow: ellipsis;
+	width: 460px;
+	height: 30px;
+	text-align: center;
+	margin-bottom: 6px;
+	font-size: 20px
+}
+
+.main-news .center-news .hot a {
+	color: #ff5203
+}
+
+.center-news .news-img-content-box {
+	width: 100%;
+	overflow: hidden;
+	margin-bottom: 8px
+}
+
+.center-news .news-img-content-box .left-img {
+	position: relative;
+	float: left;
+	*display: inline;
+	display: block;
+	width: 156px;
+	height: 106px;
+	margin-right: 10px
+}
+
+.center-news .news-img-content-box .left-img img {
+	width: 156px;
+	height: 106px
+}
+
+.center-news .news-img-content-box .left-img p {
+	position: absolute;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	word-break: break-all;
+	left: 0;
+	top: 90px;
+	width: 146px;
+	height: 16px;
+	line-height: 16px;
+	padding: 0 5px;
+	color: #fff;
+	background: rgba(0, 0, 0, 0.5);
+	filter: progid: DXImageTransform.Microsoft.gradient(startColorstr=#7f000000, endColorstr=#7f000000);
+}
+
+.center-news .news-img-content-box .right-news {
+	float: right;
+	*display: inline;
+	display: block;
+	width: 290px;
+	margin-top: -6px
+}
+
+.center-news .news-content-box ul {
+	float: left;
+	*display: inline;
+	display: block;
+	width: 240px
+}
+
+.center-news .news-content-box ul.left {
+	margin-right: 15px
+}
+
+.center-news .news-img-content-box .right-news li,
+.center-news .news-content-box ul li {
+	width: 290px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	word-break: break-all
+}
+
+.news-list-box {
+	margin-top: 20px
+}
+
+.news-list-box .column {
+	position: relative;
+	z-index: 10;
+	height: 40px;
+	line-height: 40px;
+	border-bottom: 3px solid #eee
+}
+
+.news-list-box .column li {
+	position: absolute;
+	z-index: 12;
+	top: 0;
+	left: 130px;
+	width: 130px;
+	font-size: 20px;
+	color: #333;
+	text-align: center;
+	cursor: pointer
+}
+
+.news-list-box .column li.posleft {
+	left: 0;
+}
+
+.news-list-box .column li.cur {
+	border-bottom: 3px solid #1b71e0;
+	cursor: default
+}
+
+.news-list {
+	margin-top: 5px
+}
+
+.news-list li {
+	position: relative;
+	: 1;
+	z-index: 20;
+	display: block;
+	padding: 20px 15px;
+	border-bottom: 1px dotted #e0e0e0
+}
+
+.news-list li:hover {
+	background-color: #f8f8f8
+}
+
+.news-list li h3 a {
+	color: #333;
+	font-weight: 400;
+	font-size: 18px
+}
+
+.news-list li:hover h3 a {
+	color: #ff5203
+}
+
+.news-list li p {
+	font-size: 14px
+}
+
+.news-list li p a {
+	color: #666
+}
+
+.news-list li p a:hover {
+	color: #ff5203
+}
+
+.news-list li .pos-news-img {
+	position: absolute;
+	z-index: 21;
+	top: 20px;
+	left: 15px;
+	width: 156px;
+	height: 106px
+}
+
+.news-list li .news-content {
+	height: 110px;
+	margin-left: 166px
+}
+
+.news-list li .news-content h3 {
+	margin-bottom: 5px
+}
+
+.news-list li.nopic .news-content {
+	margin-left: 0;
+	height: 80px
+}
+
+.news-list li .time {
+	position: absolute;
+	z-index: 22;
+	/*bottom: 20px;*/
+	right: 15px
+}
+
+.east-news dl {
+	width: 300px;
+	margin-bottom: 20px
+}
+
+.east-news dt {
+	position: relative;
+	font-size: 18px;
+	font-weight: 700;
+	color: #333
+}
+
+.east-news dt.mg {
+	margin: 10px 0 6px
+}
+
+.east-news dd {
+	width: 300px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	word-break: break-all
+}
+
+.east-news dd.img-content-box {
+	margin-top: 5px;
+	margin-bottom: 10px;
+	height: 110px;
+	overflow: hidden
+}
+
+.east-news dd.img-content-box h3 {
+	width: 300px;
+	height: 30px;
+	overflow: hidden;
+	white-space: nowrap;
+	word-break: break-all;
+	text-overflow: ellipsis
+}
+
+.east-news .img-content-box .img {
+	float: left;
+	*display: inline;
+	display: block;
+	width: 118px;
+	margin-right: 5px
+}
+
+.east-news .img-content-box .detail {
+	float: left;
+	*display: inline;
+	display: block;
+	width: 175px;
+	line-height: 20px;
+	overflow: auto;
+	white-space: normal;
+	word-break: normal
+}
+
+.east-news .img-content-box .detail a {
+	color: #2a60ab
+}
+
+.east-news .img-content-box .detail a:hover {
+	color: #ff5203
+}
+
+.east-news .news-hot-list dd {
+	display: block;
+	height: 18px;
+	line-height: 18px;
+	padding: 13px 0;
+	border-bottom: 1px dashed #e0e0e0;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	word-break: break-all
+}
+
+.east-news .news-hot-list dt {
+	margin: 0
+}
+
+.east-news .news-hot-list dd i {
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	line-height: 18px;
+	font-size: 12px;
+	color: #fff;
+	background-color: #ddd;
+	margin-right: 5px;
+	font-weight: 400;
+	text-align: center
+}
+
+.east-news .news-hot-list dd i.hot {
+	background-color: #ff5203
+}
+
+.perch {
+	overflow: hidden;
+	width: 860px;
+	height: 1px;
+	font-size: 0;
+	line-height: 0
+}

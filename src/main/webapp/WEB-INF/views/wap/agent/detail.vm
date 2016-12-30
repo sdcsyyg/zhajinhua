@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>金牌代理人</title>
+    <link rel="stylesheet" type="text/css" href="/assets/wap/css/api.css"/>
+    <link rel="stylesheet" type="text/css" href="/assets/wap/css/aui.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/wap/css/aui-flex.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/wap/css/aui-slide.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/wap/css/style.css" />
+    <style>
+        body {
+            background-color: #fff;
+        }
+        .aui-content {
+            padding-bottom: 60px;
+        }
+        .tap {
+            padding: 5px 12px 15px;
+        }
+
+        .title {
+            line-height: 20px;
+            margin: 10px 0;
+        }
+
+        .addr {
+            margin: 8px 0;
+        }
+
+        .price {
+            color: #c0392b;
+            font-weight: bolder;
+            font-size: 18px;
+        }
+
+        .subt {
+            line-height: 44px;
+            background-color: #fafafa;
+            font-size: 14px;
+        }
+        .subt span {
+            border-left: 4px solid #e74c3c;
+            margin-left: 15px;
+            padding-left: 8px;
+        }
+        .subcon {
+            margin-bottom: 0px;
+            color: #666;
+            line-height: 36px;
+            text-indent: 15px;
+            padding: 10px 0;
+        }
+        .content {
+            padding: 10px 15px;
+        }
+        .aui-bar-tab {
+            background-color: rgba(0,0,0,.5) !important;
+        }
+        .aui-bar-tab span, .aui-bar-tab p {
+            color: #fff !important;
+        }
+        .tab-phone {
+            line-height: 55px;
+        }
+        .tab-phone p {
+            color: #fff;
+            font-size: 16px !important;
+        }
+        .footer {
+            background-color: #2ecc71;
+            position: fixed;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            z-index: 10;
+            line-height: 44px;
+            background-color: #3498db;
+        }
+        .ft1 {
+            width: 64px;
+            text-align: center;
+            background-color: #fff;
+            padding-top: 2px;
+        }
+        .ft1 span {
+            font-size: 20px;
+        }
+        .ft1 p {
+            font-size: 12px;
+            margin-bottom: 2px;
+        }
+        .ft1.active span, .ft1.active p {
+            color: #c0392b;
+        }
+        .ft2 {
+            text-align: center;
+            color: #fff;
+        }
+
+        .aui-bar-tab {
+            background-color: rgba(0, 0, 0, .5) !important;
+        }
+
+        .aui-bar-tab span, .aui-bar-tab p {
+            color: #fff !important;
+        }
+
+        .tab-phone {
+            line-height: 55px;
+        }
+
+        .tab-phone p {
+            color: #fff;
+            font-size: 16px !important;
+        }
+        p {color: #333;}
+    </style>
+</head>
+<body>
+    <header class="aui-bar aui-bar-nav">
+        <a class="aui-pull-left" onclick="history.back();">
+            <span class="aui-iconfont aui-icon-left"></span>返回
+        </a>
+        <div class="aui-title">代理人详情</div>
+        <a class="aui-pull-right" href="/wap/index">
+            <span class="aui-iconfont aui-icon-home"></span>
+        </a>
+    </header>
+    <div class="aui-content">
+        <div id="aui-slide">
+            <div class="aui-slide-wrap">
+                #foreach($thumb in $!model.thumbnailItems)
+                    <div class="aui-slide-node bg-dark">
+                        <img src="$thumb"/>
+                    </div>
+                #end
+                </div>
+            <div class="aui-slide-page-wrap"><!--分页容器--></div>
+        </div>
+        <div class="tap aui-border-b">
+            <h4 class="title">$!model.title</h4>
+        </div>
+        <h4 class="subt"><span>基本资料</span></h4>
+        <ul class="aui-list-view subcon">
+            <p>编号：$!model.num</p>
+            <p>姓名：$!model.name</p>
+            <p>年龄：$!model.age &nbsp;&nbsp;$!house.sex</p>
+        </ul>
+        <h4 class="subt aui-border-t"><span>联系方式</span></h4>
+        <ul class="aui-list-view subcon">
+            <p>电话：$!model.phone</p>
+            <p>微信：$!model.wx</p>
+            <p>Q&nbsp;Q：$!model.qq</p>
+        </ul>
+        <h4 class="subt aui-border-tb"><span>详细介绍</span></h4>
+        <div class="content">
+            $!model.content
+        </div>
+    </div>
+    <div class="aui-flex-col aui-flex-middle aui-border-t footer">
+        <div class="aui-flex-auto ft2 aui-border-r" onclick="">
+            <a href="tel:$!model.phone">
+                <div style="color: #fff;">电话咨询</div>
+            </a>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="/assets/wap/js/api.js"></script>
+<script type="text/javascript" src="/assets/wap/js/aui-slide.js"></script>
+<script type="text/javascript" src="/assets/wap/js/doT.min.js"></script>
+<script type="text/javascript" src="/assets/wap/js/echo.min.js"></script>
+<script type="text/javascript" src="/assets/wap/js/zepto.min.js"></script>
+<script type="text/javascript" src="/assets/wap/js/common.js"></script>
+<script type="text/javascript">
+
+    function initSlide() {
+        var slide = new auiSlide({
+            container: document.getElementById("aui-slide"),
+            "autoPlay": 3000,
+            "height": 200,
+            "speed": 300,
+            "pageShow": true,
+            "pageStyle": 'dot',
+            "loop": true,
+            'dotPosition': 'center'
+        });
+    }
+
+    $(function(){
+        initSlide();
+    });
+
+</script>
+</html>

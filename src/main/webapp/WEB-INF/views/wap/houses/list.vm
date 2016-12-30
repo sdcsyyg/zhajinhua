@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>$!htype.zhValue</title>
+    <link rel="stylesheet" type="text/css" href="/assets/wap/css/api.css"/>
+    <link rel="stylesheet" type="text/css" href="/assets/wap/css/aui.css"/>
+    <link rel="stylesheet" type="text/css" href="/assets/wap/css/aui-flex.css"/>
+    <link rel="stylesheet" type="text/css" href="/assets/wap/css/aui-slide.css"/>
+    <link rel="stylesheet" type="text/css" href="/assets/wap/css/style.css"/>
+    <style>
+        .nav {
+            text-align: center;
+            height: 44px;
+            line-height: 44px;
+            font-size: 14px;
+            -webkit-user-select: none;
+        }
+        .nav .dropdown-toggle {
+            border-left: 1px solid #c6c0b3;
+            margin-left: -1px;
+        }
+        .nav .dropdown-toggle.caret:after {
+            content: "";
+            width: 0;
+            height: 0;
+            display: inline-block;
+            border-top: 10px solid #B7B7B7;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-bottom: 0;
+            margin-left: 15px;
+        }
+        .nav .dropdown-toggle.caret.active:after {
+            content: "";
+            width: 0;
+            height: 0;
+            display: inline-block;
+            border-top: 0;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-bottom: 10px solid #3779d0;
+            margin-left: 15px;
+        }
+        .nav .dropdown-toggle.caret .nav-head-name {
+            display: inline-block;
+            white-space: nowrap;
+            overflow: hidden;
+            max-width: 50%;
+            vertical-align: middle;
+            text-overflow: ellipsis;
+        }
+        .nav-sub-menus-bg {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background-color: rgba(0,0,0,.8);
+            z-index: 900;
+        }
+        .nav-sub-menus {
+            position: absolute;
+            width: 100%;
+            z-index: 999;
+            border-bottom: 1px solid #ddd;
+            border-top: 1px solid #ddd;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .mb-0 {
+            margin-bottom: 0px !important;
+        }
+        .aui-list-view {
+            margin: 0px !important;
+        }
+    </style>
+</head>
+<body>
+	<header class="aui-bar aui-bar-nav">
+        <a class="aui-pull-left" onclick="history.back();">
+            <span class="aui-iconfont aui-icon-left"></span>返回
+        </a>
+        <div class="aui-title">$!htype.zhValue</div>
+        <a class="aui-pull-right" href="/wap/index">
+            <span class="aui-iconfont aui-icon-home"></span>
+        </a>
+    </header>
+    <!--条件筛选搜索-->
+    <div class="search-selector">
+        <div id="top-nav-bar" class="nav-bar">
+            <ul class="nav aui-flex-col">
+                <li class="dropdown-toggle caret aui-flex-item-4" id="nav-1" data-nav="city">
+                    <span class="nav-head-name">地区</span>
+                </li>
+                <li class="dropdown-toggle caret aui-flex-item-4" id="nav-2" data-nav="sort">
+                    <span class="nav-head-name">面积</span>
+                </li>
+                <li class="dropdown-toggle caret aui-flex-item-4" id="nav-3" data-nav="sort">
+                    <span class="nav-head-name">价格</span>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-sub-menus-bg" style="display: none;">
+            <div class="nav-sub-menus" id="nav-1-sub" style="display: none;">
+                <ul class="aui-list-view mb-0">
+                    <li class="aui-list-view-cell" onclick="changeCountry(undefined)" data-display="地区">
+                        全部
+                    </li>
+                    #foreach($country in $countries)
+                        <li class="aui-list-view-cell" onclick="changeCountry('$!country.code')" data-display="$!country.name">
+                            $!country.name
+                        </li>
+                    #end
+                </ul>
+            </div>
+            <div class="nav-sub-menus" id="nav-2-sub" style="display: none;">
+                <ul class="aui-list-view mb-0">
+                    <li class="aui-list-view-cell" onclick="changeAreaSize(0, 99999)"  data-display="面积">
+                        全部
+                    </li>
+                    <li class="aui-list-view-cell" onclick="changeAreaSize(0, 80)" data-display="0-80平米">
+                        0-80平米
+                    </li>
+                    <li class="aui-list-view-cell" onclick="changeAreaSize(80, 100)" data-display="80-100平米">
+                        80-100平米
+                    </li>
+                    <li class="aui-list-view-cell" onclick="changeAreaSize(100, 120)" data-display="100-120平米">
+                        100-120平米
+                    </li>
+                    <li class="aui-list-view-cell" onclick="changeAreaSize(120, 150)" data-display="120-150平米">
+                        120-150平米
+                    </li>
+                    <li class="aui-list-view-cell" onclick="changeAreaSize(150, 99999)" data-display="150以上">
+                        150以上
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-sub-menus" id="nav-3-sub" style="display: none;">
+                <ul class="aui-list-view mb-0">
+                    <li class="aui-list-view-cell" onclick="changePrice(0, 99999)" data-display="价格">
+                        全部
+                    </li>
+                    <li class="aui-list-view-cell" onclick="changePrice(0, 1000)" data-display="0-1000元/平米">
+                        0-1000元/平米
+                    </li>
+                    <li class="aui-list-view-cell" onclick="changePrice(1000, 2000)" data-display="1000-2000元/平米">
+                        1000-2000元/平米
+                    </li>
+                    <li class="aui-list-view-cell" onclick="changePrice(2000, 3000)" data-display="2000-3000元/平米">
+                        2000-3000元/平米
+                    </li>
+                    <li class="aui-list-view-cell" onclick="changePrice(3000, 4000)" data-display="3000-4000元/平米">
+                        3000-4000元/平米
+                    </li>
+                    <li class="aui-list-view-cell" onclick="changePrice(4000, 99999)" data-display="4000元/平米以上">
+                        4000元/平米以上
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!---->
+    <div class="aui-content house-items">
+        <ul class="aui-list-view" id="tpl-el">
+
+        </ul>
+    </div>
+    <div class="btn-load-more">
+        <div id="btn-load-more" onclick="loadPaged()" class="aui-btn">加载更多</div>
+    </div>
+    <script id="tpl" type="text/html">
+        {{~it :value}}
+        <a href="/wap/houses/detail/{{=value.id}}">
+            <li class="aui-list-view-cell aui-img" onclick="">
+                <img class="aui-img-object aui-pull-left" src="/assets/wap/images/gray.png" data-echo="{{=value.cover}}">
+                <div class="aui-img-body">
+                    <h4 class="aui-ellipsis-1">{{=value.title}}</h4>
+                    <p class="addr">{{=value.address}}</p>
+                    <p class="type">
+                        <span>{{=value.room}}</span>
+                        <span class="price">{{=value.total+'万'||'面议'}}</span>
+                    </p>
+                </div>
+            </li>
+        </a>
+        {{~}}
+    </script>
+    <script type="text/javascript" src="/assets/wap/js/api.js"></script>
+    <script type="text/javascript" src="/assets/wap/js/doT.min.js"></script>
+    <script type="text/javascript" src="/assets/wap/js/echo.min.js"></script>
+    <script type="text/javascript" src="/assets/wap/js/zepto.min.js"></script>
+    <script type="text/javascript" src="/assets/wap/js/common.js"></script>
+    <script type="text/javascript">
+
+        #* 1.dropdown与选项列表通过id对应，dropdown.id=nav-1，对应items.id=nav-1-sub *#
+        #* 2.构造全局默认的query form（有待优化），进行多条件查询 *#
+
+        //默认分页参数
+        var PageData = {
+            page: 0,    // 当前页码，默认从0开始
+            size: 10,   // 每页size
+            last: false // 是否已经到最后一页
+        };
+
+        // 默认查询参数
+        var defaultQueryForm = {
+            hstype: '$!htype.enValue',
+            country: undefined,
+            minPrice: 0,
+            maxPrice: 99999,
+            minAreasize: 0,
+            maxAreasize: 99999
+        };
+
+        #*-----------------------------根据条件，进行动态查询-----------------------------*#
+        function queryPaged() {
+            if (PageData.last) {
+                alert("暂无最新数据!");
+                return;
+            }
+            var url = '/houses/query?page=' + PageData.page + '&size=' + PageData.size;
+            ajaxPost(url, defaultQueryForm, function(ret) {
+                refreshDom(ret);
+            });
+        }
+
+        function refreshDom(ret) {
+            var html = renderEl('tpl', ret.content);
+            if(PageData.page == 0) {
+                $("#tpl-el").html(html);
+            } else {
+                $("#tpl-el").append(html);
+            }
+            var display = ret.last ? 'none' : 'block';
+            $('#btn-load-more').css('display', display);
+            lazyLoadImgs();
+            // 修改分页参数
+            updatePageData(ret);
+        }
+
+        function updatePageData(data) {
+            PageData.last = data.last;
+            var page = PageData.page;
+            PageData.page = page + 1;
+        }
+
+        #*-----------------------------动态构造form查询条件-----------------------------*#
+        function changeCountry(val) {
+            $('#nav-1>span').text($(event.target).data('display'));
+            resetPageData();
+            defaultQueryForm.country = val;
+            queryPaged();
+        }
+        function changeAreaSize(min, max) {
+            $('#nav-2>span').text($(event.target).data('display'));
+            resetPageData();
+            defaultQueryForm.minAreasize = min;
+            defaultQueryForm.maxAreasize = max;
+            queryPaged();
+        }
+        function changePrice(min, max) {
+            $('#nav-3>span').text($(event.target).data('display'));
+            resetPageData();
+            defaultQueryForm.minPrice = min;
+            defaultQueryForm.maxPrice = max;
+            queryPaged();
+        }
+        // 选择某一个条件后，需重新设置分页参数，并关闭黑色背景
+        function resetPageData() {
+            PageData = {
+                page: 0,    // 当前页码，默认从0开始
+                size: 10,   // 每页size
+                last: false // 是否已经到最后一页
+            };
+            $('.nav-sub-menus-bg').click();
+        }
+
+        // 默认加载
+        queryPaged();
+
+        #*----------------------------点击顶部dropdown的js处理--------------------------------*#
+        $('.dropdown-toggle').on('click', function(e) {
+
+            var $this = $(this),
+                $toClose = $this.hasClass('active'),
+                $submenu = $('#' + $this.attr('id') + '-sub'),
+                $submenu_bg = $submenu.parent();
+
+            $('.dropdown-toggle').removeClass('active');
+            if($toClose) {
+                $submenu.hide();
+                $submenu_bg.hide();
+            } else {
+                $this.addClass('active');
+                $('.nav-sub-menus').hide();
+                $submenu.show();
+                $submenu_bg.show();
+            }
+        });
+
+        $('.nav-sub-menus-bg').on('click', function(e) {
+            var $this = $(this), $target = $(e.target);
+            if($target.hasClass('nav-sub-menus-bg')) {
+                $this.hide();
+                $('.dropdown-toggle').removeClass('active');
+                $('.nav-sub-menus').hide();
+            }
+        });
+    </script>
+</body>
+</html>

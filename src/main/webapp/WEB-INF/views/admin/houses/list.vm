@@ -1,0 +1,77 @@
+#set($layout = '/admin/_tags/_layout.vm')
+
+<style>
+    .label {
+        display: inline-block;
+        padding: .4em .6em;
+        line-height: 1.2;
+        margin-right: 8px;
+        cursor: pointer;
+    }
+    
+</style>
+
+#set($menu = "menu_house")
+
+#set($submenu = 'submenu_house_list_' + $!type)
+#parse("/admin/houses/_tabs.vm")
+
+<div class="main_bd">
+    <table id="model-table-view" data-type="$!type"></table>
+</div>
+
+<script id="tpl-house-property" type="text/html">
+    <label class="label isrecommended 
+        {{? it.isrecommended }}
+            label-success 
+        {{??}}
+            label-default
+        {{?}}">推荐
+    </label>
+    <label class="label isnew 
+        {{? it.isnew }}
+            label-success 
+        {{??}}
+            label-default
+        {{?}}">新品
+    </label>
+    <label class="label ishot 
+        {{? it.ishot }}
+            label-success 
+        {{??}}
+            label-default
+        {{?}}">热卖
+    </label>
+    <label class="label isgroup
+        {{? it.isgroupbuy }}
+            label-success
+        {{??}}
+            label-default
+        {{?}}">团购
+    </label>
+</script>
+<script id="tpl-house-status" type="text/html">
+    <label class="label sale 
+        {{? it.hs == 'SALE' }}
+            label-success 
+        {{??}}
+            label-default
+        {{?}}">待售
+    </label>
+    <label class="label talk 
+        {{? it.hs == 'TALK' }}
+            label-success 
+        {{??}}
+            label-default
+        {{?}}">洽谈
+    </label>
+    <label class="label deal 
+        {{? it.hs == 'DEAL' }}
+            label-success 
+        {{??}}
+            label-default
+        {{?}}">成交
+    </label>
+</script>
+
+<script src="/assets/js/admin/houses/list.js"></script>

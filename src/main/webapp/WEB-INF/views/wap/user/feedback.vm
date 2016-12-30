@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>修改密码</title>
+    <link rel="stylesheet" type="text/css" href="/assets/wap/css/api.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/wap/css/aui.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/wap/css/style.css" />
+    <style>
+        .t {
+            color: #e74c3c;
+            line-height: 50px;
+            text-align: center;
+        }
+        .aui-form {
+            background-color: transparent;
+            padding: 0px 12px;
+        }
+        textarea.content{
+            width: 100%;
+            height: 180px;
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+        .aui-btn-row:after {
+            border: none;
+        }
+        .aui-btn-warning {
+            padding: 10px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header class="aui-bar aui-bar-nav">
+        <div class="bar-content">
+        	<a class="aui-pull-left" onclick="history.back();">
+        		<span class="aui-iconfont aui-icon-left"></span>返回
+        	</a>
+            <div class="aui-title">意见反馈</div>
+        </div>
+    </header>
+    <div class="aui-content">
+        <p class="t">您有什么问题或建议想对我们说呢？</p>
+        <div class="aui-form">
+            <textarea placeholder="您的宝贵意见，就是我们进步的源泉。感谢您对我们的支持！！" class="content" id="content"></textarea>
+        </div>
+        <div class="aui-btn-row">
+            <div class="aui-btn aui-btn-warning" onclick="submit()">问题提交</div>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="/assets/wap/js/api.js" ></script>
+<script type="text/javascript" src="/assets/wap/js/zepto.min.js"></script>
+<script type="text/javascript" src="/assets/wap/js/common.js"></script>
+<script type="text/javascript">
+    function submit() {
+        var content = $("#content").val();
+        if(content == '') {
+            alert('请填写反馈内容后进行提交'); return;
+        }
+        if(content.length < 20) {
+            alert('反馈内容不能少于20字'); return;
+        }
+        ajaxPost("/feedback", {
+            content: content
+        }, function (data) {
+            alert(data.msg);
+            if(data.success){
+                openWin("user/index");
+            }
+        });
+    }
+</script>
+</html>

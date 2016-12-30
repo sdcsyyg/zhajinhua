@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>${vote.name} - 选手列表</title>
+    <link rel="stylesheet" type="text/css" href="/assets/wap/css/api.css"/>
+    <link rel="stylesheet" type="text/css" href="/assets/wap/css/aui.css"/>
+    <link rel="stylesheet" type="text/css" href="/assets/wap/css/aui-flex.css"/>
+    <link rel="stylesheet" type="text/css" href="/assets/wap/css/aui-slide.css"/>
+    <link rel="stylesheet" type="text/css" href="/assets/wap/css/style.css"/>
+    <style>
+        body {
+            background-color: #fff;
+        }
+        .nav-section {
+            padding: 10px;
+        }
+        .hd {
+            border-left: 2px solid #03a9f4;
+            text-indent: 10px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header class="aui-bar aui-bar-nav">
+        <a class="aui-pull-left" href="/wap/index">返回</a>
+        <div class="aui-title">${vote.name}
+            #if($vote.finished)
+                <span class="aui-lozenge aui-warning">（已关闭）</span>
+            #end
+        </div>
+        #if($vote.finished)
+            <a class="aui-pull-right" href="/wap/votes/baoming/${vote.id}">报名</a>
+        #end
+    </header>
+    <!--分类导航-->
+    <div class="nav-section">
+        <div class="aui-content house-items">
+            <h1>选手列表(按照排名)<img style="height: 22px;margin-bottom: -5px;" src="/assets/images/down.jpg"/><h1>
+            <ul class="aui-list-view" id="tpl-agent-con">
+                #foreach($tompetitor in $cmpetitors)
+                    <li class="aui-list-view-cell">
+
+                        #if(!$vote.finished)
+                            <a class="hd" href="/wap/votes/vote/${vote.id}/competitor/${tompetitor.id}">${tompetitor.name}【
+                            #if(${vote.voteType} == 'CHECK')
+                            ${tompetitor.checkInCount}票赞成；
+                            ${tompetitor.checkOutCount}票反对
+                            #elseif(${vote.voteType} == 'VOTE')
+                            ${tompetitor.voteCount}票
+                            #elseif(${vote.voteType} == 'SCORE')
+                                #if($!{tompetitor.average})
+                                    $!{tompetitor.average}
+                                #else
+                                    0.00
+                                #end 分(平均分)
+                            #end】</a>
+                        #else
+                            ${tompetitor.name}【
+                            #if(${vote.voteType} == 'CHECK')
+                            ${tompetitor.checkInCount}票赞成；
+                            ${tompetitor.checkOutCount}票反对
+                            #elseif(${vote.voteType} == 'VOTE')
+                            ${tompetitor.voteCount}票
+                            #elseif(${vote.voteType} == 'SCORE')
+                                #if($!{tompetitor.average})
+                                    $!{tompetitor.average}
+                                #else
+                                    0.00
+                                #end 分(平均分)
+                            #end】
+                        #end
+                    </li>
+                #end
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
+

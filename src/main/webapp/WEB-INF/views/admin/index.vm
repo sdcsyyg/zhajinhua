@@ -1,0 +1,138 @@
+<head>
+    #parse("/admin/_tags/_meta.vm")
+    <title>$!title - 后台管理</title>
+    <style>
+        .title_tab {
+            top: 0;
+            right: 0;
+            padding-left: 112px;
+        }
+        .panel {
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+        .panel .icon i {
+            font-size: 30px;
+            border-radius: 50%;
+            border: 1px solid #444;
+            padding: 25px;
+            width: 90px;
+            height: 90px;
+            text-align: center;
+            color: #444;
+            margin-top: 20px;
+        }
+        .title {
+            font-size: 20px;
+            line-height: 60px;
+        }
+        .btn-groups {
+            margin: 0;
+            border-top: 1px solid #ddd;
+            line-height: 44px;
+        }
+        .bl {
+            border-left: 1px solid #ddd;
+        }
+        .br {
+            border-right: 1px solid #ddd;
+        }
+        .badge {
+            position: absolute;
+            background-color: #eb0000;
+        }
+        .home-link {
+            float: right;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="body">
+    <div class="container-box row">
+        #parse("/admin/_tags/_menus.vm")
+        <div class="col-main">
+            <div class="main_hd">
+                <div class="title_tab">
+                    <span class=""></span>
+                    <a href="/wap/index" class="home-link" target="_blank">站点首页</a>
+                </div>
+            </div>
+            <div class="main_bd_wrap">
+                <div class="main_bd">
+                    <!-- 快捷菜单 S -->
+                    #*<div class="row" style="margin: 0px;">
+                        <div class="col-md-4">
+                            <div class="panel">
+                                <div class="icon">
+                                    <i class="fa fa-edit"></i>
+                                </div>
+                                <p class="title">房源登记</p>
+                                <ul class="row btn-groups">
+                                    <li class="col-md-4">
+                                        <div>
+                                            今日新增<span class="badge">4</span>
+                                        </div>
+                                    </li>
+                                    <li class="col-md-4 bl br">
+                                        待处理
+                                    </li>
+                                    <li class="col-md-4">
+                                        退货<span class="badge">4</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="panel">
+                                <div class="icon">
+                                    <i class="fa fa-user"></i>
+                                </div>
+                                <p class="title">会员</p>
+                                <ul class="row btn-groups">
+                                    <li class="col-md-4">
+                                        <div>
+                                            今日新增
+                                        </div>
+                                    </li>
+                                    <li class="col-md-4 bl br">
+                                        违规处理
+                                    </li>
+                                    <li class="col-md-4">
+                                        消费统计
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="panel">
+                                <div class="icon">
+                                    <i class="fa fa-cog"></i>
+                                </div>
+                                <p class="title">系统设置</p>
+                                <ul class="row btn-groups">
+                                    <li class="col-md-4">
+                                        <div>
+                                            今日新增
+                                        </div>
+                                    </li>
+                                    <li class="col-md-4 bl br">
+                                        库存预警
+                                    </li>
+                                    <li class="col-md-4">
+                                        已下架
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>*#
+                    <!-- 快捷菜单 E -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>

@@ -1,0 +1,326 @@
+#set($layout = '/admin/_tags/_layout.vm')
+
+#set($menu = "menu_house")
+
+#parse("/admin/houses/_tabs.vm")
+
+<style>
+    .panel {
+        margin-bottom: 0px;
+    }
+    .no-border-b {
+        border-bottom: 0;
+    }
+    .no-border-lr {
+        border-left: 0;
+        border-right: 0;
+    }
+    .no-padding {
+        padding: 0px !important;
+    }
+    .dropdown-opt-group {
+        padding-top: 15px;
+    }
+    .dropdown-opt-group li {
+        padding: 0px 10px;
+        text-align: center;
+    }
+    .dropdown-opt-group li span {
+        display: inline-block;
+        padding: 5px 10px;
+        border: 1px solid #999;
+        margin-bottom: 10px;
+        margin-right: 5px;
+    }
+    .dropdown-opt-group li span:hover {
+        cursor: pointer;
+        background-color: #f4f4f4;
+    }
+</style>
+
+<div class="main_bd">
+    <form id="model-form" action="/admin/houses/update/$!model.id" method="post">
+        <div class="panel panel-default no-border-b">
+            <div class="panel-heading">
+                <ol class="breadcrumb">
+                    <li>
+                        <a href="javascript:window.history.back();">
+                            <i class="glyphicon glyphicon-chevron-left"></i>查看
+                        </a>
+                    </li>
+                    <li class="active">修改</li>
+                </ol>
+            </div>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <h4>城市</h4>
+                    <div class="meta_content">
+                        <select name="city" data-placeholder="选择城市" id="selector-city" style="width:300px;" class="form-control chzn-select">
+                            #foreach($item in $!cityList)
+                                <option value="$!item.code" #if($!model.city == $item.code) selected="selected" #end>$!item.name</option>
+                            #end
+                        </select>
+                    </div>
+                    <h4>地区</h4>
+                    <div class="meta_content">
+                        <select name="country" data-placeholder="选择地区" id="selector-country" value = "$!model.city" style="width:300px;" class="form-control chzn-select">
+                            '<option value="-1"></option>
+                            #foreach($item in $!citySelectedList)
+                                <option value="$!item.code" #if($!model.country == $item.code) selected="selected" #end>$!item.name</option>
+                            #end
+                        </select>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <h4><em>*</em>分类</h4>
+                    <div class="meta_content">
+                        <select id="select-cid" name="type" data-placeholder="选择分类" style="width:300px;" class="form-control chzn-select">
+                            <option value="-1"></option>
+                            #foreach($type in $!types)
+                                <option value="$!type.value" data-type="$!type.value" #if($!model.type == $type.value) selected="selected" #end>$!type.name</option>
+                            #end
+                        </select>
+                    </div>
+                    <h4>售楼部</h4>
+                    <div class="meta_content">
+                        <select name="comid" data-placeholder="选择售楼部" style="width:300px;" class="form-control chzn-select">
+                            <option value="-1"></option>
+                            #foreach($com in $!coms)
+                                <option value="$!com.id" #if($!model.comid == $com.id) selected="selected" #end>$!com.title</option>
+                            #end
+                        </select>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <h4><em>*</em>标题</h4>
+                    <div class="meta_content">
+                        <input type="text" name="title" value="$!model.title" class="form-control" style="width:720px;" placeholder="xx花园有房出售"/>
+                        <p class="fnote">建议在100字以内</p>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <h4>用途</h4>
+                    <div class="meta_content">
+                        <div class="input-group" style="width:300px;">
+                            <input type="text" name="useage" value="$!model.useage" class="form-control">
+                            <div class="input-group-btn">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">选择 <span class="caret"></span></button>
+                                <ul class="dropdown-menu dropdown-menu-right dropdown-opt-group">
+                                    <li>
+                                        <span class="btn-opt">住宅</span>
+                                        <span class="btn-opt">别墅</span>
+                                        <span class="btn-opt">商铺</span>
+                                        <span class="btn-opt">写字楼</span>
+                                    </li>
+                                    <li>
+                                        <span class="btn-opt">厂房</span>
+                                        <span class="btn-opt">仓库</span>
+                                        <span class="btn-opt">车库</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <h4>朝向</h4>
+                    <div class="meta_content">
+                        <div class="input-group" style="width:300px;">
+                            <input type="text" name="toward" value="$!model.toward" class="form-control">
+                            <div class="input-group-btn">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">选择 <span class="caret"></span></button>
+                                <ul class="dropdown-menu dropdown-menu-right dropdown-opt-group">
+                                    <li>
+                                        <span class="btn-opt">东</span>
+                                        <span class="btn-opt">西</span>
+                                        <span class="btn-opt">南</span>
+                                        <span class="btn-opt">北</span>
+                                    </li>
+                                    <li>
+                                        <span class="btn-opt">东南</span>
+                                        <span class="btn-opt">西南</span>
+                                        <span class="btn-opt">东北</span>
+                                        <span class="btn-opt">西北</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <h4>装修</h4>
+                    <div class="meta_content">
+                        <div class="input-group" style="width:300px;">
+                            <input type="text" name="decoration" value="$!model.decoration" class="form-control">
+                            <div class="input-group-btn">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">选择 <span class="caret"></span></button>
+                                <ul class="dropdown-menu dropdown-menu-right dropdown-opt-group">
+                                    <li>
+                                        <span class="btn-opt">毛坯</span>
+                                        <span class="btn-opt">普通</span>
+                                        <span class="btn-opt">精装</span>
+                                    </li>
+                                    <li>
+                                        <span class="btn-opt">中档</span>
+                                        <span class="btn-opt">豪装</span>
+                                        <span class="btn-opt">均可</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <h4>面积</h4>
+                    <div class="meta_content">
+                        <div class="input-group" style="width:300px;">
+                            <input type="text" name="areasize" value="$!model.areasize" class="form-control" placeholder="">
+                            <span class="input-group-addon">平米</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <h4>总价</h4>
+                    <div class="meta_content">
+                        <div class="input-group" style="width:300px;">
+                            <input type="text" name="total" value="$!model.total" class="form-control" placeholder="">
+                            <span class="input-group-addon">万元</span>
+                        </div>
+                    </div>
+                    <h4>单价</h4>
+                    <div class="meta_content">
+                        <div class="input-group" style="width:300px;">
+                            <input type="text" name="price" value="$!model.price" class="form-control" placeholder="">
+                            <span class="input-group-addon">元/m²</span>
+                        </div>
+                    </div>
+
+                </li>
+                <li class="list-group-item">
+                    <h4>户型</h4>
+                    <div class="meta_content">
+                        <div class="input-group" style="width:300px;float:left;margin-right:20px;">
+                            <input type="text" name="bedroom" value="$!model.bedroom" class="form-control" placeholder="">
+                            <span class="input-group-addon no-border-lr">室</span>
+                            <input type="text" name="livingroom" value="$!model.livingroom" class="form-control" placeholder="">
+                            <span class="input-group-addon no-border-lr">厅</span>
+                            <input type="text" name="bathroom" value="$!model.bathroom" class="form-control" placeholder="">
+                            <span class="input-group-addon">卫</span>
+                        </div>
+                    </div>
+                    <h4 style="margin-left: -18px;">楼层</h4>
+                    <div class="meta_content">
+                        <div class="input-group" style="width:300px;float:left;margin-right:20px;">
+                            <input type="text" name="floor" value="$!model.floor" class="form-control" placeholder="">
+                            <span class="input-group-addon no-border-lr">几楼</span>
+                            <input type="text" name="fhigh" value="$!model.fhigh" class="form-control" placeholder="">
+                            <span class="input-group-addon">共几层</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <h4>标签</h4>
+                    <div class="meta_content">
+                        <input name="labels" value="$!model.labels" id="tags-labels" value="随时可看"/>
+                        <p class="fnote">按回车键(Enter)保存标签；建议1-3个标签即可；每个标签字数在4个以内</p>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <h4><em>*</em>图片</h4>
+                    <div class="meta_content">
+                        #set($thumbnails = $!model.thumbnailItems)
+                        #parse('/admin/_widgets/upload_con.vm')
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <h4><em>*</em>位置图片</h4>
+                    <div class="meta_content">
+                        #set($locationThumbnails = $!model.locationThumbnailItems)
+                        #parse('/admin/_widgets/upload_con_location.vm')
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <h4>属性</h4>
+                    <div class="meta_content">
+                        <div class="checkbox">
+                            <label><input name="isrecommended" type="checkbox" #if($model.isrecommended) checked="checked" #end>推荐</label>
+                            <label><input name="isnew" type="checkbox" #if($model.isnew) checked="checked" #end>新品</label>
+                            <label><input name="ishot" type="checkbox" #if($model.ishot) checked="checked" #end>热卖</label>
+                            <label><input name="isgroupbuy" type="checkbox" #if($model.isgroupbuy) checked="checked" #end>团购</label>
+                        </div>
+                        <p class="fnote">被推荐的房产将会显示在首页</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="panel panel-default no-border-b">
+            <div class="panel-heading">联系人信息
+            </div>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <h4><em>*</em>姓名</h4>
+                    <div class="meta_content">
+                        <input type="text" name="contact" value="$!model.contact" class="form-control" style="width:300px;" placeholder=""/>
+                    </div>
+                    <h4><em>*</em>电话</h4>
+                    <div class="meta_content">
+                        <input type="text" name="phone" value="$!model.phone" class="form-control" style="width:300px;" placeholder=""/>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <h4>座机</h4>
+                    <div class="meta_content">
+                        <input type="text" name="landLine" value="$!model.landLine" class="form-control" style="width:300px;" placeholder=""/>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <h4>微信</h4>
+                    <div class="meta_content">
+                        <input type="text" name="weixin" value="$!model.weixin" class="form-control" style="width:300px;" placeholder=""/>
+                    </div>
+                    <h4>QQ</h4>
+                    <div class="meta_content">
+                        <input type="text" name="qq" value="$!model.qq" class="form-control" style="width:300px;" placeholder=""/>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="panel panel-default no-border-b">
+            <div class="panel-heading">备注信息（以下内容只对管理员可见，用以备注特殊信息）
+            </div>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <h4>联系方式</h4>
+                    <div class="meta_content">
+                        <input type="text" name="publisher" value="$!model.publisher" class="form-control" style="width:300px;" placeholder=""/>
+                    </div>
+                    <h4>房源底价</h4>
+                    <div class="meta_content">
+                        <input type="text" name="minPrice" value="$!model.minPrice" class="form-control" style="width:300px;" placeholder=""/>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <h4>关注者</h4>
+                    <div class="meta_content">
+                        <input type="text" name="follow" value="$!{model.follow}" class="form-control" style="width:300px;" placeholder=""/>
+                    </div>
+                    <h4>综合评分</h4>
+                    <div class="meta_content">
+                        <input type="text" name="score" value="$!{model.score}" class="form-control" style="width:300px;" placeholder="请填写1-100之内的数字"/>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">详情描述
+            </div>
+            <ul class="list-group no-padding">
+                <li class="list-group-item">
+                    <textarea class="form-control" id="editor-content" style="width:950px;">$!model.content</textarea>
+                    <input type="hidden" name="content" id="editor-input">
+                    <p class="fnote">建议：图片上传数量不宜超过5张，宽度在640像素以内，高度任意，大小在200k以内。</p>
+                </li>
+            </ul>
+        </div>
+    </form>
+</div>
+#include('/admin/_widgets/upload_view.vm')
+#include('/admin/_widgets/upload_view_location.vm')
+<script src="/assets/js/admin/houses/edit.js"></script>
+

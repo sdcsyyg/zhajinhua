@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>买房/租房登记</title>
+    <link rel="stylesheet" type="text/css" href="/assets/wap/css/api.css"/>
+    <link rel="stylesheet" type="text/css" href="/assets/wap/css/aui.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/wap/css/aui-flex.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/wap/css/aui-slide.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/wap/css/style.css" />
+    <style>
+        body {
+            background-color: #fff;
+        }
+        .aui-input-row {
+            padding: 6px 10px;
+        }
+        .btn-wrap {
+            padding: 20px;
+        }
+        .btn-wrap .aui-btn {
+            padding: 10px 0;
+            font-size: 15px;
+        }
+        .content{
+            width: 100%;
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="aui-bar aui-bar-nav">
+        <a class="aui-pull-left" onclick="history.back();">
+            <span class="aui-iconfont aui-icon-left"></span>返回
+        </a>
+        <div class="aui-title">买房/租房登记</div>
+        <a class="aui-pull-right" href="/wap/index">
+            <span class="aui-iconfont aui-icon-home"></span>
+        </a>
+    </header>
+    <div class="aui-content">
+        <div class="aui-form">
+            <div class="aui-input-row">
+                <label class="aui-input-addon">类型</label>
+                <div class="aui-pull-right">
+                    <input class="aui-radio" type="radio" name="dt" checked value="mf">
+                        <div class="aui-radio-name">我要买房</div>
+                    <input class="aui-radio" type="radio" name="dt" value="zf">
+                        <div class="aui-radio-name">我要租房</div>
+                </div>
+            </div>
+            <div class="aui-input-row">
+                <label class="aui-input-addon">概述</label>
+                <input type="text" class="aui-input" name="title" placeholder="请输入大概要求"/>
+            </div>
+            <div class="aui-input-row">
+                <label class="aui-input-addon">姓名</label>
+                <input type="text" class="aui-input" name="contact" placeholder="请输入真实姓名"/>
+            </div>
+            <div class="aui-input-row">
+                <label class="aui-input-addon">电话</label>
+                <input type="text" class="aui-input" name="phone" placeholder="请输入电话号码"/>
+            </div>
+            <div class="aui-input-row">
+                <textarea cols="80" rows="5" name="content" class="content" placeholder="请输入具体需求"></textarea>
+            </div>
+            <div class="btn-wrap">
+                <div class="aui-btn aui-btn-block aui-btn-info" onclick="enroll()">确定</div>
+            </div>
+
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="/assets/wap/js/api.js"></script>
+<script type="text/javascript" src="/assets/wap/js/zepto.min.js"></script>
+<script type="text/javascript" src="/assets/wap/js/common.js"></script>
+<script type="text/javascript">
+    function enroll() {
+        var title = $('input[name="title"]').val(),
+            dt = $('input[name="dt"]').val(),
+            contact = $('input[name="contact"]').val(),
+            phone = $('input[name="phone"]').val(),
+            content = $('textarea[name="content"]').val();
+        if(contact == '') {
+            alert('请输入姓名'); return;
+        }
+        if(phone == '') {
+            alert('请输入电话号码'); return;
+        }
+        ajaxPost('/demand/save', {
+            dt: dt,
+            title: title,
+            contact: contact,
+            phone: phone,
+            content: content
+        }, function(ret) {
+            alert(ret.msg);
+            if(ret.success) {
+                location.href = '/wap/index';
+            }
+        });
+    }
+</script>
+</html>

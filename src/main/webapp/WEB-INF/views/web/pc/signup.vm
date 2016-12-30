@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<link rel="stylesheet" href="/assets/css/pc/base.css">
+		<link rel="stylesheet" href="/assets/css/pc/zhuce.css">
+		<script src="/assets/js/pc/jquery.min.js"></script>
+		<title>注册-楼盘网</title>
+	</head>
+
+	<body>
+		<div class="top">
+			<h1><a href="#" class="toplogo"></a></h1>
+		</div>
+
+		<div class="wrapper clearfixed">
+			<p class="zc_title">注册</p>
+			<div class="form" id="formTab">
+				<div id="jjr_block" style="display:block" class="reg-form">
+					<dl>
+						<dt><span>*</span>账&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;号</dt>
+						<dd><input type="text" placeholder="请输入手机号" class="userid"></dd>
+						<em class="id-error"></em>
+					</dl>
+					<dl>
+						<dt><span>*</span>短信验证码</dt>
+						<dd style="width:170px;"><input type="text" placeholder="请输入验证码" style="width:100px;" class="validate-code"></dd>
+						<span class="getCode">获取验证码</span>
+						<em class="validate-error"></em>
+					</dl>
+
+					<dl>
+						<dt><span>*</span>昵&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;称</dt>
+						<dd><input type="text" placeholder="请输入您的昵称" class="username" maxlength="20" data-form-un="1474163297751.769"></dd>
+						<em class="name-error"></em>
+					</dl>
+
+					<dl>
+						<dt><span>*</span>选择身份</dt>
+						<button id="capacity-pt" class="capacity">普通用户</button> &nbsp;&nbsp;&nbsp;&nbsp;
+						<button id="capacity-jjr" class="capacity">经纪人</button>
+					</dl>
+
+					<dl>
+						<dt><span>*</span>密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码</dt>
+						<dd><input type="password" placeholder="6-16个字符可使用字母、数字" class="userpassword" maxlength="16" data-form-pw="1474163297751.5168"></dd>
+						<em class="password-error"></em>
+					</dl>
+
+					<dl>
+						<dt><span>*</span>确认密码</dt>
+						<dd><input type="password" placeholder="请重复输入您的密码" class="userpassword1" maxlength="16" data-form-pw="1474163297751.769"></dd>
+						<em class="password-error1"></em>
+					</dl>
+					<p><input type="checkbox" class="xieyi" checked="">同意
+						<a href="/home/pro" target="_blank">万佳房产网相关协议</a>
+					</p>
+					<button class="free-reg">免费注册</button>
+				</div>
+			</div>
+		</div>
+
+		<!--版权开始-->
+		<div class="footer">
+			<p>广告投放热线：
+				<font color="red"></font> 客服热线： 邮箱： 经营性ICP证：
+				<a href="http://www.wanjiafdc.com/about/icp" rel="nofollow" target="_blank">湘B2-20130102</a>
+			</p>
+			<p>Copyright© 2015 www.wanjiafdc.com All Rights Reserved</p>
+		</div>
+		<div class="success" style="width: 150px;height: 60px;background: #000;color: #fff;position: fixed;top: 50%;left: 50%;margin-top:-30px;margin-left: -75px;text-align: center;line-height: 60px;border-radius: 10px;font-size: 20px;display: none;">注册成功</div>
+		<!--版权结束-->
+	</body>
+
+</html>

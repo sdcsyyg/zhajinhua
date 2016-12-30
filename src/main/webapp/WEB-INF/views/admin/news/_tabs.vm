@@ -1,0 +1,71 @@
+<div class="main_hd">
+    <div class="title_tab">
+        <ul class="tab_navs">
+            #if($submenu == 'submenu_news_list_bdls')
+                <li class="tab_nav selected"><a href="javascript:;">本地楼市</a></li>
+            #else
+                <li class="tab_nav"><a href="/admin/news/list/bdls">本地楼市</a></li>
+            #end
+
+            #if($submenu == 'submenu_news_list_bwyc')
+                <li class="tab_nav selected"><a href="javascript:;">本网原创</a></li>
+            #else
+                <li class="tab_nav"><a href="/admin/news/list/bwyc">本网原创</a></li>
+            #end
+
+            #if($submenu == 'submenu_news_list_xfdt')
+                <li class="tab_nav selected"><a href="javascript:;">新房动态</a></li>
+            #else
+                <li class="tab_nav"><a href="/admin/news/list/xfdt">新房动态</a></li>
+            #end
+
+            #if($submenu == 'submenu_news_list_pptj')
+                <li class="tab_nav selected"><a href="javascript:;">品牌推荐</a></li>
+            #else
+                <li class="tab_nav"><a href="/admin/news/list/pptj">品牌推荐</a></li>
+            #end
+
+            #if($submenu == 'submenu_news_list_gndt')
+                <li class="tab_nav selected"><a href="javascript:;">国内动态</a></li>
+            #else
+                <li class="tab_nav"><a href="/admin/news/list/gndt">国内动态</a></li>
+            #end
+
+            #if($submenu == 'submenu_news_list_xshq')
+                <li class="tab_nav selected"><a href="javascript:;">销售行情</a></li>
+            #else
+                <li class="tab_nav"><a href="/admin/news/list/xshq">销售行情</a></li>
+            #end
+
+            #if($submenu == 'submenu_news_list_lpzy')
+                <li class="tab_nav selected"><a href="javascript:;">楼盘置业</a></li>
+            #else
+                <li class="tab_nav"><a href="/admin/news/list/lpzy">楼盘置业</a></li>
+            #end
+
+            #if($submenu == 'submenu_news_list_yjft')
+                <li class="tab_nav selected"><a href="javascript:;">业界访谈</a></li>
+            #else
+                <li class="tab_nav"><a href="/admin/news/list/yjft">业界访谈</a></li>
+            #end
+
+            #if($submenu == 'submenu_news_list_xwzt')
+                <li class="tab_nav selected"><a href="javascript:;">新闻专题</a></li>
+            #else
+                <li class="tab_nav"><a href="/admin/news/list/xwzt">新闻专题</a></li>
+            #end
+
+            #if($submenu == 'submenu_news_list_hdzt')
+                <li class="tab_nav selected"><a href="javascript:;">活动专题</a></li>
+            #else
+                <li class="tab_nav"><a href="/admin/news/list/hdzt">活动专题</a></li>
+            #end
+
+##            #if($submenu == 'submenu_article_category')
+##                <li class="tab_nav selected"><a href="javascript:;">文章分类</a></li>
+##            #else
+##                <li class="tab_nav"><a href="/admin/categories/article/list">文章分类</a></li>
+##            #end
+        </ul>
+    </div>
+</div>

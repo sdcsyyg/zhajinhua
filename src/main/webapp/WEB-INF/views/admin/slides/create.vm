@@ -1,0 +1,72 @@
+#set($layout = '/admin/_tags/_layout.vm')
+
+#set($menu = "menu_slide")
+
+#set($submenu = 'submenu_slide_form')
+#parse("/admin/slides/_tabs.vm")
+
+<div class="main_bd">
+    <div class="panel panel-default">
+        <div class="panel-heading">基本信息
+        </div>
+        <ul class="list-group">
+            <form id="model-form" method="post" action="/admin/slides/save">
+                <li class="list-group-item">
+                    <h4>分类</h4>
+                    <div class="meta_content">
+                        <select id="select-type" name="type" data-placeholder="选择分类" style="width:500px;" class="form-control chzn-select">
+                            <option value="-1"></option>
+                            #foreach($type in $!typeList)
+                                <option value="$!type.value" data-type="$!type.value">$!type.name</option>
+                            #end
+                        </select>
+                    </div>
+                    <div class="meta_opr">选择广告分类</div>
+                </li>
+                <li class="list-group-item">
+                    <h4>城市</h4>
+                    <div class="meta_content">
+                        <select id="select-type" name="city" data-placeholder="选择城市" style="width:500px;" class="form-control chzn-select">
+                            #foreach($item in $!cityList.children)
+                                <option value="$!item.code" data-type="$!item.value">$!item.name</option>
+                            #end
+                        </select>
+                    </div>
+                    <div class="meta_opr">选择广告城市</div>
+                </li>
+                <li class="list-group-item">
+                    <h4><em>*</em>图片</h4>
+                    <div class="meta_content">
+                        #parse('/admin/_widgets/upload_con.vm')
+                        <p class="fnote">建议尺寸：600 x 120 像素，只需要上传一张即可。</p>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <h4>标题</h4>
+                    <div class="meta_content">
+                        <input type="text" name="title" class="form-control" style="width:500px;"/>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <h4>链接地址</h4>
+                    <div class="meta_content">
+                        <input type="text" name="url" class="form-control" style="width:500px;"/>
+                    </div>
+                </li>
+##                <li class="list-group-item">
+##                    <h4>顺序</h4>
+##                    <div class="meta_content">
+##                        <input type="text" name="position" class="form-control"  style="width:200px;"/>
+##                        <p class="fnote">请填写数字，越小越靠前。</p>
+##                    </div>
+##                </li>
+            </form>
+        </ul>
+        <div class="panel-footer">
+            <button id="model-form-save" type="button" class="btn btn-success" >立即保存</button>
+            <button id="model-form-reset" type="button" class="btn btn-default" >重置</button>
+        </div>
+    </div>
+</div>
+#include('/admin/_widgets/upload_view.vm')
+<script src="/assets/js/admin/slides/create.js"></script>

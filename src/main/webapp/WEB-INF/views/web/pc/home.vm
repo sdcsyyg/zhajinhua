@@ -1,0 +1,625 @@
+<html>
+
+	<head><noscript></noscript>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="format-detection" content="telephone=no">
+		<title>固原房产_固原房产网_固原房地产信息网 - 固原楼盘网</title>
+		<meta name="Keywords" content="固原房产网,固原房产,固原房地产,固原房地产信息网">
+		<meta name="description" content="楼盘网固原站是最权威的固原房产网站，专业的固原房地产网为您提供固原房产、固原房地产、固原楼盘、固原房价等资讯服务，致力打造一流的固原房地产信息网。">
+		<link rel="stylesheet" media="all" href="/assets/css/pc/base.css">
+		<link rel="stylesheet" media="all" href="/assets/css/pc/home.css">
+		<link rel="stylesheet" media="all" href="/assets/css/pc/swiper-3.3.1.min.css">
+		<link rel="stylesheet" media="all" href="/assets/css/pc/swiper.css">
+		<script type="text/javascript" src="/assets/js/pc/jquery.min.js"></script>
+        <script type="text/javascript" src="/assets/js/pc/home.js"></script>
+		<style type="text/css">
+			.demand-div {
+                float: left;
+                height: 50px;
+                position: absolute;
+                right: 1px;
+                text-align: center;
+                top: 42px;
+                width: 244px;
+			}
+			.demand-div a {
+                background-color: #ff552e;
+                color: #fff;
+                display: inline-block;
+                font-size: 16px;
+                height: 34px;
+                margin-left: 10px;
+                padding-top: 10px;
+                width: 110px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="header">
+				<div class="site-nav">
+					#parse("/web/pc/_tags/_header.vm")
+				</div>
+				<div class="logo-search">
+					<div class="wrapper logo-search-box">
+						<div class="logo-box clearfix">
+							<h1>
+								<a class="logo" href="#" title="在线表决系统网" hidefocus="true" style="background-image:url(/assets/images/logo.png);"></a>
+							</h1>
+							<div class="citywrap">
+								<div id="city_hover_id" class="curcity clearfix"><i class="city">$!{cityName}</i><em class="cur"></em></div>
+								<div id="citylist_panel_id" class="citylist" style="display:none;">
+                                    <dl class="fn-clear"><dt>$!dataMap.cites.name：</dt>
+                                        <dd>
+											#foreach($!c in $!dataMap.cites.children)
+                                                <a rel="nofollow" href="/web/pc/change/$!{c.code}">$!{c.name}</a>
+											#end
+                                        </dd>
+                                    </dl>
+								</div>
+							</div>
+						</div>
+						<div class="search-home-box">
+							<!-- js before submit validate and submit-->
+							<div id="search_hover_id" class="searchwrap clearfix">
+								<form id="search_form" action="/xinfang/?" method="get">
+									<div id="search_pos_combox_id" class="combox">
+										<p class="combox-text">
+											<span data-search-type="1" id="search_combox_type_id">新房</span><i></i></p>
+										<div id="search_combox_items_id" class="combox-items">
+											<span data-search-combox="1">新房</span>
+											<span data-search-combox="2">二手房</span>
+											<span data-search-combox="3">租房</span>
+										</div>
+									</div>
+									<p class="field">
+										<input id="search_field_id" name="q" maxlength="20" class="key" type="text" data-value="请填写新房名称" value="请填写新房名称">
+										<input id="citypinyin" value="$!{cityCode}" type="hidden"></p>
+									<p id="search_house_id"><i></i>搜索</p>
+								</form>
+							</div>
+							<ul class="top_tab_list_ul" style="display: none; z-index: 1000;" id="top_search_ul"></ul>
+							<ul class="searchhot">
+								<li class="firsthot">热门楼房:</li>
+								#foreach($!item in $!dataMap.rmlp)
+									#if($!{velocityCount} < 5)
+                                        <li>
+                                            <a href="/web/house/detail/$!{item.id}" target="_blank">$!{item.title}</a>
+                                        </li>
+									#else
+
+									#end
+								#end
+							</ul>
+						</div>
+						<div class="topic-box">
+							<div class="g" id="A12617"></div>
+						</div>
+						<div class="demand-div">
+							<a href="/web/pc/demand/mf">我要买房</a>
+                            <a href="/web/pc/demand/zf">我要租房</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="nav">
+				<div class="wrapper">
+					<ul class="main-nav clearfix">
+						<li class="ui-nav-item-current cur">
+							<a href="/web/pc/home" target="_self">首页</a>
+						</li>
+                        <li>
+                            <a href="/web/house/search/xinfang?flag=1" target="_blank">一手盘</a>
+                        </li>
+						<li>
+							<a href="/web/news/news_list" target="_blank">楼盘资讯</a>
+						</li>
+						<li>
+							<a href="/web/house/search/ershoufang?flag=1" target="_blank">二手房</a>
+						</li>
+						<li>
+							<a href="/web/house/search/zufang?flag=1" target="_blank">租房</a>
+						</li>
+						<li>
+							<a href="/web/company/list" target="_blank">装修</a>
+						</li>
+					</ul>
+					<ul class="sub-nav clearfix">
+						<li id="mobile_nav_panel_id">
+							<span class="mobile-icon"></span>
+							<i id="mobile_arrow_panel_id" class="arrow"></i>
+							<div id="mobile_pos_panel_id" class="mobile-pos clearfix">
+								<img src="/assets/images/pc/ewm/vote-andriod.png" width="123" height="123" alt="二维码">
+							</div>
+						</li>
+						<li id="iphone_nav_panel_id">
+							<span class="app-icon"></span>
+                            <i id="iphone_arrow_panel_id" class="arrow"></i>
+                            <div id="iphone_pos_panel_id" class="mobile-pos clearfix">
+                                <img src="/assets/images/pc/ewm/vote-iphone.png" width="123" height="123" alt="二维码">
+                            </div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="wrapper">
+				<div class="news clearfix">
+					<div class="west-news">
+						<div class="news-swiper" id="xbjdt" style="position: relative;">
+							<div id="news_swipe_container_id" class="swiper-container" style="overflow: hidden;">
+								<div id="news_swipe_id" class="swiper-wrapper clearfix">
+									#foreach($!item in $!dataMap.zcgd)
+                                        <div class="swiper-slide" style="width: 340px; height: 252px; display: inline-block; vertical-align: top;">
+                                            <a href="$!{item.url}" target="_blank" hidefocus="true">
+                                                <img src="$!{item.thumbnails}" width="340" height="252">
+                                                <p>$!{item.title}</p>
+                                            </a>
+                                        </div>
+									#end
+								</div>
+								<div class="swiper-pagination"></div>
+							</div>
+
+							<script src="/assets/js/pc/swiper-3.3.1.min.js"></script>
+							<script>
+								var mySwiper = new Swiper('.swiper-container', {
+									autoplay: 5000, //可选选项，自动滑动
+									autoplayDisableOnInteraction: false,
+									speed: 300,
+									loop: true,
+									loopAdditionalSlides: 1,
+									pagination: '.swiper-pagination',
+									paginationClickable: true,
+								})
+							</script>
+						</div>
+						<div class="news-advert">
+							#if($!dataMap.zcgg.size() == 1)
+                                <a href="$!{dataMap.zcgg[0].url}" target="_blank">
+                                    <img src="$!{dataMap.zcgg[0].thumbnails}" width="340" height="178">
+                                </a>
+							#end
+						</div>
+					</div>
+					<div class="center-news">
+						<h3 class="hot">
+							#if($!{dataMap.news_header.size()} >0)
+                                <a href="/web/news/detail/$!{dataMap.news_header[0].id}" target="_blank" hidefocus="true">$!{dataMap.news_header[0].title}</a>
+							#end
+						</h3>
+						<div class="news-img-content-box clearfix">
+							<div class="left-img">
+								#if($!{dataMap.zjgg.size()} == 2)
+                                    <a href="$!{dataMap.zjgg[0].url}" target="_blank" hidefocus="true">
+                                        <img src="$!{dataMap.zjgg[0].thumbnails}" width="156" height="106">
+                                        <p>$!{dataMap.zjgg[0].title}</p>
+                                    </a>
+								#end
+							</div>
+							<ul class="right-news">
+								#foreach($news in $!dataMap.bdls1)
+                                    <li>
+                                        <a href="/web/news/" target="_blank" hidefocus="true"> [本地] </a>
+                                        <a href="/web/news/detail/$!{news.id}" target="_blank" hidefocus="true"> $!{news.title} </a>
+                                    </li>
+								#end
+							</ul>
+						</div>
+						<div class="news-img-content-box clearfix">
+							<div class="left-img">
+								#if($!{dataMap.zjgg.size()} == 2)
+                                    <a href="$!{dataMap.zjgg[1].url}" target="_blank" hidefocus="true">
+                                        <img src="$!{dataMap.zjgg[1].thumbnails}" width="156" height="106">
+                                        <p>$!{dataMap.zjgg[1].title}</p>
+                                    </a>
+								#end
+							</div>
+							<ul class="right-news">
+
+								#foreach($news in $!dataMap.bdls2)
+                                    <li>
+                                        <a href="/web/news/" target="_blank" hidefocus="true"> [本地] </a>
+                                        <a href="/web/news/detail/$!{news.id}" target="_blank" hidefocus="true"> $!{news.title} </a>
+                                    </li>
+								#end
+							</ul>
+						</div>
+                        <h3 class="hot">
+							#if($!{dataMap.news_header.size()} ==2)
+                                <a href="/web/news/detail/$!{dataMap.news_header[1].id}" target="_blank" hidefocus="true">$!{dataMap.news_header[1].title}</a>
+							#end
+						</h3>
+						<div class="news-content-box clearfix">
+							<ul class="left">
+								#foreach($news in $!dataMap.new_xfdt)
+                                    <li>
+                                        <a href="/web/news/" target="_blank" hidefocus="true"> [导购] </a>
+                                        <a href="/web/news/detail/$!news.id" target="_blank" hidefocus="true"> $!{news.title} </a>
+                                    </li>
+								#end
+							</ul>
+							<ul>
+								#foreach($news in $!dataMap.new_gndt)
+                                    <li>
+                                        <a href="/web/news/" target="_blank" hidefocus="true"> [指南] </a>
+                                        <a href="/web/news/detail/$!news.id" target="_blank" hidefocus="true"> $!{news.title} </a>
+                                    </li>
+								#end
+							</ul>
+						</div>
+					</div>
+					<div class="east-news">
+						<dl><dt style="margin-top:-5px;"><a href="#" target="_blank" hidefocus="true">本地楼市</a></dt>
+							#foreach($news in $!dataMap.bdls3)
+								#if($!{velocityCount} == 1)
+                                    <dd class="img-content-box clearfix">
+                                        <h3><a href="/web/news/detail/$!{news.id}" target="_blank">$!{news.title}</a></h3>
+                                        <a class="img" target="_blank" hidefocus="true"><img src="/assets/images/pc/img/h_a_3.jpg" width="118" height="80" alt="开发商一房三卖 原房主得确权"></a>
+                                        <p class="detail">$!{news.summary}
+                                            <a href="/web/news/detail/$!{news.id}" target="_blank" hidefocus="true">[查看详情]</a>
+                                        </p>
+                                    </dd>
+								#else
+                                    <dd>
+                                        <a href="/web/news/detail/$!{news.id}" target="_blank" hidefocus="true">$!{news.title}</a>
+                                    </dd>
+								#end
+							#end
+						</dl>
+						<dl><dt class="mg"><a href="#" target="_blank" hidefocus="true">本网原创</a></dt>
+							#foreach($news in $!dataMap.bwyc)
+                                <dd>
+                                    <a href="/web/news/detail/$!{news.id}" target="_blank" hidefocus="true">$!{news.title}</a>
+                                </dd>
+							#end
+						</dl>
+					</div>
+				</div>
+			</div>
+			<div class="wrapper">
+				<div class="newhouse clearfix">
+					<div class="west-newhouse">
+						<div class="column">
+							<h2 style="float:left;margin-right:18px;">
+								<a href="#" target="_blank" hidefocus="true" style="margin-right:14px;">新房</a>
+							</h2>
+##							<img src="/assets/images/pc/img/ico_map.png" width="20" height="20" style="margin-bottom:-3px;margin-top:5px;">
+##							<font>
+##								<a href="#" target="_blank" hidefocus="true" style="font-size:12px;font-weight: normal;">地图找房</a>
+##							</font>
+						</div>
+						<div class="west-newhouse-box">
+							<dl class="clearfix"><dt><i>单价</i></dt>
+								<dd>
+									<a rel="nofollow" href="/web/house/search/xinfang?flag=1&minPrice=0&maxPrice=3000" target="_blank">3000以下</a>
+								</dd>
+								<dd>
+									<a rel="nofollow" href="/web/house/search/xinfang?flag=1&minPrice=3000&maxPrice=4000" target="_blank">3000-4000</a>
+								</dd>
+								<dd>
+									<a rel="nofollow" href="/web/house/search/xinfang?flag=1&minPrice=4000&maxPrice=5000" target="_blank">4000-5000</a>
+								</dd>
+								<dd>
+									<a rel="nofollow" href="/web/house/search/xinfang?flag=1&minPrice=5000&maxPrice=7000" target="_blank">5000-7000</a>
+								</dd>
+								<dd>
+									<a rel="nofollow" href="/web/house/search/xinfang?flag=1&minPrice=7000&maxPrice=10000" target="_blank">7000-10000</a>
+								</dd>
+								<dd>
+									<a rel="nofollow" href="/web/house/search/xinfang?flag=1&minPrice=10000&maxPrice=99999" target="_blank">10000以上</a>
+								</dd>
+							</dl>
+                            <dl class="clearfix"><dt><i>面积</i></dt>
+                                <dd>
+                                    <a href="/web/house/search/xinfang?flag=1&minAreasize=0&maxAreasize=50" target="_blank" hidefocus="true" rel="nofollow">50平米以下</a>
+                                </dd>
+                                <dd>
+                                    <a href="/web/house/search/xinfang?flag=1&minAreasize=50&maxAreasize=70" target="_blank" hidefocus="true" rel="nofollow">50-70平米</a>
+                                </dd>
+                                <dd>
+                                    <a href="/web/house/search/xinfang?flag=1&minAreasize=70&maxAreasize=90" target="_blank" hidefocus="true" rel="nofollow">70-90平米</a>
+                                </dd>
+                                <dd>
+                                    <a href="/web/house/search/xinfang?flag=1&minAreasize=90&maxAreasize=120" target="_blank" hidefocus="true" rel="nofollow">90-120平米</a>
+                                </dd>
+                                <dd>
+                                    <a href="/web/house/search/xinfang?flag=1&minAreasize=120&maxAreasize=150" target="_blank" hidefocus="true" rel="nofollow">120-150平米</a>
+                                </dd>
+                                <dd>
+                                    <a href="/web/house/search/xinfang?flag=1&minAreasize=150&maxAreasize=200" target="_blank" hidefocus="true" rel="nofollow">150-200平米</a>
+                                </dd>
+                                <dd>
+                                    <a href="/web/house/search/xinfang?flag=1&minAreasize=200&maxAreasize=9999" target="_blank" hidefocus="true" rel="nofollow">200平米以上</a>
+                                </dd>
+                            </dl>
+							<dl class="clearfix"><dt><i>物业</i></dt>
+								<dd>
+									<a href="/web/house/search/xinfang?flag=1&useage=住宅" target="_blank" hidefocus="true" rel="nofollow">住宅</a>
+								</dd>
+								<dd>
+									<a href="/web/house/search/xinfang?flag=1&useage=别墅" target="_blank" hidefocus="true" rel="nofollow">别墅</a>
+								</dd>
+								<dd>
+									<a href="/web/house/search/xinfang?flag=1&useage=商铺" target="_blank" hidefocus="true" rel="nofollow">商铺</a>
+								</dd>
+								<dd>
+									<a href="/web/house/search/xinfang?flag=1&useage=写字楼" target="_blank" hidefocus="true" rel="nofollow">写字楼</a>
+								</dd>
+								<dd>
+									<a href="/web/house/search/xinfang?flag=1&useage=厂房" target="_blank" hidefocus="true" rel="nofollow">厂房</a>
+								</dd>
+								<dd>
+									<a href="/web/house/search/xinfang?flag=1&useage=仓库" target="_blank" hidefocus="true" rel="nofollow">仓库</a>
+								</dd>
+								<dd>
+									<a href="/web/house/search/xinfang?flag=1&useage=车房" target="_blank" hidefocus="true" rel="nofollow">车房</a>
+								</dd>
+
+							</dl>
+						</div>
+					</div>
+                    <div id="tab_demo" class="center-newhouse">
+                        <div class="tabBar">
+							#foreach($!item in $!dataMap.cityList)
+                                <span>$!item.name</span>
+							#end
+							<span>更多+</span>
+						</div>
+						#foreach($item in $!dataMap.xf)
+							<div class="tabCon">
+								#if($item.size() > 0)
+									<ul class="area-house-list clearfix">
+										#foreach($it in $!item)
+											<li class="area-house-wrap">
+												<a href="/web/house/detail/$!it.id" target="_blank" hidefocus="true">
+													<img src="$!it.cover" width="200" height="136" alt="$!it.title">
+												</a>
+												<h3 class="title">
+													<a href="/web/house/detail/$!it.id" target="_blank" hidefocus="true">$!it.title</a>
+												</h3>
+												<p class="detail">
+													<span class="price">$!it.price万</span>
+													<span class="attention"><i>$!it.follow</i>人关注</span>
+												</p>
+											</li>
+										#end
+									</ul>
+								#else
+                                    <p class="emptymsg">暂无新房数据</p>
+								#end
+							</div>
+						#end
+                    </div>
+                    <script>
+                        $(function() {
+                            $.NewHouse("#tab_demo .tabBar span", "#tab_demo .tabCon", "current", "mousemove", "0");
+                        });
+                    </script>
+					<div class="east-newhouse">
+						<div class="column">
+							<h2><a href="#" target="_blank" hidefocus="true">新房动态</a></h2></div>
+						<div class="east-newhouse-box clearfix">
+							<div id="timeline_split_id" class="timeline" style="height: 284px;"></div>
+							<ul id="timeline_list_id">
+								<dl class="clearfix"><dt></dt>
+
+									#foreach($news in $!dataMap.xfdt)
+										#if($!{velocityCount} == 1)
+                                            <dd class="time">$!{news.createdAt}</dd>
+										#end
+                                        <dd>
+                                            <a href="/web/news/detail/$!{news.id}" target="_blank" hidefocus="true">$!{news.title}</a>
+                                        </dd>
+									#end
+								</dl>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="wrapper">
+				<div class="ranking clearfix">
+					<div class="west-ranking">
+						<div class="column">
+							<h2>热门楼盘</h2></div>
+						<ul>
+
+							#foreach($h in $!dataMap.rmlp)
+                                <li>
+									#if($!{velocityCount} < 4)
+										<i class="hot">$!{velocityCount}</i>
+									#else
+                                        <i>$!{velocityCount}</i>
+									#end
+                                    <a class="house-name" href="/web/house/detail/$!{h.id}" target="_blank" hidefocus="true">$!{h.title}</a><span class="price">$!{h.total}万</span>
+                                    <a class="house-area" href="/web/house/detail/$!{h.id}" target="_blank" hidefocus="true">$!{h.qq}</a>
+                                </li>
+							#end
+
+						</ul>
+					</div>
+					<div class="center-ranking">
+						<div class="column">
+							<h2>楼房团购排行榜</h2></div>
+						<ul>
+
+							#foreach($h in $!dataMap.follow)
+                                <li>
+									#if($!{velocityCount} < 4)
+                                        <i class="hot">$!{velocityCount}</i>
+									#else
+                                        <i>$!{velocityCount}</i>
+									#end
+                                    <a class="house-name" href="/web/house/detail/$!{h.id}" target="_blank" hidefocus="true">$!{h.title}</a><span class="price">$!{h.total}万</span>
+                                    <a class="house-area" href="/web/house/detail/$!{h.id}" target="_blank" hidefocus="true">$!{h.qq}</a><span class="person">$!{h.follow}人</span></li>
+                                </li>
+							#end
+						</ul>
+					</div>
+					<div class="east-ranking">
+						<div class="column">
+							<h2>综合评分</h2></div>
+						<ul>
+							#foreach($h in $!dataMap.score)
+                                <li>
+									#if($!{velocityCount} < 4)
+                                        <i class="hot">$!{velocityCount}</i>
+									#else
+                                        <i>$!{velocityCount}</i>
+									#end
+                                    <a class="house-name" href="/web/house/detail/$!{h.id}" target="_blank" hidefocus="true">$!{h.title}</a>
+									<span class="house-count">$!{h.total}万</span><span class="house-score">$!{h.score}分</span>
+								</li>
+							#end
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="wrapper">
+				<div class="g" id="A12600"></div>
+				<div class="g" id="A12601"></div>
+				<div class="g" id="A12647"></div>
+			</div>
+			<div class="wrapper">
+				<div class="oldhouse clearfix">
+					<div class="west-oldhouse">
+						<div class="column">
+							<h2><a href="/web/house/search/ershoufang" target="_blank">二手房</a></h2></div>
+						<div class="west-oldhouse-box">
+							<dl class="clearfix">
+								<dt><i>单价</i></dt>
+                                <dd>
+                                    <a rel="nofollow" href="/web/house/search/ershoufang?flag=1&minPrice=0&maxPrice=3000" target="_blank">3000以下</a>
+                                </dd>
+                                <dd>
+                                    <a rel="nofollow" href="/web/house/search/ershoufang?flag=1&minPrice=3000&maxPrice=4000" target="_blank">3000-4000</a>
+                                </dd>
+                                <dd>
+                                    <a rel="nofollow" href="/web/house/search/ershoufang?flag=1&minPrice=4000&maxPrice=5000" target="_blank">4000-5000</a>
+                                </dd>
+                                <dd>
+                                    <a rel="nofollow" href="/web/house/search/ershoufang?flag=1&minPrice=5000&maxPrice=7000" target="_blank">5000-7000</a>
+                                </dd>
+                                <dd>
+                                    <a rel="nofollow" href="/web/house/search/ershoufang?flag=1&minPrice=7000&maxPrice=10000" target="_blank">7000-10000</a>
+                                </dd>
+                                <dd>
+                                    <a rel="nofollow" href="/web/house/search/ershoufang?flag=1&minPrice=10000&maxPrice=99999" target="_blank">10000以上</a>
+                                </dd>
+							</dl>
+							<dl class="clearfix"><dt><i>面积</i></dt>
+								<dd>
+									<a href="/web/house/search/ershoufang?flag=1&minAreasize=0&maxAreasize=50" target="_blank" hidefocus="true" rel="nofollow">50平米以下</a>
+								</dd>
+								<dd>
+									<a href="/web/house/search/ershoufang?flag=1&minAreasize=50&maxAreasize=70" target="_blank" hidefocus="true" rel="nofollow">50-70平米</a>
+								</dd>
+								<dd>
+									<a href="/web/house/search/ershoufang?flag=1&minAreasize=70&maxAreasize=90" target="_blank" hidefocus="true" rel="nofollow">70-90平米</a>
+								</dd>
+								<dd>
+									<a href="/web/house/search/ershoufang?flag=1&minAreasize=90&maxAreasize=120" target="_blank" hidefocus="true" rel="nofollow">90-120平米</a>
+								</dd>
+								<dd>
+									<a href="/web/house/search/ershoufang?flag=1&minAreasize=120&maxAreasize=150" target="_blank" hidefocus="true" rel="nofollow">120-150平米</a>
+								</dd>
+								<dd>
+									<a href="/web/house/search/ershoufang?flag=1&minAreasize=150&maxAreasize=200" target="_blank" hidefocus="true" rel="nofollow">150-200平米</a>
+								</dd>
+								<dd>
+									<a href="/web/house/search/ershoufang?flag=1&minAreasize=200&maxAreasize=9999" target="_blank" hidefocus="true" rel="nofollow">200平米以上</a>
+								</dd>
+							</dl>
+							<dl class="clearfix"><dt><i>户型</i></dt>
+								<dd>
+									<a href="/web/house/search/ershoufang?flag=1&bedroom=1" target="_blank" hidefocus="true" rel="nofollow">一室</a>
+								</dd>
+								<dd>
+									<a href="/web/house/search/ershoufang?flag=1&bedroom=2" target="_blank" hidefocus="true" rel="nofollow">二室</a>
+								</dd>
+								<dd>
+									<a href="/web/house/search/ershoufang?flag=1&bedroom=3" target="_blank" hidefocus="true" rel="nofollow">三室</a>
+								</dd>
+								<dd>
+									<a href="/web/house/search/ershoufang?flag=1&bedroom=4" target="_blank" hidefocus="true" rel="nofollow">四室</a>
+								</dd>
+								<dd>
+									<a href="/web/house/search/ershoufang?flag=1&bedroom=5" target="_blank" hidefocus="true" rel="nofollow">五室</a>
+								</dd>
+							</dl>
+						</div>
+					</div>
+					<div class="center-oldhouse">
+                        <div id="tab_demo1" class="center-newhouse">
+                            <div class="tabBar">
+								#foreach($!item in $!dataMap.cityList)
+                                    <span>$!item.name</span>
+								#end
+								<span>更多+</span>
+							</div>
+							#foreach($item in $!dataMap.esf)
+                                <div class="tabCon">
+									#if($item.size() > 0)
+                                        <ul class="area-house-list clearfix">
+											#foreach($it in $!item)
+                                                <li class="area-house-wrap">
+													<a hidefocus="true" target="_blank" href="/web/house/detail/$!it.id">
+														<img width="200" height="136" alt="$!{it.title}" src="/assets/images/pc/img/h_e_01.jpg">
+													</a>
+													<h3 class="title">
+														<a hidefocus="true" target="_blank" href="/web/house/detail/$!it.id">$!{it.title}</a>
+													</h3>
+													<p class="detail"><span class="acreage">$!{it.bedroom}室$!{it.livingroom}厅$!{it.areasize}m²</span><span class="price">$!{it.total}万</span></p>
+												</li>
+											#end
+                                        </ul>
+									#else
+                                        <p class="emptymsg">暂无二手房数据</p>
+									#end
+                                </div>
+							#end
+                        </div>
+                        <script>
+                            $(function() {
+                                $.NewHouse("#tab_demo1 .tabBar span", "#tab_demo1 .tabCon", "current", "mousemove", "0");
+                            });
+                        </script>
+					</div>
+					<div class="east-oldhouse">
+						<div class="oldhouse-advert">
+							<ul>
+								#if($!dataMap.dbgg.size() <=4)
+									#foreach($!item in $!dataMap.dbgg)
+                                        <li>
+                                            <a href="$!{item.url}" target="_blank">
+                                                <img src="$!{item.thumbnails}" width="300" height="100">
+                                            </a>
+                                        </li>
+									#end
+								#end
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer">
+			#parse("/web/pc/_tags/_footer.vm")
+		</div>
+		<script type="text/javascript" src="/assets/js/pc/friendLink.js"></script>
+		<a href="http://app.wanjiafdc.com/" target="_blank">
+			<div id="codes">&nbsp;</div>
+		</a>
+		<div id="backTop" title="回顶部" class="backTop" style="display: block;"></div>
+		<script src="/assets/js/pc/lpw.js"></script>
+		<script src="/assets/js/pc/base.js"></script>
+		<script type="text/javascript" src="/assets/js/pc/silder.js"></script>
+		<script src="/assets/js/pc/swiper-3.3.1.min.js"></script>
+		<script type="text/javascript" src="/assets/js/pc/jquery.min.js" async="true"></script>
+		<script type="text/javascript" src="/assets/js/pc/friendLink.js" async="true"></script>
+	</body>
+
+</html>

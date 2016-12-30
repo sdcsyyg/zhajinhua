@@ -1,0 +1,16 @@
+<div class="main_hd">
+    <div class="title_tab">
+        <ul class="tab_navs">
+            #if($submenu == 'submenu_market_list')
+                <li class="tab_nav selected"><a href="javascript:;">二手物品</a></li>
+            #else
+                <li class="tab_nav"><a href="/admin/markets/list">二手物品</a></li>
+            #end
+            #if($submenu == 'submenu_market_create')
+                <li class="tab_nav selected"><a href="javascript:;">添加</a></li>
+            #else
+                <li class="tab_nav"><a href="/admin/markets/create">添加</a></li>
+            #end
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+#set($layout = '/admin/_tags/_layout.vm')
+
+#set($menu = "menu_feedback")
+
+#set($submenu = 'submenu_menu_feedback')
+#parse("/admin/feedbacks/_tabs.vm")
+
+<div class="main_bd">
+    <table id="model-table-view"></table>
+</div>
+
+<script src="/assets/js/admin/feedbacks/list.js"></script>

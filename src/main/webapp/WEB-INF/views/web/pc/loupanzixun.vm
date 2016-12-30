@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="format-detection" content="telephone=no">
+		<title>固原楼市_固原房产信息_固原房地产新闻 - 固原楼盘网</title>
+		<meta name="Keywords" content="固原楼市,固原房产信息,固原房地产新闻,固原房产政策">
+		<meta name="description" content="楼盘网固原楼市频道为您提供最新最全的固原房产信息、固原房地产新闻、固原房产政策，为您解读房地产行业动态、销售行情、房产时评、业界访谈、楼盘置业等。">
+		<link rel="stylesheet" media="all" href="/assets/css/pc/base.css">
+		<link rel="stylesheet" media="all" href="/assets/css/pc/home-news.css">
+		<link rel="stylesheet" media="all" href="/assets/css/pc/swiper-3.3.1.min.css">
+		<script type="text/javascript" src="/assets/js/pc/jquery.js"></script>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="header">
+				<div class="site-nav">
+					<div class="wrapper clearfix">
+						<p class="site-nav-left">
+							<a href="/" target="_blank"> 首页 </a>
+							<a href="http://guyuan./xinfang/" target="_blank"> 新房 </a>
+							<a href="/news/" target="_blank"> 楼盘资讯 </a>
+							<a href="http://guyuan.esf." target="_blank"> 二手房 </a>
+							<a href="http://guyuan.zu." target="_blank"> 租房 </a>
+							<a href="http://guyuan./ask/" target="_blank"> 问答 </a>
+						</p>
+						<ul class="site-nav-right">
+							<script type="text/javascript" src="/assets/session/show_session_status"></script>
+						</ul>
+					</div>
+				</div>
+				<div class="logo-search">
+					<div class="wrapper logo-search-box">
+						<div class="logo-box clearfix">
+							<h1><a class="logo" href="http://guyuan." title="楼盘网" hidefocus="true">楼盘网</a></h1>
+							<div class="citywrap">
+								<div id="city_hover_id" class="curcity clearfix"><i class="city">固原</i><em class="cur"></em></div>
+								<div id="citylist_panel_id" class="citylist" style="display: none;">
+									<dl><dt>华北东北</dt>
+										<dd>
+											<a href="http://bj.">北京</a>
+											<a href="http://hrb.">哈尔滨</a>
+											<a href="http://bt.">包头</a>
+											<a href="http://hd.">邯郸</a>
+											<a href="http://linfen.">临汾</a>
+											<a href="http://changzhi.">长治</a>
+											<a href="http://lf.">廊坊</a>
+											<a href="http://hs.">衡水</a>
+											<a href="http://cangzhou.">沧州</a>
+											<a href="http://cf.">赤峰</a>
+										</dd>
+									</dl>
+									<dl><dt>华东地区</dt>
+										<dd>
+											<a href="http://sh.">上海</a>
+											<a href="http://hz.">杭州</a>
+											<a href="http://qz.">泉州</a>
+											<a href="http://nj.">南京</a>
+											<a href="http://jn.">济南</a>
+											<a href="http://xm.">厦门</a>
+											<a href="http://hf.">合肥</a>
+											<a href="http://wz.">温州</a>
+											<a href="http://jh.">金华</a>
+											<a href="http://tz.">台州</a>
+											<a href="http://sm.">三明</a>
+											<a href="http://np.">南平</a>
+											<a href="http://nt.">南通</a>
+											<a href="http://jj.">九江</a>
+											<a href="http://dz.">德州</a>
+											<a href="http://anqing.">安庆</a>
+											<a href="http://fuyang.">阜阳</a>
+											<a href="http://bengbu.">蚌埠</a>
+											<a href="http://chizhou.">池州</a>
+											<a href="http://yichun.">宜春</a>
+											<a href="http://taian.">泰安</a>
+										</dd>
+									</dl>
+									<dl><dt>华南华中</dt>
+										<dd>
+											<a href="http://cs.">长沙</a>
+											<a href="http://gz.">广州</a>
+											<a href="http://sz.">深圳</a>
+											<a href="http://wh.">武汉</a>
+											<a href="http://hn.">海南</a>
+											<a href="http://sanya.">三亚</a>
+											<a href="http://zz.">郑州</a>
+											<a href="http://xt.">湘潭</a>
+											<a href="http://zhuzhou.">株洲</a>
+											<a href="http://chenzhou.">郴州</a>
+											<a href="http://hy.">衡阳</a>
+											<a href="http://yongzhou.">永州</a>
+											<a href="http://changde.">常德</a>
+											<a href="http://yy.">益阳</a>
+											<a href="http://yueyang.">岳阳</a>
+											<a href="http://fs.">佛山</a>
+											<a href="http://nn.">南宁</a>
+											<a href="http://yc.">宜昌</a>
+											<a href="http://xiangyang.">襄阳</a>
+											<a href="http://huizhou.">惠州</a>
+											<a href="http://huaian.">淮安</a>
+											<a href="http://zj.">湛江</a>
+											<a href="http://tongling.">铜陵</a>
+											<a href="http://zhoukou.">周口</a>
+											<a href="http://meizhou.">梅州</a>
+											<a href="http://xiangxi.">湘西</a>
+											<a href="http://lixian.">澧县</a>
+											<a href="http://liling.">醴陵</a>
+											<a href="http://yx.">攸县</a>
+										</dd>
+									</dl>
+									<dl><dt>西北西南</dt>
+										<dd>
+											<a href="http://xa.">西安</a>
+											<a href="http://cq.">重庆</a>
+											<a href="http://gy.">贵阳</a>
+											<a href="http://zy.">遵义</a>
+											<a href="http://kl.">凯里</a>
+											<a href="http://duyun.">都匀</a>
+											<a href="http://km.">昆明</a>
+											<a href="http://mianyang.">绵阳</a>
+											<a href="http://wlmq.">乌鲁木齐</a>
+											<a href="http://fcg.">防城港</a>
+											<a href="http://meishan.">眉山</a>
+											<a href="http://weinan.">渭南</a>
+											<a href="http://bazhong.">巴中</a>
+											<a href="http://rh.">仁怀</a>
+											<a href="http://ww.">武威</a>
+										</dd>
+									</dl>
+									<div class="more">
+										<a href="http://www./?all" class="morecity" rel="nofollow">更多城市&gt;</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="search-box">
+							<!-- js before submit validate and submit-->
+							<div class="searchwrap clearfix">
+								<form id="search_form_id" action="" method="post">
+									<div id="search_pos_combox_id" class="combox" style="display:none">
+										<p class="combox-text"><span data-search-type="4" id="search_combox_type_id">新闻</span></p>
+									</div>
+									<p><input id="search_field_id" name="q" maxlength="20" class="key" type="text" placeholder="请输入新闻关键字"><input id="citypinyin" value="guyuan" type="hidden"></p>
+									<p id="search_house_id"><i></i>搜索</p>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="nav">
+				<div class="wrapper">
+					<ul class="main-nav clearfix">
+						<li class="cur">
+							<a href="/news/" title="资讯首页" hidefocus="true">资讯首页</a>
+						</li>
+						<li>
+							<a href="/news/list-14.html" title="新闻资讯" hidefocus="true">新闻资讯</a>
+						</li>
+						<li>
+							<a href="/news/list-15.html" title="新房资讯" hidefocus="true">新房资讯</a>
+						</li>
+						<li>
+							<a href="/news/list-16.html" title="二手房资讯" hidefocus="true">二手房资讯</a>
+						</li>
+						<li>
+							<a href="/news/list-114.html" title="专题报道" hidefocus="true">专题报道</a>
+						</li>
+						<li>
+							<a href="/news/list-117.html" title="商业地产资讯" hidefocus="true">商业地产资讯</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="wrapper">
+				<div class="news clearfix">
+					<div class="main-news">
+						<div class="clearfix">
+							<div class="west-news">
+								<div class="news-swiper">
+									<div id="news_swipe_container_id" class="swiper-container" style="overflow: hidden; width: 380px; height: 282px;">
+										<div id="news_swipe_id" class="swiper-wrapper clearfix" style="list-style: none; margin: 0px; width: 2280px; transition-duration: 500ms; transition-timing-function: linear; transform: translate(-1140px, 0px);">
+											<div class="swiper-slide" style="width: 380px; height: 282px; display: inline-block; vertical-align: top;">
+												<a href="/html/news/201408/1387217.html" target="_blank" hidefocus="true"><img src="http://static./upfile/media/20140815/20140815164641_38019.jpg" width="380" height="282"></a>
+											</div>
+											<div class="swiper-slide" style="width: 380px; height: 282px; display: inline-block; vertical-align: top;">
+												<a href="/html/news/201408/1386905.html" target="_blank" hidefocus="true"><img src="http://static./upfile/media/20140815/20140815141111_34439.png" width="380" height="282"></a>
+											</div>
+											<div class="swiper-slide" style="width: 380px; height: 282px; display: inline-block; vertical-align: top;">
+												<a href="/html/news/201408/1386900.html" target="_blank" hidefocus="true"><img src="http://static./upfile/media/20140815/20140815140833_52306.png" width="380" height="282"></a>
+											</div>
+											<div class="swiper-slide" style="width: 380px; height: 282px; display: inline-block; vertical-align: top;">
+												<a href="/html/news/201408/1386862.html" target="_blank" hidefocus="true"><img src="http://static./upfile/media/20140815/20140815135118_95666.png" width="380" height="282"></a>
+											</div>
+											<div class="swiper-slide" style="width: 380px; height: 282px; display: inline-block; vertical-align: top;">
+												<a href="/html/news/201608/2392668.html" target="_blank" hidefocus="true"><img src="http://static." width="380" height="282"></a>
+											</div>
+											<div class="swiper-slide" style="width: 380px; height: 282px; display: inline-block; vertical-align: top;">
+												<a href="/html/news/201608/2392644.html" target="_blank" hidefocus="true"><img src="http://static." width="380" height="282"></a>
+											</div>
+										</div>
+										<div class="swiper-button-prev"></div>
+										<div class="swiper-button-next"></div>
+									</div>
+
+									<script src="/assets/js/pc/swiper-3.3.1.min.js"></script>
+									<script>
+										var mySwiper = new Swiper('.swiper-container', {
+											autoplay: 5000, //可选选项，自动滑动
+											autoplayDisableOnInteraction: false,
+											speed: 300,
+											loop: true,
+											loopAdditionalSlides: 1,
+											prevButton: '.swiper-button-prev',
+											nextButton: '.swiper-button-next',
+										})
+									</script>
+								</div>
+							</div>
+							<div class="center-news">
+								<h3 class="hot"><a href="/html/news/201608/2392668.html" target="_blank" hidefocus="true">福田人口密度逼近"饱和" 2030年人口将增至218.60万</a></h3>
+								<div class="news-img-content-box clearfix">
+									<div class="left-img">
+										<a href="/html/news/201606/2317307.html" target="_blank" hidefocus="true"><img src="http://static./upfile/media/20160608/20160608150544_4540964.jpg" width="156" height="106">
+											<p>开发商一房三卖 原房主得确权</p>
+										</a>
+									</div>
+									<ul class="right-news">
+										<li>
+											<a href="/news/list-36.html" target="_blank" hidefocus="true"> [本地] </a>
+											<a href="/html/news/201608/2392644.html" target="_blank" hidefocus="true"> 8月深圳新推房源商务公寓占半 不限购吸引投 </a>
+										</li>
+										<li>
+											<a href="/news/list-36.html" target="_blank" hidefocus="true"> [本地] </a>
+											<a href="/html/news/201608/2388329.html" target="_blank" hidefocus="true"> 从“零首付”到“负首付” 房价的泡沫眼看 </a>
+										</li>
+										<li>
+											<a href="/news/list-36.html" target="_blank" hidefocus="true"> [本地] </a>
+											<a href="/html/news/201608/2374530.html" target="_blank" hidefocus="true"> 台风"妮妲"明日登陆 深圳今夜进入"强风暴雨 </a>
+										</li>
+										<li>
+											<a href="/news/list-36.html" target="_blank" hidefocus="true"> [本地] </a>
+											<a href="/html/news/201607/2372600.html" target="_blank" hidefocus="true"> 龙华新区下半年有望增加4000个幼儿学位 </a>
+										</li>
+									</ul>
+								</div>
+								<div class="news-img-content-box clearfix">
+									<div class="left-img">
+										<a href="/html/news/201408/1387311.html" target="_blank" hidefocus="true"><img src="http://static./upfile/media/20140815/20140815171038_76086.png" width="156" height="106">
+											<p>郑州金地置业擅自加高楼盘高度</p>
+										</a>
+									</div>
+									<ul class="right-news">
+										<li>
+											<a href="/news/list-36.html" target="_blank" hidefocus="true"> [本地] </a>
+											<a href="/html/news/201607/2365845.html" target="_blank" hidefocus="true"> 东进战略深东部将雄起 二手房均价涨幅超20% </a>
+										</li>
+										<li>
+											<a href="/news/list-36.html" target="_blank" hidefocus="true"> [本地] </a>
+											<a href="/html/news/201607/2360277.html" target="_blank" hidefocus="true"> 温哥华欲推房产空置税 遏止中国买家囤房炒 </a>
+										</li>
+										<li>
+											<a href="/news/list-36.html" target="_blank" hidefocus="true"> [本地] </a>
+											<a href="/html/news/201607/2360266.html" target="_blank" hidefocus="true"> 农民房被"忽悠"成格格府 中介欺诈不能没惩 </a>
+										</li>
+										<li>
+											<a href="/news/list-36.html" target="_blank" hidefocus="true"> [本地] </a>
+											<a href="/html/news/201607/2360251.html" target="_blank" hidefocus="true"> 湖贝旧改引争议 村民：拆了我们不知道搬去哪 </a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="news-list-box">
+							<ul id="news_list_tab_id" class="column clearfix">
+								<li data-index="0" class="posleft cur">
+									<a target="_blank" href="/news/list-36.html">本地楼市</a>
+								</li>
+								<li data-index="1" class=" ">
+									<a target="_blank" href="/news/list-45.html">国内动态</a>
+								</li>
+							</ul>
+							<div id="news_list_swipe_container_id" class="swiper-container" style="overflow: hidden; width: 860px; height: 1216px;">
+								<div id="news_list_swipe_wrap_id" class="swiper-wrapper clearfix" style="list-style: none; margin: 0px; width: 1720px; transition-duration: 500ms; transition-timing-function: linear; transform: translate(-860px, 0px);">
+									<div class="swiper-slide" style="width: 860px; height: 1216px; display: inline-block; vertical-align: top;">
+										<ul class="news-list">
+											<li class="nopic">
+												<div class="news-content">
+													<h3><a href="/html/news/201608/2399008.html" target="_blank" hidefocus="true">深圳房价飞涨 广东住建厅：深圳房价不会永远</a></h3>
+													<p>[摘要]至于深圳出现房价较高的问题,陈天翼表示,有土地和资源比较少的原因,另外深圳是新兴城市,经济发展较快,刚性需求量较大,很多买了房的,还买第二套去投资。8月27日深莞双....
+														<a href="/html/news/201608/2399008.html" target="_blank" hidefocus="true">[详细]</a>
+													</p>
+												</div>
+												<p class="time">2016-08-24 13:48</p>
+											</li>
+											<li class="nopic">
+												<div class="news-content">
+													<h3><a href="/html/news/201608/2392668.html" target="_blank" hidefocus="true">福田人口密度逼近"饱和" 2030年人口将增至2</a></h3>
+													<p>[摘要]据悉，到2030年，福田区实际管理人口将增至218.60万，人口密度升至2.8万人/平方公里，人口密度将逼近“饱和”。人口问题成为深圳中心城区须面对的重大紧迫现实问题。8月20日....
+														<a href="/html/news/201608/2392668.html" target="_blank" hidefocus="true">[详细]</a>
+													</p>
+												</div>
+												<p class="time">2016-08-18 14:55</p>
+											</li>
+											<li class="nopic">
+												<div class="news-content">
+													<h3><a href="/html/news/201608/2392644.html" target="_blank" hidefocus="true">8月深圳新推房源商务公寓占半 不限购吸引投</a></h3>
+													<p>[摘要]相对同类型的住宅而言，商务公寓具有一定的价格优势。深圳中原地产和58同城的分析数据显示，二者之间的价格差距约在5%~10%8月20日深莞双城看房body{ padding:0; margin:....
+														<a href="/html/news/201608/2392644.html" target="_blank" hidefocus="true">[详细]</a>
+													</p>
+												</div>
+												<p class="time">2016-08-18 14:55</p>
+											</li>
+											<li class="nopic">
+												<div class="news-content">
+													<h3><a href="/html/news/201608/2388329.html" target="_blank" hidefocus="true">从“零首付”到“负首付” 房价的泡沫眼看</a></h3>
+													<p>[摘要]香港房价目前的走势会不会影响到内地，产生传导效应，应该引起大家足够的关注，当然，楼市和股市会不会产生跷跷板效应更值得大家关注。8月20日深莞双城看房body{ padding:0; ....
+														<a href="/html/news/201608/2388329.html" target="_blank" hidefocus="true">[详细]</a>
+													</p>
+												</div>
+												<p class="time">2016-08-15 10:27</p>
+											</li>
+											<li class="nopic">
+												<div class="news-content">
+													<h3><a href="/html/news/201608/2374530.html" target="_blank" hidefocus="true">台风"妮妲"明日登陆 深圳今夜进入"强风暴雨</a></h3>
+													<p>[摘要]主要降雨时段将出现在1日夜间至2日，有大暴雨，局部有特大暴雨，累计雨量可达250mm；2日最大平均风力可达10~11级，最大阵风12~14级。今年第4号台风“妮妲”来势汹汹，深圳将出现....
+														<a href="/html/news/201608/2374530.html" target="_blank" hidefocus="true">[详细]</a>
+													</p>
+												</div>
+												<p class="time">2016-08-01 09:08</p>
+											</li>
+											<li class="nopic">
+												<div class="news-content">
+													<h3><a href="/html/news/201607/2372600.html" target="_blank" hidefocus="true">龙华新区下半年有望增加4000个幼儿学位</a></h3>
+													<p>[摘要]新区将完成4所新校、2所改扩建学校建设进度，确保新增学位9000个，新增16所幼儿园，再增加幼儿学位4200个以上。7月30日龙坂线看房body{ padding:0; margin:0}今年....
+														<a href="/html/news/201607/2372600.html" target="_blank" hidefocus="true">[详细]</a>
+													</p>
+												</div>
+												<p class="time">2016-07-29 09:09</p>
+											</li>
+											<li class="nopic">
+												<div class="news-content">
+													<h3><a href="/html/news/201607/2365845.html" target="_blank" hidefocus="true">东进战略深东部将雄起 二手房均价涨幅超20%</a></h3>
+													<p>[摘要]6月份，龙岗片区几大板块的二手房均价相较去年12月均出现较大的涨幅，其中坂田板块二手均价已接近“5”字头，达48884元/平方米。7月23日龙岗线看房body{ padding:0; marg....
+														<a href="/html/news/201607/2365845.html" target="_blank" hidefocus="true">[详细]</a>
+													</p>
+												</div>
+												<p class="time">2016-07-22 13:40</p>
+											</li>
+											<li class="nopic">
+												<div class="news-content">
+													<h3><a href="/html/news/201607/2360277.html" target="_blank" hidefocus="true">温哥华欲推房产空置税 遏止中国买家囤房炒</a></h3>
+													<p>[摘要]温哥华市长罗品信表示，空置税可鼓励人们将空置房屋出租，而空置房屋税率将于数月内决定，希望能尽快解决房价高企以至难以承担的问题。法媒称，中国投资者到欧美买楼掀起炒风....
+														<a href="/html/news/201607/2360277.html" target="_blank" hidefocus="true">[详细]</a>
+													</p>
+												</div>
+												<p class="time">2016-07-18 10:27</p>
+											</li>
+											<li class="nopic">
+												<div class="news-content">
+													<h3><a href="/html/news/201607/2360266.html" target="_blank" hidefocus="true">农民房被"忽悠"成格格府 中介欺诈不能没惩</a></h3>
+													<p>[摘要]近段时间，各大城市房价飙升，不少房地产中介更是趁机浑水摸鱼、推波助澜。老话说“吹牛不上税”，但是在法治社会中，商业欺诈完全应该受到严惩。个别房产中介生生把一个翻新....
+														<a href="/html/news/201607/2360266.html" target="_blank" hidefocus="true">[详细]</a>
+													</p>
+												</div>
+												<p class="time">2016-07-18 10:27</p>
+											</li>
+											<li class="nopic">
+												<div class="news-content">
+													<h3><a href="/html/news/201607/2360251.html" target="_blank" hidefocus="true">湖贝旧改引争议 村民：拆了我们不知道搬去哪</a></h3>
+													<p>[摘要]大部分村民对旧改有着反感和不愿提的态度，之中牵扯着他们谋生的利益，村民更希望湖贝能留下来，自己有个落脚安家的地方。7月13日，旅居深圳的美国人类学博士马立安在自己的....
+														<a href="/html/news/201607/2360251.html" target="_blank" hidefocus="true">[详细]</a>
+													</p>
+												</div>
+												<p class="time">2016-07-18 10:27</p>
+											</li>
+										</ul>
+									</div>
+									<div class="swiper-slide" style="width: 860px; height: 1216px; display: block; vertical-align: top;">
+										<ul class="news-list">
+											<li class="nopic">
+												<div class="news-content">
+													<h3><a href="/html/news/201412/1531067.html" target="_blank" hidefocus="true">2015年中国将开建700万套保障房 3600万套将</a></h3>
+													<p>12月19日，一年一度的住建部年度工作会议在北京友谊宾馆召开，总结2014年，展望2015年。据一位参会的住建系统人士介绍，住建部长陈政高在讲话中特别感谢前部长姜伟新的贡献。“今年....
+														<a href="/html/news/201412/1531067.html" target="_blank" hidefocus="true">[详细]</a>
+													</p>
+												</div>
+												<p class="time">2014-12-26 12:15</p>
+											</li>
+											<li class="nopic">
+												<div class="news-content">
+													<h3><a href="/html/news/201408/1387249.html" target="_blank" hidefocus="true">创意书桌省空间多变化 增强室内灵动感</a></h3>
+													<p>讲求个性的装饰达人们，自然不会放过任何死角，比如书桌，就要它既实用又能装饰一下自己的小屋，在这个什么都讲究Fashion的年代，自己的家当更不能平庸。在现代家居空间里，书桌不再是....
+														<a href="/html/news/201408/1387249.html" target="_blank" hidefocus="true">[详细]</a>
+													</p>
+												</div>
+												<p class="time">2014-08-15 16:05</p>
+											</li>
+											<li class="nopic">
+												<div class="news-content">
+													<h3><a href="/html/news/201408/1387248.html" target="_blank" hidefocus="true">功能地板噱头多价格差异大 货不对板乱象滋</a></h3>
+													<p>防尘、按摩、安神……你能想象这些功能是地板的吗？近日，不少功能地板在网络销售中盛行，而且功能五花八门，堪称“高级”；不过，小编走访家居建材卖场却发现，这类功能地板在实体店中难....
+														<a href="/html/news/201408/1387248.html" target="_blank" hidefocus="true">[详细]</a>
+													</p>
+												</div>
+												<p class="time">2014-08-15 16:05</p>
+											</li>
+											<li class="nopic">
+												<div class="news-content">
+													<h3><a href="/html/news/201408/1387247.html" target="_blank" hidefocus="true">大房企商业综合体扎堆亮相 产品寻求突破创</a></h3>
+													<p>住宅市场低迷已经是不争的事实，而房企在今年要在业绩上有所建树不得不多花心思，多点创新和突破。在经过上半年的不断尝试后，住宅领域的表现已经令人失望而商业市场则显得格外亮....
+														<a href="/html/news/201408/1387247.html" target="_blank" hidefocus="true">[详细]</a>
+													</p>
+												</div>
+												<p class="time">2014-08-15 16:05</p>
+											</li>
+											<li class="nopic">
+												<div class="news-content">
+													<h3><a href="/html/news/201408/1387246.html" target="_blank" hidefocus="true">7月广州二手交投止跌 市区价格走稳</a></h3>
+													<p>7月，广州二手楼市淡季交投意外止跌，二手住宅网签1660套，环比上月增加3.6%；而价格方面，核心区价格基本企稳，外围和近郊板块依然有降幅，下降最大的在2.5%左右。近日，合富置业发布《201....
+														<a href="/html/news/201408/1387246.html" target="_blank" hidefocus="true">[详细]</a>
+													</p>
+												</div>
+												<p class="time">2014-08-15 16:05</p>
+											</li>
+											<li class="nopic">
+												<div class="news-content">
+													<h3><a href="/html/news/201408/1387244.html" target="_blank" hidefocus="true">新型地暖施工更便利 三类新地暖已入技术规</a></h3>
+													<p>时下正是装修旺季，不少业主都在纠结是否将家中的暖气片改造成地暖的问题，传统地暖虽然供热效果好，但要牺牲近10厘米的层高。近年来，市场上出现了不少新型的地暖形式，有些可以直接....
+														<a href="/html/news/201408/1387244.html" target="_blank" hidefocus="true">[详细]</a>
+													</p>
+												</div>
+												<p class="time">2014-08-15 16:05</p>
+											</li>
+											<li class="nopic">
+												<div class="news-content">
+													<h3><a href="/html/news/201408/1387242.html" target="_blank" hidefocus="true">广州公积金房贷遭“秒杀” 购房者吐苦水</a></h3>
+													<p>近期，广州住房公积金贷款传出“秒杀”消息，当月额度在数小时内就被抢光。“想买合适自己的好房子要用抢的，现在好了，抢完房子不算数，还得抢公积金了，以后还能愉快买房吗？”打算在广....
+														<a href="/html/news/201408/1387242.html" target="_blank" hidefocus="true">[详细]</a>
+													</p>
+												</div>
+												<p class="time">2014-08-15 16:05</p>
+											</li>
+											<li class="nopic">
+												<div class="news-content">
+													<h3><a href="/html/news/201408/1387241.html" target="_blank" hidefocus="true">佛山高明降低入户门槛 开发商看好政策正作</a></h3>
+													<p>8月13日至14日，高明公安分局走进企业举行该区入户政策放宽后的头两场政策宣讲活动。距此一周前，高明公布了一揽子户籍准入新政：放宽购房入户条件，只要有属于个人的合法房产，即可....
+														<a href="/html/news/201408/1387241.html" target="_blank" hidefocus="true">[详细]</a>
+													</p>
+												</div>
+												<p class="time">2014-08-15 16:05</p>
+											</li>
+											<li class="nopic">
+												<div class="news-content">
+													<h3><a href="/html/news/201408/1387240.html" target="_blank" hidefocus="true">评论：市场观望心态在逐渐减弱</a></h3>
+													<p>在九、十月销售旺季来临之前，经过前几月市场的充分降价促销，已经让部分持币待购的购房者出手，这也有助于打破观望情绪。近期广州楼市表现并不抢眼。7月的广州住宅市场，从网签量....
+														<a href="/html/news/201408/1387240.html" target="_blank" hidefocus="true">[详细]</a>
+													</p>
+												</div>
+												<p class="time">2014-08-15 16:05</p>
+											</li>
+											<li class="nopic">
+												<div class="news-content">
+													<h3><a href="/html/news/201408/1387237.html" target="_blank" hidefocus="true">评论：转变地方政府对土地财政依赖方式</a></h3>
+													<p>□深圳市房地产研究中心 李宇嘉近日，《国务院办公厅关于支持铁路建设实施土地综合开发的意见》下发，对于以土地开发和融资来支持铁路建设作了细则性的规定。2005年以来，铁路建....
+														<a href="/html/news/201408/1387237.html" target="_blank" hidefocus="true">[详细]</a>
+													</p>
+												</div>
+												<p class="time">2014-08-15 16:05</p>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="news-list-box">
+							<ul class="column clearfix">
+								<li class="posleft cur">
+									<a target="_blank" href="/news/list-51.html">销售行情</a>
+								</li>
+							</ul>
+							<ul class="news-list">
+								<li class="nopic">
+									<div class="news-content">
+										<h3><a href="/html/news/201408/1385990.html" target="_blank" hidefocus="true">全国商品房销售“双降” 深圳昨夜重申坚持</a></h3>
+										<p>8月13日，国家统计局发布的数据显示，今年前7月，全国商品住宅销售面积49592万平方米，同比下降9.4%；销售额29874亿元，同比下降10.5%。就在7月份，全国18个城市密集松绑楼市“限购令”。....
+											<a class="/html/news/201408/1385990.html" target="_blank" hidefocus="true">[详细]</a>
+										</p>
+									</div>
+									<p class="time">2014-08-14 16:55</p>
+								</li>
+								<li class="nopic">
+									<div class="news-content">
+										<h3><a href="/html/news/201408/1385985.html" target="_blank" hidefocus="true">“金九银十”楼市营销战提前开锣</a></h3>
+										<p>上周共11个项目有新增供应（小编蒋幸端）“金九银十”营销大战已经提前开锣，上周共有11个项目有商品房新增供应，其中临深片区常平、凤岗、樟木头、塘厦、黄江等均有项目新品加推，成....
+											<a class="/html/news/201408/1385985.html" target="_blank" hidefocus="true">[详细]</a>
+										</p>
+									</div>
+									<p class="time">2014-08-14 16:55</p>
+								</li>
+								<li class="nopic">
+									<div class="news-content">
+										<h3><a href="/html/news/201408/1385981.html" target="_blank" hidefocus="true">前7月住宅销售额下跌 专家:地方救市那难挽</a></h3>
+										<p>国家统计局昨日公布数据显示，今年前7月全国商品房销售面积与销售额双双出现下滑，其中住宅销售额下降10.5%。据统计，1至7月份，全国房地产开发投资50381亿元，同比名义增长13.7%，增速....
+											<a class="/html/news/201408/1385981.html" target="_blank" hidefocus="true">[详细]</a>
+										</p>
+									</div>
+									<p class="time">2014-08-14 16:55</p>
+								</li>
+								<li class="nopic">
+									<div class="news-content">
+										<h3><a href="/html/news/201408/1385955.html" target="_blank" hidefocus="true">7月销售额暴跌三成 楼市持续“退烧”</a></h3>
+										<p>昨日，国家统计局公布2014年1~7月份全国房地产开发和销售情况，全国房地产开发投资50381亿元，同比名义增长13.7%，增速比1~6月份回落0.4个百分点。1~7月房地产销售总额36315亿元，同....
+											<a class="/html/news/201408/1385955.html" target="_blank" hidefocus="true">[详细]</a>
+										</p>
+									</div>
+									<p class="time">2014-08-14 16:55</p>
+								</li>
+								<li class="nopic">
+									<div class="news-content">
+										<h3><a href="/html/news/201408/1385930.html" target="_blank" hidefocus="true">东莞住宅成交回落 业内:热销项目集中网签结</a></h3>
+										<p>瑞峰置业市场研究部数据监测显示：上周(2014.8.4-2014.8.10)东莞住宅共签约765套，面积约8.6万平方米，环比下滑18%，是6月中下旬以来周成交量最低的一周。瑞峰置业市场研究部研究员....
+											<a class="/html/news/201408/1385930.html" target="_blank" hidefocus="true">[详细]</a>
+										</p>
+									</div>
+									<p class="time">2014-08-14 16:54</p>
+								</li>
+								<li class="nopic">
+									<div class="news-content">
+										<h3><a href="/html/news/201408/1385905.html" target="_blank" hidefocus="true">前7月全国住宅销量持续下滑 多地库存再创新</a></h3>
+										<p>13日，国家统计局发布的“2014年1-7月份全国房地产开发和销售情况”显示，在房地产市场表现日益低迷之际，多城市住宅“去库存”压力却有增无减。7月，18城市密集松绑楼市“限购令”....
+											<a class="/html/news/201408/1385905.html" target="_blank" hidefocus="true">[详细]</a>
+										</p>
+									</div>
+									<p class="time">2014-08-14 16:54</p>
+								</li>
+								<li class="nopic">
+									<div class="news-content">
+										<h3><a href="/html/news/201408/1385892.html" target="_blank" hidefocus="true">国房景气指数降至94.82 房企难达销售目标</a></h3>
+										<p>即便地方政府采取了多种措施“救市”，但房地产开发商对未来还是信心不足。楼市降温趋势依然明显，开发投资增速持续6个月放缓。国家统计局13日公布的数据显示，7月份，房地产开发景....
+											<a class="/html/news/201408/1385892.html" target="_blank" hidefocus="true">[详细]</a>
+										</p>
+									</div>
+									<p class="time">2014-08-14 16:54</p>
+								</li>
+								<li class="nopic">
+									<div class="news-content">
+										<h3><a href="/html/news/201408/1385851.html" target="_blank" hidefocus="true">全国楼市再现回落迹象 前7月商品房销售面积</a></h3>
+										<p>小编马汉青报道：近期我国商品房销售额下降、商品房待售面积增加、楼市观望气氛加重的现象，在最新权威数据上得到反映。国家统计局昨日发布，今年1-7月，全国商品房销售额下降8.2%，....
+											<a class="/html/news/201408/1385851.html" target="_blank" hidefocus="true">[详细]</a>
+										</p>
+									</div>
+									<p class="time">2014-08-14 16:54</p>
+								</li>
+								<li class="nopic">
+									<div class="news-content">
+										<h3><a href="/html/news/201306/855590.html" target="_blank" hidefocus="true">12家房企5月销售595亿 资金充裕无降价意愿</a></h3>
+										<p>采用行政手段限制购房人群的购买资格，从而逼迫房企降价吸引有限的购房者购房的调控基本上已经失灵。今年以来房价反弹势头明显，从今年5月已经发布业绩的12家房企来看，其中9家房....
+											<a class="/html/news/201306/855590.html" target="_blank" hidefocus="true">[详细]</a>
+										</p>
+									</div>
+									<p class="time">2013-06-13 17:09</p>
+								</li>
+							</ul>
+						</div>
+						<div class="news-list-box">
+							<ul class="column clearfix">
+								<li class="posleft cur">
+									<a target="_blank" href="/news/list-50.html">楼盘置业</a>
+								</li>
+							</ul>
+							<ul class="news-list">
+								<li class="nopic">
+									<div class="news-content">
+										<h3><a href="/html/news/201408/1387311.html" target="_blank" hidefocus="true">郑州金地置业擅自加高楼盘高度</a></h3>
+										<p>郑州市一处名为“旭日龙园”的楼盘，为追求“经济利益最大化”，各栋建筑不同程度地被“拔高”，其中两栋规划为22层的高层建筑，竟然加盖到31层!业主们担心：这样的房子还敢住吗?记者....
+											<a class="/html/news/201408/1387311.html" target="_blank" hidefocus="true">[详细]</a>
+										</p>
+									</div>
+									<p class="time">2014-08-15 17:10</p>
+								</li>
+								<li class="nopic">
+									<div class="news-content">
+										<h3><a href="/html/news/201408/1387267.html" target="_blank" hidefocus="true">楼盘优惠：荷兰印象80-160平米均价3690元/平</a></h3>
+										<p>楼盘优惠：荷兰印象80-160平米均价3690元/平方米....
+											<a class="/html/news/201408/1387267.html" target="_blank" hidefocus="true">[详细]</a>
+										</p>
+									</div>
+									<p class="time">2014-08-15 16:22</p>
+								</li>
+								<li class="nopic">
+									<div class="news-content">
+										<h3><a href="/html/news/201408/1387261.html" target="_blank" hidefocus="true">楼盘优惠：物华兴洲苑均价4300元/平方米</a></h3>
+										<p>楼盘优惠：物华兴洲苑均价4300元/平方米....
+											<a class="/html/news/201408/1387261.html" target="_blank" hidefocus="true">[详细]</a>
+										</p>
+									</div>
+									<p class="time">2014-08-15 16:17</p>
+								</li>
+								<li class="nopic">
+									<div class="news-content">
+										<h3><a href="/html/news/201408/1387235.html" target="_blank" hidefocus="true">“抗跌”使海外置业走红 买家投资“加码”</a></h3>
+										<p>通货膨胀、限购政策、楼价低迷，今年上半年的楼市走势让投资者们望洋兴叹。在此情况下，越来越多投资者将眼光投向了海外。另一方面，“海外学位房”、“以房养学”也吸引着众多留....
+											<a class="/html/news/201408/1387235.html" target="_blank" hidefocus="true">[详细]</a>
+										</p>
+									</div>
+									<p class="time">2014-08-15 16:05</p>
+								</li>
+								<li class="nopic">
+									<div class="news-content">
+										<h3><a href="/html/news/201408/1387197.html" target="_blank" hidefocus="true">富阳七月楼市：刚需楼盘发力 限购松绑影响不</a></h3>
+										<p>往年，七月楼市是“降温”的日子，然而这个七月，富阳房产交易市场不仅没有出现降温的情况，反而一扫五、六月份的阴霾，迎来一场“春暖花开”。 截至7月31日，该月全市新建商品房共签约....
+											<a class="/html/news/201408/1387197.html" target="_blank" hidefocus="true">[详细]</a>
+										</p>
+									</div>
+									<p class="time">2014-08-15 16:04</p>
+								</li>
+								<li class="nopic">
+									<div class="news-content">
+										<h3><a href="/html/news/201408/1386001.html" target="_blank" hidefocus="true">豪宅助力北京楼市回暖 逆市下富豪为何频繁</a></h3>
+										<p>在刚需盘一路降温打折促销中，各大高端项目却捷报频传。招商臻园上半年销售27亿元折桂、华润万橡府开盘热销15.9亿元、中海·枫丹公馆首期入市热销70余套、广渠金茂府单价12万....
+											<a class="/html/news/201408/1386001.html" target="_blank" hidefocus="true">[详细]</a>
+										</p>
+									</div>
+									<p class="time">2014-08-14 16:55</p>
+								</li>
+								<li class="nopic">
+									<div class="news-content">
+										<h3><a href="/html/news/201408/1385847.html" target="_blank" hidefocus="true">广州:保利置业再次超低价夺地 周边房价2.4</a></h3>
+										<p>小编赵燕华、实习生麦迪安报道：荔湾区东漖村商住混用地楼面价每平方米才100元？！前天，广州市国土房管局网站挂出的一则公告引起广泛关注，公告称广州东灏房地产开发有限公司通过协....
+											<a class="/html/news/201408/1385847.html" target="_blank" hidefocus="true">[详细]</a>
+										</p>
+									</div>
+									<p class="time">2014-08-14 16:54</p>
+								</li>
+								<li class="nopic">
+									<div class="news-content">
+										<h3><a href="/html/news/201307/901247.html" target="_blank" hidefocus="true">14个项目面市迎开盘潮 置业选房更重量体裁</a></h3>
+										<p>上周天津（楼盘）市共有14个项目集中开盘，销售市场一片热火朝天，同时据渤海早报记者走访了解到，阶梯置业与一步到位成为了多数置业者“量体”选房的两种态度。14项目集中开盘330盘....
+											<a class="/html/news/201307/901247.html" target="_blank" hidefocus="true">[详细]</a>
+										</p>
+									</div>
+									<p class="time">2013-07-06 16:21</p>
+								</li>
+								<li class="nopic">
+									<div class="news-content">
+										<h3><a href="/html/news/201306/875651.html" target="_blank" hidefocus="true">上下游携手 助力置业装修</a></h3>
+										<p>本报讯（记者杨予诺）由北京（楼盘）青年报、北青集团整合营销中心、法制晚报、红星·美凯龙、苏宁电器、建设银行北京分行联合主办的“美丽生活美丽家”联展进入了第十一天。在刚刚....
+											<a class="/html/news/201306/875651.html" target="_blank" hidefocus="true">[详细]</a>
+										</p>
+									</div>
+									<p class="time">2013-06-24 17:57</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="east-news">
+						<dl><dt><a target="_blank" href="/news/list-34.html">业界访谈</a></dt>
+							<dd class="img-content-box clearfix">
+								<h3><a href="/html/news/201408/1387310.html">朱进康：泰禾投资瞄准城市核心资产</a></h3>
+								<a class="img" href="/html/news/201408/1387310.html" target="_blank" hidefocus="true"><img src="http://static./upfile/media/20140815/20140815170804_10419.png" width="118" height="80"></a>
+								<p class="detail">在商业地产遭遇同质化诟病之际，泰禾集团决定走高端路线，在多个城市...
+									<a href="/html/news/201408/1387310.html" target="_blank" hidefocus="true">[查看详情]</a>
+								</p>
+							</dd>
+							<dd>
+								<a href="/html/news/201408/1387131.html" target="_blank" hidefocus="true">欧阳捷：限贷才是房地产市场的“核”武器</a>
+							</dd>
+							<dd>
+								<a href="/html/news/201408/1387069.html" target="_blank" hidefocus="true">谢国忠：刚需是炒出来的概念</a>
+							</dd>
+							<dd>
+								<a href="/html/news/201408/1387058.html" target="_blank" hidefocus="true">朱铭来：警惕养老社区变成圈地运动</a>
+							</dd>
+							<dd>
+								<a href="/html/news/201408/1387056.html" target="_blank" hidefocus="true">孟晓苏详解以房养老：房价涨幅算坏两台计算机</a>
+							</dd>
+						</dl>
+						<dl><dt style="margin-top:-5px;"><a target="_blank" href="/news/list-35.html">新闻专题</a></dt>
+							<dd class="img-content-box clearfix">
+								<h3><a href="/html/news/201408/1387308.html">网传房价暴跌可能性最大的城市 陇南排第一</a></h3>
+								<a class="img" href="/html/news/201408/1387308.html" target="_blank" hidefocus="true"><img src="http://static./upfile/media/20140815/20140815170555_73057.jpg" width="118" height="80"></a>
+								<p class="detail">根据某市场研究机构的数据，中国城市房地产发展风险排行榜出炉。据...
+									<a href="/html/news/201408/1387308.html" target="_blank" hidefocus="true">[查看详情]</a>
+								</p>
+							</dd>
+							<dd>
+								<a href="/html/news/201408/1387298.html" target="_blank" hidefocus="true">房贷对银行已无诱惑 限购被指害人不利己</a>
+							</dd>
+							<dd>
+								<a href="/html/news/201408/1387284.html" target="_blank" hidefocus="true">第一次买房子户型该怎么选？</a>
+							</dd>
+							<dd>
+								<a href="/html/news/201408/1387030.html" target="_blank" hidefocus="true">35城市住宅库存量创新高 信贷成为关键因素</a>
+							</dd>
+							<dd>
+								<a href="/html/news/201408/1387022.html" target="_blank" hidefocus="true">无申购成本造成自住房弃选率高</a>
+							</dd>
+							<dd>
+								<a href="/html/news/201408/1387010.html" target="_blank" hidefocus="true">8月推盘缓增加，押宝“金九银十”</a>
+							</dd>
+						</dl>
+						<dl><dt style="margin-top:-5px;"><a target="_blank" href="/news/list-110.html">活动专题</a></dt>
+							<dd class="img-content-box clearfix">
+								<h3><a href="/html/news/201408/1387305.html">大亚湾海伦堡.爱Me城市楼盘</a></h3>
+								<a class="img" href="/html/news/201408/1387305.html" target="_blank" hidefocus="true"><img src="http://static./upfile/media/20140815/20140815170132_31775.png" width="118" height="80"></a>
+								<p class="detail">海伦堡•爱ME城市位于深圳东大亚湾中心区教育路(澳头第一小学旁)...
+									<a href="/html/news/201408/1387305.html" target="_blank" hidefocus="true">[查看详情]</a>
+								</p>
+							</dd>
+							<dd>
+								<a href="/html/news/201408/1387233.html" target="_blank" hidefocus="true">地板企业上半年销量激增 创新营销搞粉丝经</a>
+							</dd>
+							<dd>
+								<a href="/html/news/201408/1387225.html" target="_blank" hidefocus="true">1-7月湖北经济运行平稳 商品房销售面积涨幅</a>
+							</dd>
+							<dd>
+								<a href="/html/news/201408/1387223.html" target="_blank" hidefocus="true">南京楼市营销新招频出 开发商忙“自救”</a>
+							</dd>
+							<dd>
+								<a href="/html/news/201408/1387200.html" target="_blank" hidefocus="true">刚需买房建议：看准大力促销可有选择性入手</a>
+							</dd>
+							<dd>
+								<a href="/html/news/201408/1387198.html" target="_blank" hidefocus="true">三亚拆除荔枝沟村三栋违建 原已对外销售192</a>
+							</dd>
+						</dl>
+						<dl><dt style="margin-top:-5px;"><a target="_blank" href="/news/list-48.html">楼盘导购</a></dt>
+							<dd class="img-content-box clearfix">
+								<h3><a href="/html/news/201408/1386900.html">宁波某在售销冠楼盘开发商被曝破产</a></h3>
+								<a class="img" href="/html/news/201408/1386900.html" target="_blank" hidefocus="true"><img src="http://static./upfile/media/20140815/20140815140830_38436.png" width="118" height="80"></a>
+								<p class="detail">“刚收到消息，据说世博花园开发商南南置业已经破产，世博花园一期烂...
+									<a href="/html/news/201408/1386900.html" target="_blank" hidefocus="true">[查看详情]</a>
+								</p>
+							</dd>
+							<dd>
+								<a href="/html/news/201408/1385988.html" target="_blank" hidefocus="true">四环内首个自住房下月申购 单价22000元/平</a>
+							</dd>
+							<dd>
+								<a href="/html/news/201408/1385968.html" target="_blank" hidefocus="true">北京昔日六大地王楼盘 今年仅万柳项目能入</a>
+							</dd>
+							<dd>
+								<a href="/html/news/201408/1385823.html" target="_blank" hidefocus="true">商贷还完了房子还没影 彩石山庄购房者盼解</a>
+							</dd>
+							<dd>
+								<a href="/html/news/201408/1385819.html" target="_blank" hidefocus="true">泰安楼盘为促销喊“特价房“口号 实际仅有</a>
+							</dd>
+							<dd>
+								<a href="/html/news/201307/888009.html" target="_blank" hidefocus="true">涨价声中，刚需楼盘销售降温</a>
+							</dd>
+						</dl>
+						<dl class="news-hot-list"><dt style="margin-top:-5px;">资讯排行榜</dt>
+							<dd><i class="hot">1</i>
+								<a href="/html/news/201608/2392644.html" target="_blank" hidefocus="true">8月深圳新推房源商务公寓占半 不限购吸引投</a>
+							</dd>
+							<dd><i class="hot">2</i>
+								<a href="/html/news/201608/2392668.html" target="_blank" hidefocus="true">福田人口密度逼近"饱和" 2030年人口将增至2</a>
+							</dd>
+							<dd><i class="hot">3</i>
+								<a href="/html/news/201608/2399008.html" target="_blank" hidefocus="true">深圳房价飞涨 广东住建厅：深圳房价不会永远</a>
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+			<!--友联开始-->
+			<div class="footer clearfixed">
+				<div class="wrapper">
+					<div class="footerwrap">
+						<div class="friendlink"><b>友情链接：</b>
+							<ul class="friendlink-list clearfix">
+								<li style="margin: 10px 20px 0 0;">
+									<a target="_blank" rel="nofollow" href="http://wpa.qq.com/msgrd?v=3&amp;uin=466482887&amp;site=qq&amp;menu=yes"><img border="0" src="http://wpa.qq.com/pa?p=2:466482887:41" alt="点击交谈" title="点击交谈"></a>
+								</li>
+								<li>
+									<a href="http://m./guyuan/news/" title="固原楼市" target="_blank" hidefocus="true">固原楼市</a>
+								</li>
+								<li>
+									<a href="http://wnhx.ohqly.com/11.shtml" title="华县房产网" target="_blank" hidefocus="true">华县房产网</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="copyright">
+						<p>
+							<a target="_blank" href="http://www.wanjiafdc.com/about/index" rel="nofollow">公司简介</a> |
+							<a target="_blank" href="http://www.wanjiafdc.com/about/culture" rel="nofollow">企业文化</a> |
+							<a target="_blank" href="http://www.wanjiafdc.com/about/partners" rel="nofollow">合作伙伴</a> |
+							<a target="_blank" href="http://www.wanjiafdc.com/about/contact" rel="nofollow">联系我们</a> |
+							<a target="_blank" href="http://www.wanjiafdc.com/about/hezuo" rel="nofollow">市场合作</a> |
+							<a href="javascript:void(0)" target="_self" class="showFlBox">友情链接申请</a>
+						</p>
+						<p>广告投放热线：<i class="red"></i> 客服热线： 邮箱： 经营性ICP证：
+							<a href="http://www.wanjiafdc.com/about/icp" rel="nofollow" target="_blank">湘B2-20130102</a>
+						</p>
+						<p>Copyright © 2016 www. All Rights Reserved</p>
+					</div>
+				</div>
+			</div>
+			<!--友联结束-->
+		</div>
+		<a href="http://app.wanjiafdc.com/" target="_blank">
+			<div id="codes">&nbsp;</div>
+		</a>
+		<div id="backTop" title="回顶部" class="backTop" style="display: none;"></div>
+		<script src="/assets/js/pc/lpw.js"></script>
+		<script src="/assets/js/pc/base.js"></script>
+		<script type="text/javascript" src="/assets/js/pc/silder.js"></script>
+		<script type="text/javascript" src="/assets/js/pc/home-news.js"></script>
+		<script type="text/javascript" src="/assets/js/pc/friendLink.js"></script>
+	</body>
+
+</html>

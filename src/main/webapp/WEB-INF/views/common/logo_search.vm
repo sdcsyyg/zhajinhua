@@ -1,0 +1,124 @@
+<div class="container">
+    <div class="header">
+        <div class="row  cl logo-search-box">
+            <div class="col-5 logo-box clearfix f-l">
+                <div class="col-4-1 logo f-l">
+                    <h1><a class="logo_" href="#" title="房产网" hidefocus="true">房产网</a></h1>
+                </div>
+                <div class="col-4-1 citywrap f-l">
+                    <div id="city_hover_id" class="curcity clearfix">
+                        <i class="city">固原</i>
+                        <em class="cur"></em>
+                    </div>
+                    <div id="citylist_panel_id" class="citylist" style="display: none;">
+                        <dl>
+                            <dt>华北东北</dt>
+                            <dd>
+                                <a href="http://bj.loupan.com">北京</a>
+                                <a href="http://hrb.loupan.com">哈尔滨</a>
+                                <a href="http://bt.loupan.com">包头</a>
+                                <a href="http://hd.loupan.com">邯郸</a>
+                                <a href="http://linfen.loupan.com">临汾</a>
+                                <a href="http://changzhi.loupan.com">长治</a>
+                                <a href="http://lf.loupan.com">廊坊</a>
+                                <a href="http://hs.loupan.com">衡水</a>
+                                <a href="http://cangzhou.loupan.com">沧州</a>
+                                <a href="http://cf.loupan.com">赤峰</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>华东地区</dt>
+                            <dd>
+                                <a href="http://sh.loupan.com">上海</a>
+                                <a href="http://hz.loupan.com">杭州</a>
+                                <a href="http://qz.loupan.com">泉州</a>
+                                <a href="http://nj.loupan.com">南京</a>
+                                <a href="http://jn.loupan.com">济南</a>
+                                <a href="http://xm.loupan.com">厦门</a>
+                                <a href="http://hf.loupan.com">合肥</a>
+                                <a href="http://wz.loupan.com">温州</a>
+                                <a href="http://jh.loupan.com">金华</a>
+                                <a href="http://tz.loupan.com">台州</a>
+                                <a href="http://sm.loupan.com">三明</a>
+                                <a href="http://np.loupan.com">南平</a>
+                                <a href="http://nt.loupan.com">南通</a>
+                                <a href="http://jj.loupan.com">九江</a>
+                                <a href="http://dz.loupan.com">德州</a>
+                                <a href="http://anqing.loupan.com">安庆</a>
+                                <a href="http://fuyang.loupan.com">阜阳</a>
+                                <a href="http://bengbu.loupan.com">蚌埠</a>
+                                <a href="http://chizhou.loupan.com">池州</a>
+                                <a href="http://yichun.loupan.com">宜春</a>
+                                <a href="http://taian.loupan.com">泰安</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>华南华中</dt>
+                            <dd>
+                                <a href="http://cs.loupan.com">长沙</a>
+                                <a href="http://gz.loupan.com">广州</a>
+                                <a href="http://sz.loupan.com">深圳</a>
+                                <a href="http://wh.loupan.com">武汉</a>
+                                <a href="http://hn.loupan.com">海南</a>
+                                <a href="http://sanya.loupan.com">三亚</a>
+                                <a href="http://zz.loupan.com">郑州</a>
+                                <a href="http://xt.loupan.com">湘潭</a>
+                                <a href="http://zhuzhou.loupan.com">株洲</a>
+                                <a href="http://chenzhou.loupan.com">郴州</a>
+                                <a href="http://hy.loupan.com">衡阳</a>
+                                <a href="http://yongzhou.loupan.com">永州</a>
+                                <a href="http://changde.loupan.com">常德</a>
+                                <a href="http://yy.loupan.com">益阳</a>
+                                <a href="http://yueyang.loupan.com">岳阳</a>
+                                <a href="http://fs.loupan.com">佛山</a>
+                                <a href="http://nn.loupan.com">南宁</a>
+                                <a href="http://yc.loupan.com">宜昌</a>
+                                <a href="http://xiangyang.loupan.com">襄阳</a>
+                                <a href="http://huizhou.loupan.com">惠州</a>
+                                <a href="http://huaian.loupan.com">淮安</a>
+                                <a href="http://zj.loupan.com">湛江</a>
+                                <a href="http://tongling.loupan.com">铜陵</a>
+                                <a href="http://zhoukou.loupan.com">周口</a>
+                                <a href="http://meizhou.loupan.com">梅州</a>
+                                <a href="http://xiangxi.loupan.com">湘西</a>
+                                <a href="http://lixian.loupan.com">澧县</a>
+                                <a href="http://liling.loupan.com">醴陵</a>
+                                <a href="http://yx.loupan.com">攸县</a>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>西北西南</dt>
+                            <dd>
+                                <a href="http://xa.loupan.com">西安</a>
+                                <a href="http://cq.loupan.com">重庆</a>
+                                <a href="http://gy.loupan.com">贵阳</a>
+                                <a href="http://zy.loupan.com">遵义</a>
+                                <a href="http://kl.loupan.com">凯里</a>
+                                <a href="http://duyun.loupan.com">都匀</a>
+                                <a href="http://km.loupan.com">昆明</a>
+                                <a href="http://mianyang.loupan.com">绵阳</a>
+                                <a href="http://wlmq.loupan.com">乌鲁木齐</a>
+                                <a href="http://fcg.loupan.com">防城港</a>
+                                <a href="http://meishan.loupan.com">眉山</a>
+                                <a href="http://weinan.loupan.com">渭南</a>
+                                <a href="http://bazhong.loupan.com">巴中</a>
+                                <a href="http://rh.loupan.com">仁怀</a>
+                                <a href="http://ww.loupan.com">武威</a>
+                            </dd>
+                        </dl>
+                        <div class="more">
+                            <a href="http://www.loupan.com/?all" class="morecity" rel="nofollow">更多城市&gt;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-7 search-box searchBar f-l">
+                <form class="form-search" method="post" action="">
+                    <input id="searchKeyword" name="searchKeyword" value="请输入搜索关键词" class="input-text searchTxt">
+                    <input id="searchBtn" name="searchBtn" type="submit" value="搜索" class="btn btn-default searchBtn"
+                           onclick="b_onclick()">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

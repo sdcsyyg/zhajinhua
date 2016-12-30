@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<link rel="stylesheet" href="/assets/css/pc/base.css">
+		<link rel="stylesheet" href="/assets/css/pc/login.css">
+		<script src="/assets/js/pc/jquery.min.js"></script>
+		<title>登录-楼盘网</title>
+	</head>
+
+	<body>
+
+		<div class="wrapper">
+			<h1><a href="#" class="toplogo"></a></h1>
+			<!--表单开始-->
+			<div class="content clearfixed">
+				<div class="title">
+					<h2>登录</h2>
+				</div>
+				<ul>
+					<li>
+						<span class="user-icon"></span>
+						<input type="text" placeholder="请输入手机号或邮箱" class="user-id" name="sign_in[email]" id="sign_in_email" data-form-un="1474158992918.2664">
+						<div class="user-error">用户不能为空</div>
+						<div class="user-phone">手机号码不正确</div>
+					</li>
+					<li>
+						<span class="password-icon"></span>
+						<input type="password" placeholder="密码" name="sign_in[passwd]" class="user-password" data-form-pw="1474158992918.2664">
+						<div class="password-error">密码不能为空</div>
+					</li>
+					<input type="hidden" name="sign_in[md5]" class="user-md5" value="a696f413a9bba49a5926a44874fa59a5">
+					<input class="ui-input" type="hidden" id="backurl" value="http://guyuan.wanjiafdc.com/">
+				</ul>
+				<ol>
+					<li class="fl">
+						<input id="sign_in_cookies" value="seven" type="checkbox" name="sign_in[sign_in_cookies]">下次自动登录
+						<a href="/user/get_password" target="_blank" class="forget">忘记密码？</a>
+					</li>
+					<li class="fr">
+						<a href="/sign_up" target="_blank">立即注册</a>
+					</li>
+				</ol>
+				<button class="loginBtn clearfixed">登录</button>
+				<div class="other">
+					<dl>
+						<dd>
+							<a href="/oauth-req/2" class="qq">QQ登录</a>
+						</dd>
+						<dd>
+							<a href="/oauth-req/1" class="weibo">微博登录</a>
+						</dd>
+					</dl>
+				</div>
+			</div>
+			<!--表单结束-->
+			<!--版权开始-->
+			<div class="footer">
+				<p>广告投放热线：
+					<font color="red"></font> 客服热线： 邮箱： 经营性ICP证：
+					<a href="http://www.wanjiafdc.com/about/icp" rel="nofollow" target="_blank">湘B2-20130102</a>
+				</p>
+				<p>Copyright© 2015 www.wanjiafdc.com All Rights Reserved</p>
+			</div>
+			<!--版权结束-->
+		</div>
+		<div class="success">登录成功</div>
+		<div class="fail">登录失败，请重新登录</div>		
+	</body>
+
+</html>

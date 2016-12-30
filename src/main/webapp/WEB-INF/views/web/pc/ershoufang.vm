@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+		<title>固原楼盘_固原新楼盘_固原新房_固原房价-固原楼盘网</title>
+		<meta name="Keywords" content="固原楼盘,固原新楼盘,固原新房,固原房价">
+		<meta name="description" content="固原楼盘网为您提供固原楼盘与固原房价的最新房产信息，专业的固原房地产网站，让您即时了解固原房产的最新动态，方便快捷的固原楼盘选购体验与严格的房源审核为您的房产投资保驾护航。">
+		<link rel="stylesheet" media="all" href="/assets/css/pc/base.css">
+		<link rel="stylesheet" media="all" href="/assets/css/pc/house-list.css">
+		<link rel="stylesheet" media="all" href="/assets/css/pc/swiper.css">
+##        <link rel="stylesheet" media="all" href="/assets/css/pc/bootstrap.min.css">
+		<script type="text/javascript" src="/assets/js/pc/jquery.min.js"></script>
+        <script type="text/javascript" src="/assets/js/pc/bootstrap-paginator.js"></script>
+	</head>
+
+	<body>
+		<!--头部开始-->
+
+		<div class="container">
+			<div class="header">
+				<div class="site-nav">
+					#parse("/web/pc/_tags/_header.vm")
+				</div>
+				<div class="logo-search">
+					<div class="wrapper logo-search-box">
+						<div class="logo-box clearfix">
+							<h1><a class="logo" href="/web/pc/home" title="在线表决系统网" hidefocus="true" style="background-image:url(/assets/images/logo.png);"></a></h1>
+							<div class="citywrap">
+								<div id="city_hover_id" class="curcity clearfix">
+									<i class="city">$!{cityName}</i>
+								</div>
+							</div>
+						</div>
+
+						<div class="search-box">
+							<!-- js before submit validate and submit-->
+							<div class="searchwrap clearfix">
+								<form id="search_form" action="/xinfang/?" method="get">
+									<p class="">
+										<input id="search_field_id" name="q" maxlength="20" class="key" type="text" data-value="请填写二手房名称" value="请填写二手房名称">
+										<input id="citypinyin" value="guyuan" type="hidden">
+									</p>
+									<p id="search_house_id"><i></i>搜索</p>
+                                    <span data-search-type="2" id="search_combox_type_id"></span>
+								</form>
+							</div>
+                            <ul class="top_tab_list_ul" style="display: none; z-index: 1000;" id="top_search_ul"></ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--头部结束-->
+			<!--导航开始-->
+			<div class="nav">
+				<div class="wrapper">
+					<ul class="main-nav clearfix">
+						<li>
+							<a href="/web/pc/home" target="_self">首页</a>
+						</li>
+                        <li>
+                            <a href="/web/house/search/xinfang?flag=1" target="_blank">一手盘</a>
+                        </li>
+						<li>
+							<a href="/web/news/news_list" target="_blank">楼盘资讯</a>
+						</li>
+						<li class="cur">
+							<a href="#">二手房</a>
+						</li>
+						<li>
+							<a href="/web/house/search/zufang?flag=1" target="_blank">租房</a>
+						</li>
+                        <li>
+                            <a href="/web/company/list" target="_blank">装修</a>
+                        </li>
+					</ul>
+##					<ul class="sub-nav clearfix">
+##						<li id="mobile_nav_panel_id">
+##							<span class="mobile-icon"></span>
+##							<i id="mobile_arrow_panel_id" class="arrow"></i>
+##							<div id="mobile_pos_panel_id" class="mobile-pos clearfix">
+##								<img src="http://public.wanjiafdc.com/public/assets/images/qrcode.jpg" width="123" height="123" alt="二维码">
+##							</div>
+##						</li>
+##						<li>
+##							<a class="app-icon" href="http://app.wanjiafdc.com" title="APP" hidefocus="true" target="_blank"></a>
+##						</li>
+##					</ul>
+				</div>
+			</div>
+			<!--导航结束-->
+			<div class="wrapper">
+				<div class="search-nav">
+					<div class="nav-hd">
+						<h2>楼盘搜索</h2>
+                        <input type="hidden" id="p_city" value="$!queryForm.city" >
+                        <input type="hidden" id="p_country" value="$!queryForm.country" >
+                        <input type="hidden" id="p_useage" value="$!queryForm.useage" >
+                        <input type="hidden" id="p_bedroom" value="$!queryForm.bedroom">
+                        <input type="hidden" id="p_minPrice" value="$!queryForm.minPrice" >
+                        <input type="hidden" id="p_maxPrice" value="$!queryForm.maxPrice" >
+                        <input type="hidden" id="p_minAreasize" value="$!queryForm.minAreasize" >
+                        <input type="hidden" id="p_maxAreasize" value="$!queryForm.maxAreasize" >
+					</div>
+					<div class="nav-bd">
+						<dl class="clearfix">
+							<dt>区 域：</dt>
+							<dd>
+                                <div class="options">
+                                    <a #if($!queryForm.country == "all") class="cur" #end
+                                                                      rel="nofollow" href="/web/house/search/ershoufang?country=all">全部</a>
+									#foreach($!item in $!queryForm.cityMapList)
+                                        <a #if($!queryForm.country == $!item.code) class="cur" #end
+                                                                                href="/web/house/search/ershoufang?country=$!{item.code}">$!{item.name}</a>
+									#end
+                                </div>
+							</dd>
+						</dl>
+						<dl class="clearfix">
+							<dt>价 格：</dt>
+							<dd>
+                                <div class="options">
+                                    <a #if($!queryForm.minPrice == -1.0) class="cur" #end
+                                                                         rel="nofollow" href="/web/house/search/ershoufang?minPrice=-1">全部</a>
+                                    <a #if($!queryForm.minPrice == 0.0) class="cur" #end
+                                                                        href="/web/house/search/ershoufang?minPrice=0&maxPrice=3000" rel="nofollow">3000以下</a>
+                                    <a #if($!queryForm.minPrice == 3000.0) class="cur" #end
+                                                                           href="/web/house/search/ershoufang?minPrice=3000&maxPrice=4000" rel="nofollow">3000-4000</a>
+                                    <a #if($!queryForm.minPrice == 4000.0) class="cur" #end
+                                                                           href="/web/house/search/ershoufang?minPrice=4000&maxPrice=5000" rel="nofollow">4000-5000</a>
+                                    <a #if($!queryForm.minPrice == 5000.0) class="cur" #end
+                                                                           href="/web/house/search/ershoufang?minPrice=5000&maxPrice=7000" rel="nofollow">5000-7000</a>
+                                    <a #if($!queryForm.minPrice == 7000.0) class="cur" #end
+                                                                           href="/web/house/search/ershoufang?minPrice=7000&maxPrice=10000" rel="nofollow">7000-10000</a>
+                                    <a #if($!queryForm.minPrice == 10000.0) class="cur" #end
+                                                                            href="/web/house/search/ershoufang?minPrice=10000&maxPrice=999999" rel="nofollow">10000以上</a>
+                                    (单价:元/㎡)
+                                </div>
+							</dd>
+						</dl>
+                        <dl class="clearfix">
+                            <dt>面 积：</dt>
+                            <dd>
+                                <div class="options">
+
+                                    <a #if($!queryForm.minAreasize == -1.0) class="cur" #end
+                                                                            rel="nofollow" href="/web/house/search/ershoufang?minAreasize=-1">全部</a>
+                                    <a #if($!queryForm.minAreasize == 0.0) class="cur" #end
+                                                                           href="/web/house/search/ershoufang?minAreasize=0&maxAreasize=50" rel="nofollow">50以下</a>
+                                    <a #if($!queryForm.minAreasize == 50.0) class="cur" #end
+                                                                            href="/web/house/search/ershoufang?minAreasize=50&maxAreasize=70" rel="nofollow">50-70</a>
+                                    <a #if($!queryForm.minAreasize == 70.0) class="cur" #end
+                                                                            href="/web/house/search/ershoufang?minAreasize=70&maxAreasize=90" rel="nofollow">70-90</a>
+                                    <a #if($!queryForm.minAreasize == 90.0) class="cur" #end
+                                                                            href="/web/house/search/ershoufang?minAreasize=90&maxAreasize=120" rel="nofollow">90-120</a>
+                                    <a #if($!queryForm.minAreasize == 120.0) class="cur" #end
+                                                                             href="/web/house/search/ershoufang?minAreasize=120&maxAreasize=150" rel="nofollow">120-150</a>
+                                    <a #if($!queryForm.minAreasize == 150.0) class="cur" #end
+                                                                             href="/web/house/search/ershoufang?minAreasize=150&maxAreasize=200" rel="nofollow">150-200</a>
+                                    <a #if($!queryForm.minAreasize == 200.0) class="cur" #end
+                                                                             href="/web/house/search/ershoufang?minAreasize=200&maxAreasize=9999" rel="nofollow">200以上</a>
+                                    (单位:/㎡)
+                                </div>
+                            </dd>
+                        </dl>
+						<dl class="clearfix">
+                            <dt>用 途：</dt>
+                            <dd>
+                                <div class="options">
+
+                                    <a #if($!queryForm.useage == "all") class="cur" #end
+                                                                        rel="nofollow" href="/web/house/search/ershoufang?useage=all">全部</a>
+
+                                    <a #if($!queryForm.useage == "住宅") class="cur" #end
+                                                                       href="/web/house/search/ershoufang?useage=住宅" rel="nofollow">住宅</a>
+                                    <a #if($!queryForm.useage == "别墅") class="cur" #end
+                                                                       href="/web/house/search/ershoufang?useage=别墅" rel="nofollow">别墅</a>
+                                    <a #if($!queryForm.useage == "商铺") class="cur" #end
+                                                                       href="/web/house/search/ershoufang?useage=商铺" rel="nofollow">商铺</a>
+                                    <a #if($!queryForm.useage == "写字楼") class="cur" #end
+                                                                        href="/web/house/search/ershoufang?useage=写字楼" rel="nofollow">写字楼</a>
+                                    <a #if($!queryForm.useage == "厂房") class="cur" #end
+                                                                       href="/web/house/search/ershoufang?useage=厂房" rel="nofollow">厂房</a>
+                                    <a #if($!queryForm.useage == "仓库") class="cur" #end
+                                                                       href="/web/house/search/ershoufang?useage=仓库" rel="nofollow">仓库</a>
+                                    <a #if($!queryForm.useage == "车房") class="cur" #end
+                                                                       href="/web/house/search/ershoufang?useage=车房" rel="nofollow">车房</a>
+                                </div>
+                            </dd>
+						</dl>
+                        <dl class="clearfix">
+                            <dt>户 型：</dt>
+                            <dd>
+                                <div class="options">
+                                    <a #if($!queryForm.bedroom == -1) class="cur" #end
+                                                                      href="#">全部</a>
+                                    <a #if($!queryForm.bedroom == 1) class="cur" #end
+                                                                     href="/web/house/search/ershoufang/?bedroom=1">1室</a>
+                                    <a #if($!queryForm.bedroom == 2) class="cur" #end
+                                                                     href="/web/house/search/ershoufang/?bedroom=2"">2室</a>
+                                    <a #if($!queryForm.bedroom == 3) class="cur" #end
+                                                                     href="/web/house/search/ershoufang/?bedroom=3">3室</a>
+                                    <a #if($!queryForm.bedroom == 4) class="cur" #end
+                                                                     href="/web/house/search/ershoufang/?bedroom=4">4室</a>
+                                    <a #if($!queryForm.bedroom == 5) class="cur" #end
+                                                                     href="/web/house/search/ershoufang/?bedroom=5">5室</a>
+                                    <a #if($!queryForm.bedroom == 6) class="cur" #end
+                                                                     href="/web/house/search/ershoufang/?bedroom=6">5室内以上</a>
+                                </div>
+                            </dd>
+                        </dl>
+					</div>
+				</div>
+				<div class="contents clearfix">
+					<div class="contents-center">
+						<!--div中的i属性标示当前排序类型 1为人气排序 2为价格排序 其余为默认排序-->
+						<div class="contents-hd clearfix" i="">
+							<ul class="contents-tabs clearfix">
+								<li class="cur">全部楼房</li>
+							</ul>
+						</div>
+						<div class="contents-result">
+							共找到<i>$!{totalNums}</i>个符合要求的楼房
+						</div>
+						<div class="contents-bd" id="house_list_panel_id">
+							<div class="result-list" id="content">
+							</div>
+						</div>
+					</div>
+					<div class="contents-west">
+
+					</div>
+				</div>
+			</div>
+			<div class="wrapper">
+				<div class="page clearfix" style="padding-left: 40%;">
+					<ul id="pagination"></ul>
+					<p id="curr_total" style="margin-left: 20px;"></p>
+				</div>
+			</div>
+			<div id="compare_pos_panel_id" class="compare-house" style="display: none; top: 235px;">
+				<a id="compare_btn_id" href="/xinfang/compare/" target="_blank">
+					<img src="http://public.wanjiafdc.com/public/assets//images/house-list/compare.gif" width="87" height="23">
+				</a>
+				<ul id="compare_records_id"></ul>
+			</div>
+			<!--友联开始-->
+			<div class="footer clearfixed">
+				#parse("/web/pc/_tags/_footer.vm")
+			</div>
+			<!--友联结束-->
+		</div>
+		<a href="http://app.wanjiafdc.com/" target="_blank">
+			<div id="codes">&nbsp;</div>
+		</a>
+		<div id="backTop" title="回顶部" class="backTop" style="display: none;"></div>
+		<input type="hidden" id="totalNums" value="$!totalNums">
+		<script src="/assets/js/pc/lpw.js"></script>
+		<script src="/assets/js/pc/base.js"></script>
+		<script type="text/javascript" src="/assets/js/pc/home-list.js"></script>
+        <script>
+			var pageSize = 10;
+            var options = {
+                bootstrapMajorVersion: 3,
+                alignment:'center',
+                currentPage:1,
+                numberOfPages:6,
+                totalPages: 10,
+                pageUrl: function(type, page, current){
+                    var city = $("#p_city").val(),useage = $("#p_useage").val(),minPrice = $("#p_minPrice").val(),maxPrice = $("#p_maxPrice").val(),
+                            minAreasize = $("#p_minAreasize").val(),maxAreasize = $("#p_maxAreasize").val(),bedroom = $("#p_bedroom").val(), country = $("#p_country").val();
+                    var param = "page=" + page + "&city=" + city + "&useage=" + useage + "&minPrice=" + minPrice + "&maxPrice=" + maxPrice
+                            + "&minAreasize=" + minAreasize + "&maxAreasize=" + maxAreasize + "&bedroom=" + bedroom + "&country=" + country;
+                    return "/web/house/ershoufang/paged?" + param;
+                },
+                itemTexts: function(type, page, current) { //修改显示文字
+                    switch (type) {
+                        case "first":
+                            return "第一页";
+                        case "prev":
+                            return "上一页";
+                        case "next":
+                            return "下一页";
+                        case "last":
+                            return "最后一页";
+                        case "page":
+                            return page;
+                    }
+                },
+                onPageClicked: function (event, originalEvent, type, page) {
+                    originalEvent.preventDefault();
+                    originalEvent.stopPropagation();
+                    $.ajax({
+                        url:originalEvent.target.href,
+                        type:"GET",
+                        dataType:"json",
+                        success: function(data){
+                            $("#content li").remove();
+                            $(data).each(function(){
+								var item = '<div class="result-item clearfix" style="padding-top:15px">'
+												+ '<a class="img" href="/web/house/detail/'+ this.id+'" target="_blank" hidefocus="true">'
+												+ '<img src="'+ this.cover +'" width="200" height="140" alt="'+ this.title +'">'
+												+ '</a>'
+												+ '<div class="info">'
+												+ '<h4 class="clearfix"><a href="/web/house/detail/'+ this.id+'" target="_blank" hidefocus="true">'+ this.title +'</a><i class="v2"></i>'
+												+ '<em>[' + this.useage + ']</em></h4>'
+												+ '<p>['+ this.qq + '-]' + this.address + '</p>'
+                                        		+ '<p>户型：'+ this.bedroom + '室-' + this.livingroom + '厅-' + this.bathroom + '卫</p>'
+                                        		+ '<p>面 积：' + this.areasize +' ㎡</p>'
+												+ '<p>开 发 商：' + this.developer +'</p>'
+												+ '</div>'
+												+ '<div class="guide">'
+												+ '<p class="price"><i>'+ this.price + '元/㎡</i></p>'
+												+ '<p class="preferential"></p>'
+                                        		+ '<p class="phone">'+ this.landLine+'</p>'
+											+ '</div>';
+                                $("#content").append("<li>"+item+"</li>");
+								$("#curr_total").html("共" + page + "/" + options.totalPages + "页");
+                            });
+
+                        },
+                        error: function(error){
+                            alert("error");
+                        }
+                    });
+                }
+            };
+            $(document).ready(function(){
+				var total = $("#totalNums").val();
+				options.totalPages = Math.ceil(total /pageSize);
+                $("#pagination").bootstrapPaginator(options);
+                $("#pagination li:first a").trigger("click");
+            });
+        </script>
+	</body>
+
+</html>

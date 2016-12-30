@@ -1,0 +1,18 @@
+<div class="col-side">
+    <div class="menu-logo">
+        <a href="/admin/index">
+            <img src="/assets/images/logo.png" style="background-color: white;border-radius: 5px;"/>
+        </a>
+    </div>
+    <div class="menu-box" id="menu-box">
+
+        <dl class="menu">
+            <dd class="menu-item #if($menu == 'menu_vote') selected #end">
+                <a href="/admin/votes/list"><i class="fa fa-home"></i>投票活动</a>
+            </dd>
+        </dl>
+    </div>
+    <div class="menu-user">
+        <a href="/admin/logout"><i class="fa fa-sign-out"></i>退出</a>
+    </div>
+</div>

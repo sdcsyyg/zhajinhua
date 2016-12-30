@@ -1,0 +1,31 @@
+#set($layout = '/admin/_tags/_layout.vm')
+<style>
+    .label {
+        display: inline-block;
+        padding: .4em .6em;
+        line-height: 1.2;
+        margin-right: 8px;
+        cursor: pointer;
+    }
+</style>
+
+#set($menu = "menu_demand")
+
+#set($submenu = 'submenu_demand_list_' + $!type)
+#parse("/admin/demand/_tabs.vm")
+
+<div class="main_bd">
+    <table id="model-table-view" data-type="$!type"></table>
+</div>
+
+<script id="tpl-demand-hs" type="text/html">
+    {{? it.ds=='UNREAD'}}
+        <label class="label unread label-danger">未读</label>
+    {{?? it.ds=='FOLLOW'}}
+        <label class="label follow label-info">跟进</label>
+    {{?? it.ds=='DONE'}}
+        <label class="label done label-success">完成</label>
+    {{?}}
+</script>
+
+<script src="/assets/js/admin/demand/list.js"></script>

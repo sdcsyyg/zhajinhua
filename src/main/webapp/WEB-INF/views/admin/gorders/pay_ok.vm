@@ -1,0 +1,30 @@
+<head>
+    #parse("/admin/_tags/_meta.vm")
+    <title>$!title - 后台管理</title>
+</head>
+<body>
+
+#parse("/admin/_tags/_header.vm")
+
+<div class="body">
+    <div class="container-box row">
+
+        #set($menu = "menu_gorders")
+        #parse("/admin/_tags/_menus.vm")
+
+        <div class="col-main">
+
+            #set($submenu = 'submenu_gorders_payok')
+            #parse("/admin/gorders/_tabs.vm")
+
+            <div class="main_bd users-page">
+                <table id="model-table-view">
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+#parse("/admin/_tags/_footer.vm")
+<script src="/assets/js/admin/gorders/pay_ok.js"></script>
+</body>

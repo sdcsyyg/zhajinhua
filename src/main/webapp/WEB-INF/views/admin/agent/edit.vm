@@ -1,0 +1,124 @@
+#set($layout = '/admin/_tags/_layout.vm')
+
+#set($menu = "menu_agent")
+
+#parse("/admin/agent/_tabs.vm")
+
+<div class="main_bd">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <ol class="breadcrumb">
+                <li>
+                    <a href="javascript:window.history.back();">
+                        <i class="glyphicon glyphicon-chevron-left"></i>返回
+                    </a>
+                </li>
+                <li class="active">修改</li>
+            </ol>
+        </div>
+        <ul class="list-group">
+            <form id="model-form" method="post" action="/admin/agent/update/$!model.id">
+                <li class="list-group-item">
+                    <h4>城市</h4>
+                    <div class="meta_content">
+                        <select id="select-type" name="city" data-placeholder="选择城市" style="width:500px;" class="form-control chzn-select">
+                            #foreach($item in $!cityList.children)
+                                <option value="$!{item.code}" data-type="$!{item.code}" #if($!model.city == $!{item.code}) selected="selected" #end>$!{item.name}</option>
+                            #end
+                        </select>
+                    </div>
+                    <div class="meta_opr">选择城市</div>
+                </li>
+                <li class="list-group-item">
+                    <h4>标题</h4>
+                    <div class="meta_content">
+                        <input type="text" name="title" value="$!{model.title}" class="form-control" style="width:500px;"/>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <h4>编号</h4>
+                    <div class="meta_content">
+                        <input type="text" name="num" value="$!{model.num}" class="form-control" style="width:500px;"/>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <h4>姓名</h4>
+                    <div class="meta_content">
+                        <input type="text" name="name" value="$!{model.name}" class="form-control" style="width:500px;"/>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <h4>性别</h4>
+                    <div class="meta_content" style="margin-top:5px;">
+                        <label class="radio-inline">
+                            <input type="radio" name="sex" value="男"
+                            #if($!model.sex == '男') checked#end>男
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="sex" value="女"
+                            #if($!model.sex == '女') checked#end>女
+                        </label>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <h4>年龄</h4>
+                    <div class="meta_content">
+                        <input type="text" name="age" value="$!{model.age}" class="form-control" style="width:500px;"/>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <h4>电话</h4>
+                    <div class="meta_content">
+                        <input type="text" name="phone" value="$!{model.phone}" class="form-control" style="width:500px;"/>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <h4>微信</h4>
+                    <div class="meta_content">
+                        <input type="text" name="wx" value="$!{model.wx}" class="form-control" style="width:500px;"/>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <h4>QQ</h4>
+                    <div class="meta_content">
+                        <input type="text" name="qq" value="$!{model.qq}" class="form-control" style="width:500px;"/>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <h4>标签</h4>
+                    <div class="meta_content">
+                        <input name="labels" value="$!model.labels" id="tags-labels" value="随时可看"/>
+                        <p class="fnote">按回车键(Enter)保存标签；建议1-3个标签即可；每个标签字数在4个以内</p>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <h4><em>*</em>图片</h4>
+                    <div class="meta_content">
+                        #set($thumbnails = $!model.thumbnailItems)
+                        #parse('/admin/_widgets/upload_con.vm')
+                        <p class="fnote">建议尺寸：600 x 120 像素，只需要上传一张即可。</p>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <h4>顺序</h4>
+                    <div class="meta_content">
+                        <input type="text" name="position" value="$!{model.position}" class="form-control"  style="width:500px;"/>
+                        <p class="fnote">请填写数字，越小越靠前。</p>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <h4>简述</h4>
+                    <div class="meta_content">
+                        <textarea class="form-control" name="content" style="width:500px;">$!{model.content}</textarea>
+                    </div>
+                </li>
+            </form>
+        </ul>
+        <div class="panel-footer">
+            <button id="model-form-save" type="button" class="btn btn-success" >保存</button>
+            <button id="model-form-reset" type="button" class="btn btn-default" >重置</button>
+        </div>
+    </div>
+</div>
+#include('/admin/_widgets/upload_view.vm')
+<script src="/assets/js/admin/agent/edit.js"></script>

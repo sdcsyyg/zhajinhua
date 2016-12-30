@@ -1,0 +1,74 @@
+<head>
+    #parse("/admin/_tags/_meta.vm")
+    <title>$!title - 后台管理</title>
+    <style>
+        .rbtn {margin-top: -6px;}
+        .images-ul {overflow: hidden;min-height:140px;}
+        .images-ul li {width: 20%;float: left;padding: 10px;}
+        .images-ul .img-wrapper {position: relative;width: 100%;height: 120px;background-size: cover;background-position: center;border: 1px dashed #ddd;}
+        .img-wrapper .btn-group {position: absolute;right: 0;bottom: 0;}
+    </style>
+</head>
+<body>
+#parse("/admin/_tags/_header.vm")
+<div class="body">
+    <div class="container-box row">
+
+        #set($menu = "menu_gifts")
+        #parse("/admin/_tags/_menus.vm")
+
+        <div class="col-main">
+
+            #parse("/admin/gifts/_tabs.vm")
+
+            <div class="main_bd">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <ol class="breadcrumb">
+                            <li><a href="javascript:window.history.back();">$!gift.name</a></li>
+                            <li class="active">封面图片</li>
+                        </ol>
+                        <button id="uploader-btn" class="btn btn-success pull-right rbtn"><i class="glyphicon glyphicon-plus"></i>添加图片</button>
+                    </div>
+                    <div class="panel-body">
+                        <form id="model-form" action="/admin/gifts/$!gift.id/thumbnails/save" method="post">
+                            <ul id="images-preview-ul" class="images-ul">
+                                #foreach($image in $!gift.thumbnailItems)
+                                    <li>
+                                        <div class="img-wrapper" style="background-image: url($!image);">
+                                            <div class="btn-group btn-group-sm" role="group">
+                                                <button onclick="toTrash(this)" type="button" class="btn btn-danger"><i class="glyphicon glyphicon-trash"></i></button>
+                                                <button onclick="toLeft(this)" type="button" class="btn btn-default"><i class="glyphicon glyphicon-arrow-left"></i></button>
+                                                <button onclick="toRight(this)" type="button" class="btn btn-default"><i class="glyphicon glyphicon-arrow-right"></i></button>
+                                            </div>
+                                            <input type="hidden" name="isrcs" value="$!image"/>
+                                        </div>
+                                    </li>
+                                #end
+                            </ul>
+                        </form>
+                    </div>
+                    <div class="panel-footer">
+                        <button id="model-form-save" type="button" class="btn btn-primary" >立即保存</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<input type="file" name="file" id="uploadImg" data-target="" accept="image/*" onchange="fileupload(this)" style="display:none;">
+<script id="li-image-tpl" type="text/html">
+    <li>
+        <div class="img-wrapper" style="background-image: url({{src}});">
+            <div class="btn-group btn-group-sm" role="group">
+                <button onclick="toTrash(this)" type="button" class="btn btn-danger"><i class="glyphicon glyphicon-trash"></i></button>
+                <button onclick="toLeft(this)" type="button" class="btn btn-default"><i class="glyphicon glyphicon-arrow-left"></i></button>
+                <button onclick="toRight(this)" type="button" class="btn btn-default"><i class="glyphicon glyphicon-arrow-right"></i></button>
+            </div>
+            <input type="hidden" name="isrcs" value="{{src}}"/>
+        </div>
+    </li>
+</script>
+#parse("/admin/_tags/_footer.vm")
+<script src="/assets/js/admin/gifts/thumbnails.js"></script>
+</body>

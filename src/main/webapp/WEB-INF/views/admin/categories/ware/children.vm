@@ -1,0 +1,33 @@
+<head>
+    #parse("/admin/_tags/_meta.vm")
+    <title>$!title - 后台管理</title>
+</head>
+<body>
+#parse("/admin/_tags/_header.vm")
+<div class="body">
+    <div class="container-box row">
+
+        #set($menu = "menu_categories")
+        #parse("/admin/_tags/_menus.vm")
+
+        <div class="col-main">
+
+            #parse("/admin/categories/_tabs.vm")
+
+            <div class="main_bd">
+                <ol class="breadcrumb">
+                  <li><a href="/admin/categories/ware/list">$!category.name</a></li>
+                  <li class="active">子分类</li>
+                </ol>
+                <div id="custom-toolbar" class="pull-left" style="margin-top: 10px;">
+                     <a href="/admin/categories/ware/create?cid=$!category.id" class="btn btn-primary">添加分类</a>
+                </div>
+                <table id="model-table-view"  data-model-id="$!category.id">
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+#parse("/admin/_tags/_footer.vm")
+<script src="/assets/js/admin/categories/ware/children.js"></script>
+</body>

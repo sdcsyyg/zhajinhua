@@ -1,0 +1,41 @@
+<div class="main_hd">
+    <div class="title_tab">
+        <ul class="tab_navs">
+            #if($submenu == 'submenu_house_list_xinfang')
+                <li class="tab_nav selected"><a href="javascript:;">&nbsp;&nbsp;新房&nbsp;&nbsp;</a></li>
+            #else
+                <li class="tab_nav"><a href="/admin/houses/list/xinfang">&nbsp;&nbsp;新房&nbsp;&nbsp;</a></li>
+            #end
+
+            #if($submenu == 'submenu_house_list_ershoufang')
+                <li class="tab_nav selected"><a href="javascript:;">&nbsp;二手房&nbsp;</a></li>
+            #else
+                <li class="tab_nav"><a href="/admin/houses/list/ershoufang">&nbsp;二手房&nbsp;</a></li>
+            #end
+
+            #if($submenu == 'submenu_house_list_zufang')
+                <li class="tab_nav selected"><a href="javascript:;">&nbsp;出租房&nbsp;</a></li>
+            #else
+                <li class="tab_nav"><a href="/admin/houses/list/zufang">&nbsp;出租房&nbsp;</a></li>
+            #end
+
+##            #if($submenu == 'submenu_house_list_shouloubu')
+##                <li class="tab_nav selected"><a href="javascript:;">售楼部房源</a></li>
+##            #else
+##                <li class="tab_nav"><a href="/admin/houses/list/shouloubu">售楼部房源</a></li>
+##            #end
+##
+##            #if($submenu == 'submenu_house_list_qitafang')
+##                <li class="tab_nav selected"><a href="javascript:;">其他房源</a></li>
+##            #else
+##                <li class="tab_nav"><a href="/admin/houses/list/qitafang">其他房源</a></li>
+##            #end
+
+            #if($submenu == 'submenu_house_form')
+                <li class="tab_nav selected"><a href="javascript:;">添加房产</a></li>
+            #else
+                <li class="tab_nav"><a href="/admin/houses/create">添加房产</a></li>
+            #end
+        </ul>
+    </div>
+</div>

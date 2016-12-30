@@ -1,0 +1,11 @@
+<div class="main_hd">
+    <div class="title_tab">
+        <ul class="tab_navs">
+            #if($submenu == 'submenu_bmxx_list')
+                <li class="tab_nav selected"><a href="javascript:;">便民信息</a></li>
+            #else
+                <li class="tab_nav"><a href="/admin/bmxxs/list">便民信息</a></li>
+            #end
+        </ul>
+    </div>
+</div>

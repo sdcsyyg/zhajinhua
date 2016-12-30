@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="format-detection" content="telephone=no">
+		<title>固原楼市_固原房产信息_固原房地产新闻 - 固原楼盘网</title>
+		<meta name="Keywords" content="固原楼市,固原房产信息,固原房地产新闻,固原房产政策">
+		<meta name="description" content="楼盘网固原楼市频道为您提供最新最全的固原房产信息、固原房地产新闻、固原房产政策，为您解读房地产行业动态、销售行情、房产时评、业界访谈、楼盘置业等。">
+		<link rel="stylesheet" media="all" href="/assets/css/pc/base.css">
+		<link rel="stylesheet" media="all" href="/assets/css/pc/home-news.css">
+		<link rel="stylesheet" media="all" href="/assets/css/pc/swiper-3.3.1.min.css">
+		<script type="text/javascript" src="/assets/js/pc/jquery.js"></script>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="header">
+				<div class="site-nav">
+					#parse("/web/pc/_tags/_header.vm")
+				</div>
+				<div class="logo-search">
+					<div class="wrapper logo-search-box">
+						<div class="logo-box clearfix">
+							<h1><a class="logo" href="/web/pc/home" title="在线表决系统网" hidefocus="true" style="background-image:url(/assets/images/logo.png);"></a></h1>
+							<div class="citywrap">
+								<div id="city_hover_id" class="curcity clearfix">
+									<i class="city">$!{cityName}</i>
+								</div>
+							</div>
+						</div>
+						<div class="search-box">
+							<!-- js before submit validate and submit-->
+							<div class="searchwrap clearfix">
+								<form id="search_form_id" action="" method="post">
+									<div id="search_pos_combox_id" class="combox" style="display:none">
+										<p class="combox-text"><span data-search-type="4" id="search_combox_type_id">新闻</span></p>
+									</div>
+									<p>
+										<input id="search_field_id" name="q" maxlength="20" class="key" type="text" placeholder="请输入新闻关键字">
+##										<input id="citypinyin" value="guyuan" type="hidden"></p>
+                                    	<span data-search-type="1" id="search_combox_type_id"></span>
+									<p id="search_house_id"><i></i>搜索</p>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="nav">
+				<div class="wrapper">
+					<ul class="main-nav clearfix">
+                        <li>
+                            <a href="/" target="_blank">首页</a>
+                        </li>
+                        <li>
+                            <a href="/web/house/search/xinfang?flag=1" target="_blank">一手盘</a>
+                        </li>
+                        <li class="cur">
+                            <a href="/web/news/news_list" target="_blank">楼盘资讯</a>
+                        </li>
+                        <li>
+                            <a href="/web/house/search/ershoufang?flag=1" target="_blank">二手房</a>
+                        </li>
+                        <li>
+                            <a href="/web/house/search/zufang?flag=1" target="_blank">租房</a>
+                        </li>
+                        <li>
+                            <a href="/web/company/list" target="_blank">装修</a>
+                        </li>
+					</ul>
+				</div>
+			</div>
+			<div class="wrapper">
+				<div class="news clearfix">
+					<div class="main-news">
+						<div class="clearfix">
+							<div class="west-news">
+								<div class="news-swiper">
+									<div id="news_swipe_container_id" class="swiper-container" style="overflow: hidden; width: 380px; height: 282px;">
+										<div id="news_swipe_id" class="swiper-wrapper clearfix" style="list-style: none; margin: 0px; width: 2280px; transition-duration: 500ms; transition-timing-function: linear; transform: translate(-1140px, 0px);">
+											<div class="swiper-slide" style="width: 380px; height: 282px; display: inline-block; vertical-align: top;">
+												<a href="/html/news/201408/1387217.html" target="_blank" hidefocus="true"><img src="/assets/images/pc/img/h_s_1.png" width="380" height="282"></a>
+											</div>
+											<div class="swiper-slide" style="width: 380px; height: 282px; display: inline-block; vertical-align: top;">
+												<a href="/html/news/201408/1386905.html" target="_blank" hidefocus="true"><img src="/assets/images/pc/img/h_s_2.png" width="380" height="282"></a>
+											</div>
+											<div class="swiper-slide" style="width: 380px; height: 282px; display: inline-block; vertical-align: top;">
+												<a href="/html/news/201408/1386900.html" target="_blank" hidefocus="true"><img src="/assets/images/pc/img/h_s_3.png" width="380" height="282"></a>
+											</div>
+											<div class="swiper-slide" style="width: 380px; height: 282px; display: inline-block; vertical-align: top;">
+												<a href="/html/news/201408/1386862.html" target="_blank" hidefocus="true"><img src="/assets/images/pc/img/h_s_4.png" width="380" height="282"></a>
+											</div>
+											<div class="swiper-slide" style="width: 380px; height: 282px; display: inline-block; vertical-align: top;">
+												<a href="/html/news/201608/2392668.html" target="_blank" hidefocus="true"><img src="/assets/images/pc/img/h_s_5.png" width="380" height="282"></a>
+											</div>
+											<div class="swiper-slide" style="width: 380px; height: 282px; display: inline-block; vertical-align: top;">
+												<a href="/html/news/201608/2392644.html" target="_blank" hidefocus="true"><img src="/assets/images/pc/img/h_s_1.png" width="380" height="282"></a>
+											</div>
+										</div>
+										<div class="swiper-button-prev"></div>
+										<div class="swiper-button-next"></div>
+									</div>
+
+									<script src="/assets/js/pc/swiper-3.3.1.min.js"></script>
+									<script>
+										var mySwiper = new Swiper('.swiper-container', {
+											autoplay: 5000, //可选选项，自动滑动
+											autoplayDisableOnInteraction: false,
+											speed: 300,
+											loop: true,
+											loopAdditionalSlides: 1,
+											prevButton: '.swiper-button-prev',
+											nextButton: '.swiper-button-next',
+										})
+									</script>
+								</div>
+							</div>
+							<div class="center-news">
+								<h3 class="hot"><a href="/html/news/201608/2392668.html" target="_blank" hidefocus="true">福田人口密度逼近"饱和" 2030年人口将增至218.60万</a></h3>
+								<div class="news-img-content-box clearfix">
+									<div class="left-img">
+										#if($!{dataMap.zjgg.size()} == 2)
+                                            <a href="$!{dataMap.zjgg[0].url}" target="_blank" hidefocus="true">
+                                                <img src="$!{dataMap.zjgg[0].thumbnails}" width="156" height="106">
+                                                <p>$!{dataMap.zjgg[0].title}</p>
+                                            </a>
+										#end
+									</div>
+									<ul class="right-news">
+										#foreach($news in $!dataMap.bdls1)
+                                            <li>
+                                                <a href="/web/news/" target="_blank" hidefocus="true"> [本地] </a>
+                                                <a href="/web/news/detail/$!{news.id}" target="_blank" hidefocus="true"> $!{news.title} </a>
+                                            </li>
+										#end
+									</ul>
+								</div>
+								<div class="news-img-content-box clearfix">
+									<div class="left-img">
+										#if($!{dataMap.zjgg.size()} == 2)
+                                            <a href="$!{dataMap.zjgg[1].url}" target="_blank" hidefocus="true">
+                                                <img src="$!{dataMap.zjgg[1].thumbnails}" width="156" height="106">
+                                                <p>$!{dataMap.zjgg[1].title}</p>
+                                            </a>
+										#end
+									</div>
+									<ul class="right-news">
+										#foreach($news in $!dataMap.bdls2)
+                                            <li>
+                                                <a href="/web/news/" target="_blank" hidefocus="true"> [本地] </a>
+                                                <a href="/web/news/detail/$!{news.id}" target="_blank" hidefocus="true"> $!{news.title} </a>
+                                            </li>
+										#end
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="news-list-box">
+							<ul id="news_list_tab_id" class="column clearfix">
+								<li data-index="0" class="posleft cur">
+									<a target="_blank" href="#">本地楼市</a>
+								</li>
+								<li data-index="1" class=" ">
+									<a target="_blank" href="#">国内动态</a>
+								</li>
+							</ul>
+							<div id="news_list_swipe_container_id" class="swiper-container" style="overflow: hidden; width: 860px; height: 1216px;">
+								<div id="news_list_swipe_wrap_id" class="swiper-wrapper clearfix" style="list-style: none; margin: 0px; width: 1720px; transition-duration: 500ms; transition-timing-function: linear; transform: translate(-860px, 0px);">
+									<div class="swiper-slide" style="width: 860px; height: 1216px; display: inline-block; vertical-align: top;">
+										<ul class="news-list">
+											#foreach($!item in $!dataMap.bdls)
+                                                <li class="nopic">
+                                                    <div class="news-content">
+                                                        <h3><a href="/web/news/detail/$!item.id" target="_blank" hidefocus="true">$!item.title</a></h3>
+                                                        <p>[摘要]$!item.summary
+                                                            <a href="/web/news/detail/$!item.id" target="_blank" hidefocus="true">[详细]</a>
+                                                        </p>
+                                                    </div>
+                                                    <p class="time">$!item.stime</p>
+                                                </li>
+											#end
+										</ul>
+									</div>
+									<div class="swiper-slide" style="width: 860px; height: 1216px; display: block; vertical-align: top;">
+										<ul class="news-list">
+											#foreach($!item in $!dataMap.gndt)
+                                                <li class="nopic">
+                                                    <div class="news-content">
+                                                        <h3><a href="/web/news/detail/$!item.id" target="_blank" hidefocus="true">$!item.title</a></h3>
+                                                        <p>[摘要]$!item.summary
+                                                            <a href="/web/news/detail/$!item.id" target="_blank" hidefocus="true">[详细]</a>
+                                                        </p>
+                                                    </div>
+                                                    <p class="time">$!item.stime</p>
+                                                </li>
+											#end
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="news-list-box">
+							<ul class="column clearfix">
+								<li class="posleft cur">
+									<a target="_blank" href="/news/list-51.html">销售行情</a>
+								</li>
+							</ul>
+							<ul class="news-list">
+								#foreach($!item in $!dataMap.xshq)
+                                    <li class="nopic">
+                                        <div class="news-content">
+                                            <h3><a href="/web/news/detail/$!item.id" target="_blank" hidefocus="true">$!item.title</a></h3>
+                                            <p>[摘要]$!item.summary
+                                                <a href="/web/news/detail/$!item.id" target="_blank" hidefocus="true">[详细]</a>
+                                            </p>
+                                        </div>
+                                        <p class="time">$!item.stime</p>
+                                    </li>
+								#end
+							</ul>
+						</div>
+						<div class="news-list-box">
+							<ul class="column clearfix">
+								<li class="posleft cur">
+									<a target="_blank" href="/news/list-50.html">楼盘置业</a>
+								</li>
+							</ul>
+							<ul class="news-list">
+								#foreach($!item in $!dataMap.lpzy)
+                                    <li class="nopic">
+                                        <div class="news-content">
+                                            <h3><a href="/web/news/detail/$!item.id" target="_blank" hidefocus="true">$!item.title</a></h3>
+                                            <p>[摘要]$!item.summary
+                                                <a href="/web/news/detail/$!item.id" target="_blank" hidefocus="true">[详细]</a>
+                                            </p>
+                                        </div>
+                                        <p class="time">$!item.stime</p>
+                                    </li>
+								#end
+							</ul>
+						</div>
+					</div>
+					<div class="east-news">
+						<dl><dt><a target="_blank" href="/news/list-34.html">业界访谈</a></dt>
+
+							#foreach($news in $!dataMap.yjft)
+								#if($!{velocityCount} == 1)
+                                    <dd class="img-content-box clearfix">
+                                        <h3><a href="/web/news/detail/$!{news.id}" target="_blank">$!{news.title}</a></h3>
+                                        <a class="img" target="_blank" hidefocus="true">
+											<img src="/assets/images/pc/img/h_a_3.jpg" width="118" height="80" alt="开发商一房三卖 原房主得确权"></a>
+                                        <p class="detail">$!{news.summary}
+                                            <a href="/web/news/detail/$!{news.id}" target="_blank" hidefocus="true">[查看详情]</a>
+                                        </p>
+                                    </dd>
+								#else
+                                    <dd>
+                                        <a href="/web/news/detail/$!{news.id}" target="_blank" hidefocus="true">$!{news.title}</a>
+                                    </dd>
+								#end
+							#end
+						</dl>
+						<dl><dt style="margin-top:-5px;"><a target="_blank" href="/news/list-35.html">新闻专题</a></dt>
+							#foreach($news in $!dataMap.xwzt)
+								#if($!{velocityCount} == 1)
+                                    <dd class="img-content-box clearfix">
+                                        <h3><a href="/web/news/detail/$!{news.id}" target="_blank">$!{news.title}</a></h3>
+                                        <a class="img" target="_blank" hidefocus="true"><img src="/assets/images/pc/img/h_a_2.jpg" width="118" height="80" alt="开发商一房三卖 原房主得确权"></a>
+                                        <p class="detail">$!{news.summary}
+                                            <a href="/web/news/detail/$!{news.id}" target="_blank" hidefocus="true">[查看详情]</a>
+                                        </p>
+                                    </dd>
+								#else
+                                    <dd>
+                                        <a href="/web/news/detail/$!{news.id}" target="_blank" hidefocus="true">$!{news.title}</a>
+                                    </dd>
+								#end
+							#end
+						</dl>
+						<dl><dt style="margin-top:-5px;"><a target="_blank" href="/news/list-110.html">活动专题</a></dt>
+							#foreach($news in $!dataMap.hdzt)
+								#if($!{velocityCount} == 1)
+                                    <dd class="img-content-box clearfix">
+                                        <h3><a href="/web/news/detail/$!{news.id}" target="_blank">$!{news.title}</a></h3>
+                                        <a class="img" target="_blank" hidefocus="true"><img src="/assets/images/pc/img/h_a_1.jpg" width="118" height="80" alt="开发商一房三卖 原房主得确权"></a>
+                                        <p class="detail">$!{news.summary}
+                                            <a href="/web/news/detail/$!{news.id}" target="_blank" hidefocus="true">[查看详情]</a>
+                                        </p>
+                                    </dd>
+								#else
+                                    <dd>
+                                        <a href="/web/news/detail/$!{news.id}" target="_blank" hidefocus="true">$!{news.title}</a>
+                                    </dd>
+								#end
+							#end
+						</dl>
+						<dl><dt style="margin-top:-5px;"><a target="_blank" href="/news/list-48.html">楼盘导购</a></dt>
+							#foreach($news in $!dataMap.lpzy)
+								#if($!{velocityCount} == 1)
+                                    <dd class="img-content-box clearfix">
+                                        <h3><a href="/web/news/detail/$!{news.id}" target="_blank">$!{news.title}</a></h3>
+                                        <a class="img" target="_blank" hidefocus="true"><img src="/assets/images/pc/img/h_a_3.jpg" width="118" height="80" alt="开发商一房三卖 原房主得确权"></a>
+                                        <p class="detail">$!{news.summary}
+                                            <a href="/web/news/detail/$!{news.id}" target="_blank" hidefocus="true">[查看详情]</a>
+                                        </p>
+                                    </dd>
+								#else
+                                    <dd>
+                                        <a href="/web/news/detail/$!{news.id}" target="_blank" hidefocus="true">$!{news.title}</a>
+                                    </dd>
+								#end
+							#end
+						</dl>
+						<dl class="news-hot-list"><dt style="margin-top:-5px;">资讯排行榜</dt>
+							<dd><i class="hot">1</i>
+								<a href="/html/news/201608/2392644.html" target="_blank" hidefocus="true">8月深圳新推房源商务公寓占半 不限购吸引投</a>
+							</dd>
+							<dd><i class="hot">2</i>
+								<a href="/html/news/201608/2392668.html" target="_blank" hidefocus="true">福田人口密度逼近"饱和" 2030年人口将增至2</a>
+							</dd>
+							<dd><i class="hot">3</i>
+								<a href="/html/news/201608/2399008.html" target="_blank" hidefocus="true">深圳房价飞涨 广东住建厅：深圳房价不会永远</a>
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+			<!--友联开始-->
+			<div class="footer clearfixed">
+				#parse("/web/pc/_tags/_footer.vm")
+			</div>
+			<!--友联结束-->
+		</div>
+		<a href="http://app.wanjiafdc.com/" target="_blank">
+			<div id="codes">&nbsp;</div>
+		</a>
+		<div id="backTop" title="回顶部" class="backTop" style="display: none;"></div>
+		<script src="/assets/js/pc/lpw.js"></script>
+		<script src="/assets/js/pc/base.js"></script>
+		<script type="text/javascript" src="/assets/js/pc/silder.js"></script>
+		<script type="text/javascript" src="/assets/js/pc/home-news.js"></script>
+		<script type="text/javascript" src="/assets/js/pc/friendLink.js"></script>
+	</body>
+
+</html>

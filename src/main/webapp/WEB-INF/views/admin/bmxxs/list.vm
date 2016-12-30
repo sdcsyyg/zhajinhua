@@ -1,0 +1,13 @@
+#set($layout = '/admin/_tags/_layout.vm')
+
+#set($menu = "menu_bmxx")
+
+#set($submenu = 'submenu_bmxx_list')
+#parse("/admin/bmxxs/_tabs.vm")
+
+<div class="main_bd">
+    <a href="/admin/bmxxs/create" type="button" class="btn btn-warning pull-left" style="margin-top: 10px;">添加</a>
+    <table id="model-table-view"></table>
+</div>
+
+<script src="/assets/js/admin/bmxxs/list.js"></script>

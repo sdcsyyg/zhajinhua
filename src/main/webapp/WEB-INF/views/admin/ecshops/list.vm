@@ -1,0 +1,12 @@
+#set($layout = '/admin/_tags/_layout.vm')
+
+#set($menu = "menu_ecshop")
+
+#set($submenu = 'submenu_ecshop_list_' + $type)
+#parse("/admin/ecshops/_tabs.vm")
+
+<div class="main_bd">
+    <table id="model-table-view" data-type="${type}"></table>
+</div>
+
+<script src="/assets/js/admin/ecshops/list.js"></script>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    #parse("/admin/_tags/_meta.vm")
+    <title>$!title - 后台管理</title>
+</head>
+<body>
+<div class="body">
+    <div class="container-box">
+
+        #parse("/admin/_tags/_menus.vm")
+
+        <div class="col-main">
+            $screen_content
+        </div>
+    </div>
+</div>
+</body>
+</html>

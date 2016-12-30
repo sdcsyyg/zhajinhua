@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>首页 - 在线表决系统</title>
+    <link rel="stylesheet" type="text/css" href="/assets/wap/css/api.css"/>
+    <link rel="stylesheet" type="text/css" href="/assets/wap/css/aui.css"/>
+    <link rel="stylesheet" type="text/css" href="/assets/wap/css/aui-flex.css"/>
+    <link rel="stylesheet" type="text/css" href="/assets/wap/css/aui-slide.css"/>
+    <link rel="stylesheet" type="text/css" href="/assets/wap/css/style.css"/>
+    <style>
+        body {
+            background-color: #fff;
+        }
+        .nav-section {
+            padding: 10px;
+        }
+        .hd {
+            border-left: 2px solid #03a9f4;
+            text-indent: 10px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header class="aui-bar aui-bar-nav">
+        <div class="aui-title">在线表决系统</div>
+    </header>
+    <!--分类导航-->
+    <div class="nav-section">
+    <div class="aui-content house-items">
+        <h1>活动列表<h1>
+        <ul class="aui-list-view" id="tpl-agent-con">
+            #foreach($vote in $votes)
+                <li class="aui-list-view-cell">
+                    <a class="hd" href="/wap/votes/vote/$vote.id">$vote.name
+                    #if($vote.finished)
+                        <span class="aui-lozenge aui-warning aui-pull-right">未开启投票</span>
+                    #else
+                        <span class="aui-lozenge aui-success aui-pull-right">已开启投票</span>
+                    #end
+                    </a>
+                </li>
+            #end
+        </ul>
+    </div>
+</body>
+</html>
+

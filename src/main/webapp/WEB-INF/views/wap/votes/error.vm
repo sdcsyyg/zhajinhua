@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>ooooo</title>
+    <link rel="stylesheet" type="text/css" href="/assets/wap/css/api.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/wap/css/aui.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/wap/css/style.css" />
+    <style>
+        body {background-color: #fff;}
+        h1 {font-size: 20px;line-height: 24px;}
+        .h1 {height: 1px;background: #f0f0f0;}
+        .content {padding: 20px 15px;color:#333;}
+        .detail {margin: 15px 0 25px;}
+    </style>
+</head>
+<body>
+    <header class="aui-bar aui-bar-nav">
+        <div class="bar-content">
+            <a class="aui-pull-left" onclick="history.back();">
+                <span class="aui-iconfont aui-icon-left"></span>返回
+            </a>
+            <div class="aui-title">出错了</div>
+        </div>
+    </header>
+    <div class="content">
+        <div class="aui-tips" id="tips-1">
+            <div class="aui-tips-content aui-ellipsis-1" >
+                <i class="aui-iconfont aui-icon-warnfill"></i>访问路径或者参数不对
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <p><div class="aui-btn aui-btn-warning aui-btn-block" onclick="history.back();">返回上一页</div></p>
+    </div>
+</body>
+</html>

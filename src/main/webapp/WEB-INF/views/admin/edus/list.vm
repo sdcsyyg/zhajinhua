@@ -1,0 +1,12 @@
+#set($layout = '/admin/_tags/_layout.vm')
+
+#set($menu = "menu_edu")
+
+#set($submenu = 'submenu_edu_list_' + $type)
+#parse("/admin/edus/_tabs.vm")
+
+<div class="main_bd">
+    <table id="model-table-view" data-type="${type}"></table>
+</div>
+
+<script src="/assets/js/admin/edus/list.js"></script>

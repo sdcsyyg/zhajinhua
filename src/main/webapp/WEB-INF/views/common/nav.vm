@@ -1,0 +1,70 @@
+<div class="container">
+    <div class="row cl nav-box">
+        <div class="col-12">
+            <header class="navbar-wrapper">
+                <nav class="nav navbar-nav nav-collapse" role="navigation" id="Hui-navbar">
+                    <ul class="nav mynav col-4-3 f-l">
+                        <li class="current">
+                            <a href="/web/pc/home">首页</a>
+                        </li>
+                        <li class="dropDown dropDown_hover">
+                            <a href="/web/pc/newhouse" class="dropDown_A">新房<i class="Hui-iconfont"></i></a>
+                            <ul class="dropDown-menu menu radius box-shadow">
+                                <li>
+                                    <a href="#">二级导航</a>
+                                </li>
+                                <li>
+                                    <a href="#">二级导航<i class="arrow Hui-iconfont"></i></a>
+                                    <ul class="menu">
+                                        <li>
+                                            <a href="javascript:;">三级菜单<i class="arrow Hui-iconfont"></i></a>
+                                            <ul class="menu">
+                                                <li>
+                                                    <a href="javascript:;">四级菜单</a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;">四级菜单</a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:;">四级菜单</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#">三级导航</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">二级导航</a>
+                                </li>
+                                <li class="disabled">
+                                    <a href="javascript:;">二级菜单</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/web/pc/house_news">楼盘资讯</a>
+                        </li>
+
+                        <li>
+                            <a href="#">租房</a>
+                        </li>
+                        <li>
+                            <a href="#">问答</a>
+                        </li>
+                    </ul>
+                    <!--
+                        作者：389589802@qq.com
+                        时间：2016-08-31
+                        描述： /*导航栏按钮*/
+                    -->
+                    <ul class="sub-nav col-4-1 f-r">
+                        <input class="btn radius btn-secondary" type="button" value="手机">
+                        <input class="btn radius btn-secondary" type="button" value="APP">
+                    </ul>
+                </nav>
+            </header>
+        </div>
+    </div>
+</div>

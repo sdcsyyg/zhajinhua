@@ -1,0 +1,74 @@
+<style>
+.image-upload-list {
+    float: left;
+}
+.image-upload-list dt {
+    float: left;
+    margin: 0 10px 10px 0;
+    display: block;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    position: relative;
+    line-height: 80px;
+    text-align: center;
+    color: #07d;
+    overflow: hidden;
+}
+.image-upload-list dt img {
+    max-width: 95%;
+    max-height: 95%;
+}
+.image-upload-list .image-preview-box:hover .image-opt-btn {
+    display: block;
+}
+.image-upload-list .image-opt-btn {
+    top: 0;
+    left: 0;
+    height: 24px;
+    font-size: 14px;
+    line-height: 24px;
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    background: rgba(0,0,0,0.5);
+    width: 80px;
+    display: none;
+}
+.image-upload-list .image-opt-btn span {
+    display: inline-block;
+    width: 30%;
+}
+.image-upload-list .image-opt-btn span:hover {
+    color: red;
+}
+#image-upload-btn {
+    float: left;
+    margin: 0 10px 10px 0;
+    display: block;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+    position: relative;
+    line-height: 80px;
+    text-align: center;
+    color: #07d;
+}
+</style>
+<dl class="image-upload-list" id="image-upload-section">
+    #foreach($thumb in $thumbnails)
+        <dt class="image-preview-box">
+            <img src="$!thumb">
+            <div class="image-opt-btn">
+                <span onclick="toLeft(this)">←</span>
+                <span onclick="toRight(this)">→</span>
+                <span onclick="toTrash(this)">x</span>
+            </div>
+            <input type="hidden" name="thumbnails" value="$!thumb"/>
+        </dt>
+    #end
+</dl>
+<div id="image-upload-btn">添加</div>

@@ -1,0 +1,67 @@
+#set($layout = '/admin/_tags/_layout.vm')
+
+#set($menu = "menu_user")
+
+#parse("/admin/users/_tabs.vm")
+
+<div class="main_bd">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <ol class="breadcrumb">
+                <li>
+                    <a href="javascript:window.history.back();">
+                        <i class="glyphicon glyphicon-chevron-left"></i>返回
+                    </a>
+                </li>
+                <li class="active">查看</li>
+            </ol>
+        </div>
+        <ul class="list-group">
+            <form id="model-form" action="/admin/users/update/$!user.id" method="post">
+                <li class="list-group-item">
+                    <h4>头像</h4>
+                    <div class="meta_content">
+                        <img src="$!user.avatar" width="100px;" height="100px;">
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <h4>昵称</h4>
+                    <div class="meta_content">
+                        <label class="form-control" style="width: 200px;">$!user.nickname</label>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <h4>姓名</h4>
+                    <div class="meta_content">
+                        <label class="form-control" style="width: 200px;">$!user.realname</label>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <h4>手机号码</h4>
+                    <div class="meta_content">
+                        <label class="form-control" style="width: 200px;">$!user.phone</label>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <h4>性别</h4>
+                    <div class="meta_content">
+                        <label class="form-control" style="width: 200px;">$!user.gender</label>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <h4>微信</h4>
+                    <div class="meta_content">
+                        <label class="form-control" style="width: 200px;">$!user.weixin</label>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <h4>QQ</h4>
+                    <div class="meta_content">
+                        <label class="form-control" style="width: 200px;">$!user.qq</label>
+                    </div>
+                </li>
+            </form>
+        </ul>
+    </div>
+</div>
+

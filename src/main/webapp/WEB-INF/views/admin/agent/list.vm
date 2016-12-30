@@ -1,0 +1,12 @@
+#set($layout = '/admin/_tags/_layout.vm')
+
+#set($menu = "menu_agent")
+
+#set($submenu = 'submenu_agent_list')
+#parse("/admin/agent/_tabs.vm")
+
+<div class="main_bd">
+    <table id="model-table-view"></table>
+</div>
+
+<script src="/assets/js/admin/agent/list.js"></script>

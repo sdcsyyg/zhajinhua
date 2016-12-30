@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <title>团购</title>
+    <link rel="stylesheet" type="text/css" href="/assets/wap/css/api.css"/>
+    <link rel="stylesheet" type="text/css" href="/assets/wap/css/aui.css"/>
+    <link rel="stylesheet" type="text/css" href="/assets/wap/css/aui-flex.css"/>
+    <link rel="stylesheet" type="text/css" href="/assets/wap/css/aui-slide.css"/>
+    <link rel="stylesheet" type="text/css" href="/assets/wap/css/style.css"/>
+    <style>
+        .item-list .hd {
+            margin-bottom: 5px;
+        }
+        .item-list .thumb {
+            position: relative;
+        }
+        .item-list .time {
+            margin-top: 5px;
+            display: inline-block;
+            color: #666;
+            font-size: 14px;
+        }
+        .item-list .thumb img {
+            width: 100%;
+            max-width: 100%;
+            height: 120px;
+        }
+        .item-list .price {
+            display: block;
+            position: absolute;
+            background-color: rgba(0,0,0,.8);
+            bottom: 5px;
+            color: #fff;
+            font-size: 12px;
+            width: 100%;
+            line-height: 24px;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+	<header class="aui-bar aui-bar-nav">
+        <a class="aui-pull-left" onclick="history.back();">
+            <span class="aui-iconfont aui-icon-left"></span>返回
+        </a>
+        <div class="aui-title">优惠团购</div>
+        <a class="aui-pull-right" href="/wap/index">
+            <span class="aui-iconfont aui-icon-home"></span>
+        </a>
+    </header>
+    <div class="aui-content item-list">
+        <ul class="aui-list-view" id="tpl-el">
+        </ul>
+    </div>
+    <div class="btn-load-more">
+        <div id="btn-load-more" onclick="loadPaged()" class="aui-btn">加载更多</div>
+    </div>
+    <script id="tpl" type="text/html">
+        {{~it :value}}
+        <li class="aui-list-view-cell aui-img">
+            <a href="/wap/houses/detail/{{=value.id}}">
+                <div class="thumb">
+                    <h4 class="aui-ellipsis-1 hd">{{=value.title}}</h4>
+                    <img src="/assets/images/web/gray.png" data-echo="{{=value.cover}}">
+                    <div class="price">
+                        <span>参考均价：{{=value.price}}元/平米</span>
+                        <span class="aui-pull-right"> 报名人数：{{=value.follow}}</span>
+                    </div>
+                </div>
+                <div class="">
+                    <span class="time">开始时间：{{=value.createdAt}}</span>
+                    <button class="aui-pull-right aui-bg-info" style="color:#fff">我要报名</button>
+                </div>
+            </a>
+        </li>
+        {{~}}
+    </script>
+    <script type="text/javascript" src="/assets/wap/js/api.js"></script>
+    <script type="text/javascript" src="/assets/wap/js/doT.min.js"></script>
+    <script type="text/javascript" src="/assets/wap/js/echo.min.js"></script>
+    <script type="text/javascript" src="/assets/wap/js/zepto.min.js"></script>
+    <script type="text/javascript" src="/assets/wap/js/common.js"></script>
+    <script type="text/javascript">
+        var PageData = {
+            page: 0,    // 当前页码，默认从0开始
+            size: 10,   // 每页size
+            last: false // 是否已经到最后一页
+        };
+
+        function updatePageData(data) {
+            PageData.last = data.last;
+            var page = PageData.page;
+            PageData.page = page + 1;
+            var display = data.last ? 'none' : 'block';
+            $('#btn-load-more').css('display', display);
+            lazyLoadImgs();
+        }
+
+        function loadPaged() {
+            if (PageData.last) {
+                alert("暂无最新数据!");
+                return;
+            }
+            var url = '/groupbuy/paged?page=' + PageData.page + '&size=' + PageData.size;
+            ajaxGet(url, function(data){
+                var html = renderEl('tpl', data.content);
+                $("#tpl-el").append(html);
+                updatePageData(data);
+            });
+        }
+
+        $(function () {
+            loadPaged();
+        })
+    </script>
+</body>
+</html>

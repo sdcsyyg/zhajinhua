@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>城市切换</title>
+    <link rel="stylesheet" type="text/css" href="/assets/wap/css/api.css"/>
+    <link rel="stylesheet" type="text/css" href="/assets/wap/css/aui.css"/>
+    <link rel="stylesheet" type="text/css" href="/assets/wap/css/aui-flex.css"/>
+    <link rel="stylesheet" type="text/css" href="/assets/wap/css/style.css"/>
+    <style>
+        .city-list .title {
+            border-top: 1px solid #E3E3E3;
+            border-bottom: 1px solid #E3E3E3;
+            font-size: 14px;
+            padding-left: 10px;
+            line-height: 50px;
+            background: #F8F8F8;
+            color: #3F4358;
+            text-align: center;
+            color: #3498db;
+        }
+        .city-list .item {
+            text-align: center;
+            color: #1f78c8;
+            line-height: 44px;
+        }
+        .t2 {
+            line-height: 44px;
+            margin-left: 15px;
+            font-weight: bolder;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header class="aui-bar aui-bar-nav">
+        <a class="aui-pull-left" href="/wap/index">
+            <span class="aui-iconfont aui-icon-left"></span>返回
+        </a>
+        <div class="aui-title">选择城市</div>
+    </header>
+    <div class="city-list">
+        <h4 class="title">已开通城市</h4>
+        <div class="">
+            #foreach($province in $root.children)
+                <h4 class="t2">$!province.name</h4>
+                <ul class="aui-flex-col">
+                    #foreach($city in $province.children)
+                        <li class="aui-col-xs-4 item">
+                            <a href="/wap/city/$!city.code">$!city.name</a>
+                        </li>
+                    #end
+                </ul>
+            #end
+        </div>
+    </div>
+</body>
+</html>

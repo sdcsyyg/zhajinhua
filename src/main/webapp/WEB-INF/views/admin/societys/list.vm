@@ -1,0 +1,12 @@
+#set($layout = '/admin/_tags/_layout.vm')
+
+#set($menu = "menu_societys")
+
+#set($submenu = 'submenu_societys_list_' + $type)
+#parse("/admin/societys/_tabs.vm")
+
+<div class="main_bd">
+    <table id="model-table-view" data-type="${type}"></table>
+</div>
+
+<script src="/assets/js/admin/societys/list.js"></script>

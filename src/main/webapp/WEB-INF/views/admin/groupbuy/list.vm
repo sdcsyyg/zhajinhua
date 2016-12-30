@@ -1,0 +1,12 @@
+#set($layout = '/admin/_tags/_layout.vm')
+
+#set($menu = "menu_groupbuy")
+
+#set($submenu = 'submenu_groupbuy_list')
+#parse("/admin/groupbuy/_tabs.vm")
+
+<div class="main_bd">
+    <table id="model-table-view"></table>
+</div>
+
+<script src="/assets/js/admin/groupbuy/list.js"></script>

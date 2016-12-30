@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="format-detection" content="telephone=no">
+		<title>$!{model.title}-固原楼盘网</title>
+		<meta name="Keywords" content="福田人口密度逼近&quot;饱和&quot; 2030年人口将增至218.60万">
+		<meta name="description" content="[摘要]据悉，到2030年，福田区实际管理人口将增至218.60万，人口密度升至2.8万人/平方公里，人口密度将逼近“饱和”。人口问题成为深圳中心城区须面对的重大紧迫现实问题。8月20日深莞双城看房b">
+		<link rel="stylesheet" media="all" href="/assets/css/pc/base.css">
+		<link rel="stylesheet" media="all" href="/assets/css/pc/news-list-detail.css">
+		<script type="text/javascript" src="/assets/js/pc/jquery.js"></script>
+		<link rel="stylesheet" href="/assets/css/pc/share_style1_16.css">
+		<script type="text/jscript" src="/assets/js/pc/push.js"></script>
+		<script type="text/jscript" src="/assets/js/pc/hm.js"></script>
+	</head>
+
+	<body>
+		
+		<div class="logo-search">
+			<div class="wrapper logo-search-box">
+				<div class="logo-box clearfix">
+					<h1>
+						<a class="logo" href="/web/pc/home" title="在线表决系统网" hidefocus="true">在线表决系统网</a>
+					</h1>
+					<div class="citywrap">
+						<div id="city_hover_id" class="curcity clearfix">
+							<i class="city">$!{cityName}</i>
+						</div>
+					</div>
+				</div>
+
+				<div class="search-box">
+					<!-- js before submit validate and submit-->
+					<div class="searchwrap clearfix">
+						<form id="search_form_id" action="" method="post">
+							<div id="search_pos_combox_id" class="combox" style="display:none">
+								<p class="combox-text"><span data-search-type="4" id="search_combox_type_id">新闻</span></p>
+							</div>
+							<p>
+								<input id="search_field_id" name="q" maxlength="20" class="key" type="text" placeholder="请输入新闻关键字">
+								<input id="citypinyin" value="guyuan" type="hidden">
+							</p>
+							<p id="search_house_id"><i></i>搜索</p>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="nav">
+			<div class="wrapper">
+				<ul class="main-nav clearfix">
+                    <li class="ui-nav-item-current cur">
+                        <a href="/web/pc/home" target="_self">首页</a>
+                    </li>
+                    <li>
+                        <a href="/web/house/search/xinfang?flag=1" target="_blank">新房</a>
+                    </li>
+                    <li>
+                        <a href="/web/news/news_list" target="_blank">楼盘资讯</a>
+                    </li>
+                    <li>
+                        <a href="/web/house/search/ershoufang?flag=1" target="_blank">二手房</a>
+                    </li>
+                    <li>
+                        <a href="http://guyuan.zu.wanjiafdc.com" target="_blank">租房</a>
+                    </li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="wrapper">
+			<div class="news clearfix">
+				<!--详情左边开始-->
+				<div class="main-news">
+					<!--你所在的网站位置-->
+					<div class="new-sider-nav">
+						<ul>
+							<li>
+								<a href="/">固原房地产</a> &gt; </li>
+							<li>
+								<a href="/news/">固原房产新闻</a> &gt;</li>
+							<li>
+								<a href="/news/list-36.html">本地楼市</a>
+							</li>
+						</ul>
+					</div>
+					<!--你所在的网站位置-->
+					<!--新闻详情开始-->
+					<div class="new-text clearfixed border">
+						<h1 class="news-title">$!{model.title}</h1>
+						<p class="time-form">$!{model.createdAt} 来源：</p>
+						<div class="daoyu">
+							<p>[摘要]$!{model.summary}</p>
+						</div>
+						<div class="ad">
+							<div class="g" id="A12622"></div>
+						</div>
+						<div id="A713" class="g250 ad"></div>
+						<div id="news_content_box_id" class="new-text-p">
+							<p class="titdd-Article">[<strong>摘要</strong>]$!{model.summary}</p>
+##							<p style="TEXT-INDENT: 2em">昨天，福田区委理论中心组召开“人口政策解读和人口形势分析”专题讲座。</p>
+							$!{model.content}
+						</div>
+						<!--分页开始-->
+						<!--分页结束-->
+					</div>
+					<!--新闻详情结束-->
+					<div class="ad">
+						<div class="g" id="A12623"></div>
+
+					</div>
+					<!--选项卡新闻结束-->
+##					<!--热点推荐开始-->
+##					<div class="hot-tui">
+##						<span>热点推荐</span>
+##						<ul>
+##							<li>
+##								<a href="/loupan/guyuanhuafuhaoting" target="_blank">固原华福豪庭</a>
+##							</li>
+##							<li>
+##								<a href="/loupan/guyuanmicheng" target="_blank">固原COCO蜜城二期·睿谷</a>
+##							</li>
+##							<li>
+##								<a href="/loupan/guyuandonghaitaiyangcheng" target="_blank">固原东海太阳城</a>
+##							</li>
+##							<li>
+##								<a href="/loupan/guyuanjingyuanshengshihuadou" target="_blank">固原景园·盛世华都</a>
+##							</li>
+##							<li>
+##								<a href="/loupan/zhongbojiatianxia" target="_blank">中博嘉天下</a>
+##							</li>
+##							<li>
+##								<a href="/loupan/guyuanlijingcheng" target="_blank">固原丽景城</a>
+##							</li>
+##							<li>
+##								<a href="/loupan/guyuanzheshangguoji" target="_blank">固原浙商国际</a>
+##							</li>
+##							<li>
+##								<a href="/loupan/guyuanjiadaoyinzuo" target="_blank">固原家道银座</a>
+##							</li>
+##							<li>
+##								<a href="/loupan/guyuanlushujinyuan" target="_blank">固原绿墅锦园</a>
+##							</li>
+##							<li>
+##								<a href="/loupan/nanfengjiayuan12hao" target="_blank">南凤嘉园12号</a>
+##							</li>
+##						</ul>
+##					</div>
+					<!--热点推荐结束-->
+				</div>
+				<!--详情左边结束-->
+				<!--详情右边开始-->
+				<div class="east-news">
+					<!--活动开始-->
+					<!--活动结束-->
+##					<!--导购开始-->
+##					<div class="daogou mb20">
+##						<h3>楼盘导购</h3>
+##						<div>
+##							<ol>
+##								<li>
+##									<a href="/html/news/201408/1386900.html">
+##										<img src="http://static.wanjiafdc.com/upfile/media/20140815/20140815140830_38436.png">
+##										<p>宁波某在售销冠楼盘开发商被曝破产[查看详情]</p>
+##									</a>
+##								</li>
+##							</ol>
+##						</div>
+##						<div class="new-list">
+##							<ul>
+##								<li>
+##									<a href="/html/news/201408/1385988.html">四环内首个自住房下月申购 单价22000元/平</a>
+##								</li>
+##							</ul>
+##						</div>
+##					</div>
+##					<!--导购结束-->
+##					<!--最新资讯开始-->
+##					<div class="new-list mb20">
+##						<h3 style="margin-left:-20px;">最新资讯</h3>
+##						<ul>
+##							<li>
+##								<a href="/html/news/201608/2399008.html">深圳房价飞涨 广东住建厅：深圳房价不会永远升</a>
+##							</li>
+##							<li>
+##								<a href="/html/news/201608/2392668.html">福田人口密度逼近"饱和" 2030年人口将增至218.60</a>
+##							</li>
+##							<li>
+##								<a href="/html/news/201608/2392644.html">8月深圳新推房源商务公寓占半 不限购吸引投资客入</a>
+##							</li>
+##							<li>
+##								<a href="/html/news/201608/2388329.html">从“零首付”到“负首付” 房价的泡沫眼看就要破</a>
+##							</li>
+##							<li>
+##								<a href="/html/news/201608/2374530.html">台风"妮妲"明日登陆 深圳今夜进入"强风暴雨"模式</a>
+##							</li>
+##							<li>
+##								<a href="/html/news/201607/2372600.html">龙华新区下半年有望增加4000个幼儿学位</a>
+##							</li>
+##							<li>
+##								<a href="/html/news/201607/2365845.html">东进战略深东部将雄起 二手房均价涨幅超20%</a>
+##							</li>
+##						</ul>
+##					</div>
+##					<!--最新资讯结束-->
+					<!--热门楼盘开始-->
+					<div class="hot mb20">
+						<h3>热门楼盘</h3>
+						#foreach($!item in $!rmlp)
+							<dl>
+								<a href="/web/news/detail/$!item.id" target="_blank">
+									#if($!{velocityCount} < 4)
+                                        <dt class="no1">$!{velocityCount}</dt>
+									#else
+                                        <dt>$!{velocityCount}</dt>
+									#end
+                                    <dd class="lpname">$!item.title</dd>
+                                    <dd class="price">$!item.price/㎡</dd>
+                                    <dd class="quyu">$!item.qq</dd>
+								</a>
+							</dl>
+						#end
+					</div>
+					<!--热门楼盘结束-->
+				</div>
+				<!--详情右边结束-->
+			</div>
+		</div>
+		<div class="footer clearfixed">
+			<div class="wrapper">
+
+				<div class="copyright">
+					<p>
+						<a target="_blank" href="http://www.wanjiafdc.com/about/index" rel="nofollow">公司简介</a> |
+						<a target="_blank" href="http://www.wanjiafdc.com/about/culture" rel="nofollow">企业文化</a> |
+						<a target="_blank" href="http://www.wanjiafdc.com/about/partners" rel="nofollow">合作伙伴</a> |
+						<a target="_blank" href="http://www.wanjiafdc.com/about/contact" rel="nofollow">联系我们</a> |
+						<a target="_blank" href="http://www.wanjiafdc.com/about/hezuo" rel="nofollow">市场合作</a> |
+						<a href="javascript:void(0)" target="_self" class="showFlBox">友情链接申请</a>
+					</p>
+					<p>广告投放热线：<i class="red"></i> 客服热线： 邮箱： 经营性ICP证：
+						<a href="http://www.wanjiafdc.com/about/icp" rel="nofollow" target="_blank">湘B2-20130102</a>
+					</p>
+					<p>Copyright © 2016 www.wanjiafdc.com All Rights Reserved</p>
+				</div>
+			</div>
+		</div>
+		<!--友联结束-->
+		<script src="/assets/js/pc/lpw.js"></script>
+		<script src="/assets/js/pc/base.js"></script>
+	</body>
+
+</html>

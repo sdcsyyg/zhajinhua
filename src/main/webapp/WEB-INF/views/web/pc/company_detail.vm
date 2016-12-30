@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title></title>
+	<meta name="Keywords" content="在线表决系统网">
+	<meta name="description" content="在线表决系统网">
+	<link rel="stylesheet" media="all" href="/assets/css/pc/base.css">
+	<link rel="stylesheet" media="all" href="/assets/css/pc/loupanxiangqing.css">
+	<link rel="stylesheet" media="all" href="/assets/css/pc/loupanxiangqing-top.css">
+	<script type="text/javascript" src="/assets/js/pc/jquery.min.js"></script>
+
+</head>
+
+<body>
+	
+	<div class="container">
+		<!--头部开始-->
+		<div class="header">
+			<div class="site-nav">
+				<div class="wrapper clearfix">
+					<p class="site-nav-left">
+                        在线表决系统欢迎您！
+					</p>
+					<ul class="site-nav-right">
+						<script type="text/javascript" src="/assets/session/show_setHome"></script>
+					</ul>
+				</div>
+			</div>
+			<div class="logo-search">
+				<div class="wrapper logo-search-box">
+					<div class="logo-box clearfix"  style="width: 300px;height: 126px;">
+						<h1>
+                            <a class="logo" href="/web/pc/home" title="在线表决系统网" hidefocus="true" style="background-image:url(/assets/images/logo.png);">
+
+							</a>
+						</h1>
+                        <div class="citywrap">
+                            <div id="city_hover_id" class="curcity clearfix"><i class="city">$!{cityName}</i>
+##								<em class="cur"></em>
+							</div>
+                        </div>
+					</div>
+				</div>
+                <hr>
+			</div>
+		</div>
+		<!--头部结束-->
+		<!--导航开始-->
+		<div class="wrapper">
+			<div class="lp_detail123">
+				<div class="lp_detailL clearfixed">
+					<div class="lp-id clearfixed" style="padding-top: 20px;">
+						<div class="wz">
+							<ul>
+								<li>
+									<a href="#">$!{cityName}&nbsp;&gt;&nbsp;</a>
+								</li>
+                                <li>
+                                    <a href="#">
+										#if($!{model.type} == "JJJZ")家居家装
+										#elseif($!{model.type} == 'JZFW')家政服务
+										#else 家居 #end&nbsp;&gt;&nbsp;</a>
+                                </li>
+								<li>$!{model.title}</li>
+							</ul>
+						</div>
+					</div>
+					<div class="lp-name-id fl">
+						<h1>$!{model.title}</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--导航结束-->
+		<!--主体开始-->
+		<div class="wrapper">
+			<!--楼盘名称开始-->
+			<!--户型图展示-文字简介开始-->
+			<div class="pic-show-dateil clearfiexd">
+				<!-- 焦点图 -->
+                <div class="syFocusThumb">
+                    <div id="syFocusThumb" class="sliderwrapper">
+						#foreach($item in $model.thumbnailItems)
+                            <div class="contentdiv" style="display: block; overflow: hidden; z-index: 5; visibility: visible;">
+                                <div class="dPic">
+                                    <a href="/web/house/detail/$!{model.id}" target="_blank"><img src="$!{item}" alt="效果图"></a>
+                                </div>
+                            </div>
+						#end
+                    </div>
+                    <div id="paginate-syFocusThumb" class="pagination">
+						<i id="prev" class="prev" title="上一幅"></i>
+                        <div class="thumbWrap">
+                            <div class="holder">
+								#foreach($item in $model.thumbnailItems)
+                                    <i class="toc selected" rel="1" style="float: left;">
+                                        <a target="_blank">
+											<img src="$!{item}" width="70" height="40" alt="效果图">
+										</a>
+                                        <span></span><p>效果图</p>
+                                    </i>
+								#end
+							</div>
+                        </div>
+						<i id="next" class="next" title="下一幅"></i>
+					</div>
+                </div>
+				<!-- 焦点图 end-->
+				<!--楼盘数据开始-->
+				<div class="lp-dateil">
+					<div class="lp-dateil-list">
+						<dl>
+							<dt>标 题：</dt>
+							<dd>$!{model.title}</dd>
+						</dl>
+                        <dl>
+							<dt>城 市：</dt>
+                            <dd>$!{model.city}</dd>
+                        </dl>
+                        <dl>
+                            <dt>地 址：</dt>
+                            <dd>$!{model.addr}</dd>
+                        </dl>
+                        <dl>
+                            <dt>标 签：</dt>
+                            <dd>
+								#foreach($!item in $!{model.labelItems})
+									<i class="b">$!{item}</i>
+								#end
+							</dd>
+                        </dl>
+					</div>
+					<div class="lp-num clearfixed" style="margin-top: 20px;">
+						<p> $!{model.phone}&nbsp; </p>
+					</div>
+				</div>
+				<!--楼盘数据结束-->
+			</div>
+            <!--房屋介绍开始-->
+            <div class="loupan-peitao clearfixed mt22" id="zhoubianpeitao1">
+                <h2>服务详情</h2>
+                <div id="loupan-peitao-tab" class="clearfixed">
+					$!{model.content}
+    			</div>
+
+				<div></div>
+            </div>
+            <!--房屋介绍结束-->
+		</div>
+		<div class="footer clearfixed">
+			#parse("/web/pc/_tags/_footer.vm")
+		</div>
+
+
+	</div>
+	<a href="http://app.wanjiafdc.com/" target="_blank">
+		<div id="codes">&nbsp;</div>
+	</a>
+	<div id="backTop" title="回顶部" class="backTop" style="display: block;"></div>
+	<script src="/assets/js/pc/lpw.js"></script>
+	<script src="/assets/js/pc/base.js"></script>
+	<script src="/assets/js/pc/min_contentslider.js"></script>
+	<script type="text/javascript" src="/assets/js/pc/friendLink.js"></script>
+	<script type="text/javascript">
+		function saveGroupBuy(){
+
+			var $form = $("#group_form_house");
+            var name = $form.find('input[name="name"]').val();
+            if(name === '') {
+                alert('名称不能为空');
+                return false;
+            }
+
+            $.post($form.attr('action'), $form.serialize(), function(result) {
+                alert(result.msg);
+				$form[0].reset();
+            }, 'json');
+
+        }
+	</script>
+
+</body>

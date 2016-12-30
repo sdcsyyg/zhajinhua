@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>关于我们</title>
+    <link rel="stylesheet" type="text/css" href="/assets/wap/css/api.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/wap/css/aui.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/wap/css/style.css" />
+    <style>
+        body {background-color: #fff;}
+        h1 {font-size: 20px;line-height: 24px;}
+        .h1 {height: 1px;background: #f0f0f0;}
+        .content {padding: 20px 15px;color:#333;}
+        .detail {margin: 15px 0 25px;}
+    </style>
+</head>
+<body>
+    <header class="aui-bar aui-bar-nav">
+        <div class="bar-content">
+            <a class="aui-pull-left" onclick="history.back();">
+                <span class="aui-iconfont aui-icon-left"></span>返回
+            </a>
+            <div class="aui-title">关于我们</div>
+        </div>
+    </header>
+    <div class="content">
+        <h1 class="peter-river">宁夏万家房地产经纪有限公司 </h1>
+        <div class="h1"></div>
+        <ul class="detail">
+            <li><p>地址：固原市原州区北京路派胜世茂城S1-0206号</p></li>
+            <li><p>官网：http://www.wanjiafc.com/</p></li>
+        </ul>
+        <h1>主营业务</h1>
+        <div class="h1"></div>
+        <p class="detail">房地产代理销售，二手房地产销售、租赁、置换服务，房地产中介服务* </p>
+        <h1>联系方式</h1>
+        <div class="h1"></div>
+        <ul class="detail">
+            <li><p>联系人：海小虎</p></li>
+            <li><p>联系电话：155-9544-1595</p></li>
+            <li><p>联系邮箱：wanjiafc@qq.com</p></li>
+        </ul>
+    </div>
+</body>
+</html>

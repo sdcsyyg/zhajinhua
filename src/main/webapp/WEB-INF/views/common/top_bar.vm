@@ -1,0 +1,17 @@
+<div class="site-nav">
+    <div class="wrapper clearfix">
+        <p class="site-nav-left">
+            <script type="text/javascript" src="/session/show_session_status"></script>
+            楼盘网固原站欢迎您！您尚未<a target="_self" href="http://user.loupan.com/session/sign_in">[登录]</a>或者<a class="pr0"
+                                                                                                      href="http://user.loupan.com/user/sign_up">[注册]</a>
+        </p>
+        <ul class="site-nav-right">
+            <script type="text/javascript" src="/session/show_setHome"></script>
+            <li><span id="setHome">设为首页</span></li>
+            <li>|</li>
+            <li><span id="addFavorite">加入收藏</span></li>
+            <li>|</li>
+            <li><a target="_blank" href="http://www.loupan.com/fangdai/" hidefocus="true">房贷计算器</a></li>
+        </ul>
+    </div>
+</div>

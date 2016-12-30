@@ -1,0 +1,245 @@
+@import url("animate.css");
+
+body {background-color: #fafafa;font-family: "Microsoft Yahei",sans-serif;}
+
+.bar-content {
+    overflow: hidden;
+}
+
+.aui-bar-gray {
+    background-color: #f4f4f4;
+}
+
+.aui-bar-gray .aui-title, .aui-bar-gray a, .aui-bar-gray .aui-iconfont {
+    color: #666;
+}
+
+.aui-btn-gray {
+    background-color:  #f4f4f4;;
+}
+
+.aui-btn-gray .aui-iconfont {
+    color: #101010 !important;
+}
+
+.bg-gray {
+    background-color:  #f4f4f4 !important;
+}
+
+.f12 {
+    font-size: 12px;
+}
+
+.h10 {
+    height: 10px;
+    background-color:  #f4f4f4;;
+}
+
+.aui-ellipsis-1 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.aui-ellipsis-2 {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    white-space: normal !important;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.aui-font-size-12 {
+    font-size: 0.6rem !important;
+}
+.aui-font-size-14 {
+    font-size: 0.7rem !important;
+}
+.aui-font-size-16 {
+    font-size: 0.8rem !important;
+}
+.aui-font-size-18 {
+    font-size: 0.9rem !important;
+}
+.aui-font-size-20 {
+    font-size: 1rem !important;
+}
+.aui-text-default {
+    color: #212121 !important;
+}
+.aui-text-primary {
+    color: #00bcd4 !important;
+}
+.aui-text-success {
+    color: #009688 !important;
+}
+.aui-text-info {
+    color: #03a9f4 !important;
+}
+.aui-text-warning {
+    color: #ffc107 !important;
+}
+.aui-text-danger {
+    color: #e51c23 !important;
+}
+.aui-text-pink {
+    color: #e91e63 !important;
+}
+.aui-text-purple {
+    color: #673ab7 !important;
+}
+.aui-text-indigo {
+    color: #3f51b5 !important;
+}
+.aui-bg-default {
+    background-color: #f5f5f5 !important;
+}
+.aui-bg-primary {
+    background-color: #00bcd4 !important;
+}
+.aui-bg-success {
+    background-color: #009688 !important;
+}
+.aui-bg-info {
+    background-color: #03a9f4 !important;
+}
+.aui-bg-warning {
+    background-color: #f1c40f !important;
+}
+.aui-bg-danger {
+    background-color: #e51c23 !important;
+}
+.aui-bg-pink {
+    background-color: #e91e63 !important;
+}
+.aui-bg-purple {
+    background-color: #673ab7 !important;
+}
+.aui-bg-indigo {
+    background-color: #3f51b5 !important;
+}
+/*警告、成功颜色*/
+.aui-warning,
+.aui-warning label,
+.aui-warning .aui-input,
+.aui-warning .aui-iconfont {
+    color: #e51c23 !important;
+}
+.aui-success,
+.aui-success label,
+.aui-success .aui-input,
+.aui-success .aui-iconfont {
+    color: #009688 !important;
+}
+/*对齐,显示，隐藏等*/
+.aui-pull-right {
+    float: right !important;
+}
+.aui-pull-left {
+    float: left !important;
+}
+
+/******/
+.house-items .aui-list-view .aui-img-object {
+    width: 120px;
+    height: 90px;
+    max-width: 120px;
+    margin-right: 10px !important;
+}
+.house-items .label {
+    font-size: 10px;
+    color: #9b59b6;
+    border: 1px solid #9b59b6;
+    padding: 2px 6px;
+    margin-left: 4px;
+}
+.house-items .state {
+    float: right;
+    font-size: 12px;
+    margin-top: 4px;
+}
+.house-items .addr {
+    margin: 8px 0 !important;
+}
+.house-items .type .price{
+    float: right;
+    color: #fe6200;
+    font-weight: bolder;
+}
+.house-items .status {
+    display: block;
+    position: absolute;
+    background-color: #f1c40f;
+    top: 66px;
+    color: #fff;
+    padding: 2px 6px;
+    font-size: 12px;
+}
+/****/
+.air-selector .aui-input {
+   width: 75%;
+}
+.air-selector .aui-arrow-right span {
+    position: absolute;
+    right: 25px;
+    font-size: 14px;
+    top: 50%;
+    display: inline-block;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: #3498db;
+    height: 100%;
+    line-height: 50px;
+    padding: 0 5px;
+}
+.btn-list-header {
+    color: #3498db;
+    text-align: center;
+    line-height: 40px;
+    border-bottom: 1px solid;
+    font-size: 16px;
+}
+.btn-list-content {
+   background: none;
+    text-align: center;
+    overflow: hidden;
+    padding:10px 5px;
+}
+ .btn-opt {
+    text-align: center;
+    font-size: 14px;
+    margin: 0 5px;
+    background: #fff;
+    height: 32px;
+    line-height: 32px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: #333;
+    overflow: hidden;
+    margin: 5px;
+}
+
+.btn-opt.active {
+    background: #3498db;
+    border: 1px solid #3498db;
+    color: #ffffff;
+    -webkit-animation: fadeIn .5s ease both;
+            animation: fadeIn .5s ease both;
+}
+.btn-opt.disabled{
+    background: #eeeeee;
+    border-color: #eeeeee;
+    color: #666;
+}
+
+.btn-load-more {
+    overflow: hidden;
+    padding: 0px 15px 64px 15px;
+}
+
+.btn-load-more .aui-btn {
+    color: #3498db;
+    display: none;
+    width: 100%;
+}

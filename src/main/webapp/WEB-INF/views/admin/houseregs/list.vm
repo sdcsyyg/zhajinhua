@@ -1,0 +1,64 @@
+#set($layout = '/admin/_tags/_layout.vm')
+
+#set($menu = "menu_housereg")
+
+#set($submenu = 'submenu_housereg_list_' + $!status)
+#parse("/admin/houseregs/_tabs.vm")
+
+<div class="main_bd">
+    <table id="model-table-view" data-status="$!status"></table>
+</div>
+
+<script id="tpl-house-status" type="text/html">
+    <label class="label submited 
+        {{? it.hs == 'SUBMITED' }}
+            label-success 
+        {{??}}
+            label-default
+        {{?}}">待审核
+    </label>
+    <label class="label aduit_ok 
+        {{? it.hs == 'ADUIT_OK' }}
+            label-success 
+        {{??}}
+            label-default
+        {{?}}">审核通过
+    </label>
+    <label class="label aduit_fail 
+        {{? it.hs == 'ADUIT_FAIL' }}
+            label-success 
+        {{??}}
+            label-default
+        {{?}}">审核失败
+    </label>
+    <label class="label sale 
+        {{? it.hs == 'SALE' }}
+            label-success 
+        {{??}}
+            label-default
+        {{?}}">待售中
+    </label>
+    <label class="label talk 
+        {{? it.hs == 'TALK' }}
+            label-success 
+        {{??}}
+            label-default
+        {{?}}">洽谈中
+    </label>
+    <label class="label deal 
+        {{? it.hs == 'DEAL' }}
+            label-success 
+        {{??}}
+            label-default
+        {{?}}">已成交
+    </label>
+    <label class="label invalid 
+        {{? it.hs == 'INVALID' }}
+            label-success 
+        {{??}}
+            label-default
+        {{?}}">无效
+    </label>
+</script>
+
+<script src="/assets/js/admin/houseregs/list.js"></script>

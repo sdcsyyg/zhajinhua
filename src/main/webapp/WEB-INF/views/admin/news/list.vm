@@ -1,0 +1,14 @@
+#set($layout = '/admin/_tags/_layout.vm')
+
+#set($menu = "menu_news")
+
+#set($submenu = 'submenu_news_list_' + $!type)
+#parse("/admin/news/_tabs.vm")
+
+<div class="main_bd">
+    <a href="/admin/news/create" type="button" class="btn btn-warning pull-left" style="margin-top: 10px;">添加</a>
+    <table id="model-table-view" data-type="$!type"></table>
+</div>
+
+<script src="/assets/js/admin/news/list.js"></script>
+

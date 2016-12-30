@@ -1,0 +1,68 @@
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+    <meta content="no-cache,must-revalidate" http-equiv="Cache-Control">
+    <meta content="no-cache" http-equiv="pragma">
+    <meta content="0" http-equiv="expires">
+    <meta content="telephone=no, address=no" name="format-detection">
+    <meta name="apple-mobile-web-app-capable" content="yes"> 
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="/assets/libs/agile/css/agile.layout.css">
+    <link rel="stylesheet" href="/assets/libs/agile/css/flat/flat.component.css">
+    <link rel="stylesheet" href="/assets/libs/agile/css/flat/flat.color.css">
+    <link rel="stylesheet" href="/assets/libs/agile/css/flat/iconform.css">
+    <link rel="stylesheet" href="/assets/libs/agile/css/flat/iconline.css">
+    <link rel="stylesheet" href="/assets/libs/app/css/app.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <style>
+        body, .mui-bar, .mui-content {background-color: #fff;}
+        img {max-width: 100%;}
+    </style>
+    <title>$!title</title>
+</head>
+<body>
+    <div id="section_container">
+        <section id="section_ware_detail" data-role="section">
+            <header>
+                <div class="titlebar">
+                    <h1>奖品详情</h1>
+                </div>
+            </header>
+            <article data-role="article" id="main_content" data-scroll="verticle" class="active" style="top:44px;;overflow: hidden;">
+                <div class="scroller">
+
+                    <div id="slide-ware-thumbnails" data-role="slider" class="full" style="height: 250px;overflow: hidden;">
+                        <div class="scroller">
+                            #foreach($!thumbnail in $!gift.thumbnailItems)
+                                <div class="slide">
+                                    <div class="slide-image" style="background-image:url($!thumbnail);" ></div>
+                                    <div class="slider_label"></div>
+                                </div>
+                            #end
+                        </div>
+                    </div>
+
+                    <div class="ware-info">
+                        <p class="name">$!gift.name</p>
+                        <div class="info">
+                            <strong class="left price">
+                                <span>消耗积分：</span>
+                                <span>$!gift.point</span>
+                            </strong>
+                        </div>
+                    </div>
+
+                    <ul class="listitem border-top">
+                        <li class="bg-clouds center">
+                            <div class="text">奖品详情</div>
+                        </li>
+                    </ul>
+                    <div class="article-preview" style="padding:12px 12px 0px;">
+                        $!gift.content
+                    </div>
+                </div>
+            </article>
+        </section>
+    </div>
+    #include("/common/js.vm")
+</body>

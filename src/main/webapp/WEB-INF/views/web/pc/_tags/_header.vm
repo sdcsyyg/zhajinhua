@@ -1,0 +1,9 @@
+<div class="wrapper clearfix">
+    <p class="site-nav-left">
+    ##<script type="text/javascript" src="/assets/session/show_session_status"></script>
+        在线表决系统欢迎您！
+    </p>
+    <ul class="site-nav-right">
+        <script type="text/javascript" src="/assets/session/show_setHome"></script>
+    </ul>
+</div>

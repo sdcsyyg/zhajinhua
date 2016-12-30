@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>${competitor.name} 正在参加  ${vote.name}</title>
+    <link rel="stylesheet" type="text/css" href="/assets/wap/css/api.css"/>
+    <link rel="stylesheet" type="text/css" href="/assets/wap/css/aui.css"/>
+    <link rel="stylesheet" type="text/css" href="/assets/wap/css/aui-flex.css"/>
+    <link rel="stylesheet" type="text/css" href="/assets/wap/css/aui-slide.css"/>
+    <link rel="stylesheet" type="text/css" href="/assets/wap/css/style.css"/>
+    <style>
+        body {
+            background-color: #fff;
+        }
+        .nav-section {
+            padding: 10px;
+        }
+        .hd {
+            border-left: 2px solid #03a9f4;
+            text-indent: 10px;
+            color: #333;
+        }
+        #hr {
+            border: 2px solid #000;
+            margin-top: 15px;
+            margin-bottom: 15px
+        }
+        .btn {
+            background-color: #58c34a;
+        }
+        #danduiBtn {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <header class="aui-bar aui-bar-nav">
+        <a class="aui-pull-left" href="/wap/votes/vote/${vote.id}">返回</a>
+        <div class="aui-title">${competitor.name} - ${vote.name}</div>
+    </header>
+    <!--分类导航-->
+    <div class="nav-section" id="temp" vid="${vote.id}" cid="${competitor.id}">
+        <div class="aui-content house-items">
+            #if(${vote.voteType} == 'CHECK')截至目前，<font color="blue" size="5px">${competitor.name}</font>一共获得:<br/>
+            <font color="GREEN" size="10px">${competitor.checkInCount}</font>票赞成<br/>
+            <font color="RED" size="10px">${competitor.checkOutCount}</font>票反对<br/><div id="hr"></div>
+
+            <header class="aui-page-header">
+                <div class="aui-page-header-inner">
+                    <div class="aui-page-header-main">
+                        <h1 style="text-align: center;color: red;">请填写您的电话(必填)</h1>
+                    </div>
+                </div>
+            </header>
+            <table class="aui">
+                <tbody>
+                    <tr>
+                        <td headers="name"  style="font-size: 20px;padding-bottom: 19px;">电话：</td>
+                        <td headers="type"><input class="text medium-field" id="phoneIpt" name="phone" type="text" size="15"/></td>
+                    </tr>
+                </tbody>
+            </table><div id="hr"></div>
+
+            <button id="zanchengBtn" type="button" class="btn btn-success" >支持TA</button>&nbsp;&nbsp;&nbsp;&nbsp;
+            <button id="fanduiBtn" type="button" class="btn btn-success" >不支持TA</button>
+            #elseif(${vote.voteType} == 'VOTE')截至目前，<font color="blue" size="5px">${competitor.name}</font>一共获得:<br/>
+            <font color="GREEN" size="10px">${competitor.voteCount}</font>票<br/><div id="hr"></div>
+
+            <header class="aui-page-header">
+                <div class="aui-page-header-inner">
+                    <div class="aui-page-header-main">
+                        <h1 style="text-align: center;color: red;">请填写您的电话(必填)</h1>
+                    </div>
+                </div>
+            </header>
+            <table class="aui">
+                <tbody>
+                    <tr>
+                        <td headers="name"  style="font-size: 20px;padding-bottom: 19px;">电话：</td>
+                        <td headers="type"><input class="text medium-field" id="phoneIpt" name="phone" type="text"/></td>
+                    </tr>
+                </tbody>
+            </table><div id="hr"></div>
+
+            <button id="voteBtn" type="button" class="btn btn-success" >投TA一票</button>
+            #elseif(${vote.voteType} == 'SCORE')截至目前，<font color="blue" size="5px">${competitor.name}</font>的平均分为:<br/>
+            <font color="GREEN" size="10px">
+                #if($!{competitor.average})
+                    $!{competitor.average}
+                #else
+                    0.00
+                #end
+            </font>分<br/><div id="hr"></div>
+
+            <header class="aui-page-header">
+                <div class="aui-page-header-inner">
+                    <div class="aui-page-header-main">
+                        <h1 style="text-align: center;color: red;">请填写您的电话(必填)</h1>
+                    </div>
+                </div>
+            </header>
+            <table class="aui">
+                <tbody>
+                    <tr>
+                        <td headers="name"  style="font-size: 20px;padding-bottom: 19px;">电话：</td>
+                        <td headers="type"><input class="text medium-field" id="phoneIpt" name="phone" type="text"/></td>
+                    </tr>
+                </tbody>
+            </table><div id="hr"></div>现在，请为
+            <font color="blue" size="5px">${competitor.name}</font>打分：<br />
+
+            <input id="scoreIpt" name="score" type="text"/>
+            <button id="scoreBtn" type="button" class="btn btn-success" >确认打分</button>
+            #end
+        </div>
+    </div>
+    <script src="/assets/libs/jquery-2.1.3.min.js"></script>
+    <script src="/assets/wap/js/votePage.js"></script>
+</body>
+</html>
+

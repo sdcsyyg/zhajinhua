@@ -1,0 +1,1 @@
+document.write("万佳房产欢迎您！您尚未<a target='_self' href='http://user.wanjia.com/session/sign_in'>[登录]</a>或者<a class='pr0'  href='http://user.wanjia.com/user/sign_up'>[注册]</a>");

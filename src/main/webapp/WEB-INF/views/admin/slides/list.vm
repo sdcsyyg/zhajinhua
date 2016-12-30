@@ -1,0 +1,12 @@
+#set($layout = '/admin/_tags/_layout.vm')
+
+#set($menu = "menu_slide")
+
+#set($submenu = 'submenu_slide_list')
+#parse("/admin/slides/_tabs.vm")
+
+<div class="main_bd">
+    <table id="model-table-view"></table>
+</div>
+
+<script src="/assets/js/admin/slides/list.js"></script>

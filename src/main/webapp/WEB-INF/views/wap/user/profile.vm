@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0"/>
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>个人资料</title>
+    <link rel="stylesheet" type="text/css" href="/assets/wap/css/api.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/wap/css/aui.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/wap/css/style.css" />
+    <style type="text/css">
+        body {
+            height: auto;
+        }
+        .aui-card {
+            margin-top: 15px;
+        }
+        .avatar-box {
+            width: 100%;
+            padding: 15px 0;
+            text-align: center;
+            font-size: 12px;
+        }
+        .avatar-box p {
+            margin-bottom: 0;
+            font-size: 12px;
+        }
+        .avatar-box img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+        }
+        .aui-btn-warning {
+            width: 100%;
+            padding: 10px;
+        }
+        .aui-input-addon {
+            min-width: 66px;
+            text-align: left !important;
+        }
+    </style>
+</head>
+<body>
+    <header class="aui-bar aui-bar-nav">
+        <div class="bar-content">
+            <a class="aui-pull-left" onclick="history.back();">
+                <span class="aui-iconfont aui-icon-left"></span>返回
+            </a>
+            <div class="aui-title">个人资料</div>
+        </div>
+    </header>
+    #set($user = $!session.getAttribute("user"))
+    <input type="hidden" id="user_id" value="$!user.id">
+    <div class="aui-content aui-card aui-noborder">
+        <div class="avatar-box">
+            <img id="avatar" #if($!user.avatar) src="$!user.avatar" #else src="/assets/images/web/noavatar.gif" #end onclick="getPicture()" />
+            <p>选择头像</p>
+            <input type="hidden" name="avatar"/>
+        </div>
+        <input type="hidden" id="avatar" />
+        <div class="aui-form">
+            <div class="aui-input-row">
+                <label class="aui-input-addon">昵称</label>
+                <input type="text" class="aui-input" name="nickname" placeholder="请输入昵称" value="$!user.nickname"/>
+            </div>
+            <div class="aui-input-row">
+                <label class="aui-input-addon">真实姓名</label>
+                <input type="text" class="aui-input" name="realname" placeholder="请输入真实姓名" value="$!user.realname"/>
+            </div>
+            
+            <div class="aui-input-row">
+                <label class="aui-input-addon">性别</label>
+                <div class="aui-pull-right">
+                    <input class="aui-radio aui-radio-info" type="radio" name="gender" value="男" #if($!user.gender=="男") checked  #end><div class="aui-radio-name">男</div>
+                    <input class="aui-radio aui-radio-info" type="radio" name="gender" value="女" #if($!user.gender=="女") checked  #end><div class="aui-radio-name">女</div>
+                </div>
+            </div>
+            <div class="aui-input-row">
+                <label class="aui-input-addon">微信</label>
+                <input type="text" class="aui-input" name="weixin" placeholder="请输入微信号码" value="$!user.weixin"/>
+            </div>
+            <div class="aui-input-row">
+                <label class="aui-input-addon">QQ</label>
+                <input type="text" class="aui-input" name="qq" placeholder="请输入QQ号码" value="$!user.qq"/>
+            </div>
+            <div class="aui-btn-row">
+                <div class="aui-btn aui-btn-warning" onclick="confirm()">提交</div>
+            </div>
+        </div>
+    </div>
+    #* 上传文件 *#
+    <input type="file" name="file" id="uploadImg" data-target="" accept="image/*" onchange="fileupload(this)" style="display:none;">
+    <div class="aui-toast" style="display:none" id="toast-success">
+        <i class="aui-iconfont aui-icon-check"></i>
+        <div class="aui-toast-content">提交成功</div>
+    </div>
+    <div class="aui-toast" style="display:none" id="toast-fail">
+        <i class="aui-iconfont aui-icon-close"></i>
+        <div class="aui-toast-content">提交失败</div>
+    </div>
+</body>
+<script type="text/javascript" src="/assets/wap/js/jquery-2.1.3.min.js"></script>
+<script type="text/javascript" src="/assets/wap/js/common.js"></script>
+<script type="text/javascript" src="/assets/wap/js/ajaxfileupload.min.js"></script>
+<script type="text/javascript">
+    function getPicture() {
+        $('#uploadImg').click();
+    }
+    function fileupload(obj) {
+        $.ajaxFileUpload({
+            url: '/wap/upload/img',       //需要链接到服务器地址
+            secureuri: false,
+            fileElementId: 'uploadImg',  //文件选择框的id属性
+            dataType: 'json',                //服务器返回的格式，可以是json
+            success: function (ret, status) {
+                if(ret.success) {
+                    var data = ret.data;
+                    $('#avatar').attr('src', data.src);
+                    $('input[name="avatar"]').val(data.src)
+                } else {
+                    alert('网络连接错误，请稍后再试');
+                }
+            },
+            error: function (data, status, e) {
+                alert(e);
+            }
+        });
+    }
+    function confirm() {
+        var user_id = $('#user_id').val();
+        var nickname = $('input[name="nickname"]').val(),
+            realname = $('input[name="realname"]').val(),
+            gender = $('input[name="gender"]:checked').val(),
+            weixin = $('input[name="weixin"]').val(),
+            qq = $('input[name="qq"]').val(),
+            avatar = $('input[name="avatar"]').val();
+        if(nickname == '') {
+           alert('请输入昵称'); return;
+        }
+        ajaxPost('/user/' + user_id, {
+            nickname: nickname,
+            realname: realname,
+            gender: gender,
+            weixin: weixin,
+            qq: qq,
+            avatar: avatar
+        }, function(data) {
+            if(data.success) {
+                success();
+            } else {
+                fail();
+            }
+        });
+    }
+    function success(){
+        $('#toast-success').fadeIn();
+        setTimeout(function(){
+            $('#toast-success').fadeOut();
+            openWin('user/index');
+        }, 1500)
+    }
+    function fail(){
+        $('#toast-fail').fadeIn();
+        setTimeout(function(){
+            $('#toast-fail').fadeOut();
+        }, 1500)
+    }
+</script>
+</html>

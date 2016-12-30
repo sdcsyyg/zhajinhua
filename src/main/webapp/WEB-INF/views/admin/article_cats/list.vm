@@ -1,0 +1,13 @@
+#set($layout = '/admin/_tags/_layout.vm')
+
+#set($menu = "menu_article")
+
+#set($submenu = 'submenu_article_category')
+#parse("/admin/articles/_tabs.vm")
+
+<div class="main_bd">
+    <a href="/admin/article/cats/create" type="button" class="btn btn-warning pull-left" style="margin-top: 10px;">添加</a>
+    <table id="model-table-view"></table>
+</div>
+
+<script src="/assets/js/admin/article_cats/list.js"></script>

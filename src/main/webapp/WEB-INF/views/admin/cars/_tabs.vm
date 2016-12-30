@@ -1,0 +1,16 @@
+<div class="main_hd">
+    <div class="title_tab">
+        <ul class="tab_navs">
+            #if($submenu == 'submenu_car_list')
+                <li class="tab_nav selected"><a href="javascript:;">车辆买卖</a></li>
+            #else
+                <li class="tab_nav"><a href="/admin/cars/list">车辆买卖</a></li>
+            #end
+            #if($submenu == 'submenu_car_create')
+                <li class="tab_nav selected"><a href="javascript:;">添加</a></li>
+            #else
+                <li class="tab_nav"><a href="/admin/cars/create">添加</a></li>
+            #end
+        </ul>
+    </div>
+</div>

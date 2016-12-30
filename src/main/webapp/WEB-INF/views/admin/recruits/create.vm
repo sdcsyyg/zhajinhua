@@ -1,0 +1,77 @@
+#set($layout = '/admin/_tags/_layout.vm')
+#set($menu = "menu_recruit")
+#set($submenu = 'submenu_recruit_form')
+#parse("/admin/recruits/_tabs.vm")
+
+<div class="main_bd">
+    <div class="panel panel-default">
+        <div class="panel-heading">基本信息</div>
+        <ul class="list-group">
+            <form id="model-form" action="/admin/recruits/save" method="post">
+                <li class="list-group-item">
+                    <h4><em>*</em>职位名称</h4>
+                    <div class="meta_content">
+                        <input type="text" name="title" class="form-control" style="width:500px;"/>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <h4>薪资水平</h4>
+                    <div class="meta_content">
+                        <input type="text" name="wage" class="form-control" style="width:500px;"/>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <h4>工作区域</h4>
+                    <div class="meta_content">
+                        <input type="text" name="area" class="form-control" style="width:500px;"/>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <h4>详细地址</h4>
+                    <div class="meta_content">
+                        <input type="text" name="address" class="form-control" style="width:500px;"/>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <h4>职位类别</h4>
+                    <div class="meta_content">
+                        <input type="text" name="job" class="form-control" style="width:500px;"/>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <h4>工作年限</h4>
+                    <div class="meta_content">
+                        <input type="text" name="worklife" class="form-control" style="width:500px;"/>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <h4>联系人</h4>
+                    <div class="meta_content">
+                        <input type="text" name="contact" class="form-control" style="width:500px;"/>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <h4>联系电话</h4>
+                    <div class="meta_content">
+                        <input type="text" name="phone" class="form-control" style="width:500px;"/>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <h4>任职要求</h4>
+                    <div class="meta_content">
+                        <textarea class="form-control" id="editor-content" style="width:700px;"></textarea>
+                        <input type="hidden" name="standard" id="editor-input">
+                        <p class="fnote">建议：图片上传数量不宜超过5张，宽度在640像素以内，高度任意，大小在200k以内。</p>
+                    </div>
+                </li>
+
+            </form>
+        </ul>
+        <div class="panel-footer">
+            <button id="model-form-save" type="button" class="btn btn-success">立即保存</button>
+            <button id="model-form-reset" type="button" class="btn btn-default">重置</button>
+        </div>
+    </div>
+</div>
+#include('/admin/_widgets/upload_view.vm')
+<script src="/assets/js/admin/recruits/create.js"></script>

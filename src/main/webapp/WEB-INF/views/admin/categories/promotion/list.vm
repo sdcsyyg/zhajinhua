@@ -1,0 +1,30 @@
+<head>
+    #parse("/admin/_tags/_meta.vm")
+    <title>$!title - 后台管理</title>
+</head>
+<body>
+#parse("/admin/_tags/_header.vm")
+<div class="body">
+    <div class="container-box row">
+
+        #set($menu = "menu_ware_cate")
+        #parse("/admin/_tags/_menus.vm")
+
+        <div class="col-main">
+
+            #set($submenu = 'submenu_categories_promotion')
+            #parse("/admin/categories/_tabs.vm")
+
+            <div class="main_bd">
+                <div id="custom-toolbar" class="pull-left" style="margin-top: 10px;">
+                     <a href="/admin/categories/promotion/create" class="btn btn-primary">添加分类</a>
+                </div>
+                <table id="model-table-view">
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+#parse("/admin/_tags/_footer.vm")
+<script src="/assets/js/admin/categories/promotion/list.js"></script>
+</body>

@@ -1,0 +1,95 @@
+#set($layout = '/admin/_tags/_layout.vm')
+
+#set($menu = "menu_news")
+
+#set($submenu = 'submenu_news_list')
+#parse("/admin/news/_tabs.vm")
+
+<div class="main_bd">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <ol class="breadcrumb">
+                <li>
+                    <a href="javascript:window.history.back();">
+                        <i class="glyphicon glyphicon-chevron-left"></i>返回
+                    </a>
+                </li>
+                <li class="active">添加</li>
+            </ol>
+        </div>
+        <ul class="list-group">
+            <form id="model-form" method="post" action="/admin/news/save">
+                <li class="list-group-item">
+                    <h4>分类</h4>
+                    <div class="meta_content">
+                        <select id="select-type" name="type" data-placeholder="选择分类" style="width:500px;" class="form-control chzn-select">
+                            <option value="-1"></option>
+                            #foreach($news in $!typeList)
+                                <option value="$!news.value" data-type="$!news.value">$!news.name</option>
+                            #end
+                        </select>
+                    </div>
+                    <div class="meta_opr">选择新闻分类</div>
+                </li>
+                <li class="list-group-item">
+                    <h4>标题</h4>
+                    <div class="meta_content">
+                        <input type="text" name="title" class="form-control" placeholder="请填写标题" style="width:500px;"/>
+                    </div>
+                    <div class="meta_opr">设置标题</div>
+                </li>
+##                <li class="list-group-item">
+##                    <h4>聚合标签</h4>
+##                    <div class="meta_content">
+##                        <input name="labels" id="tags-labels" value="政策,聚焦,时事"/>
+##                    </div>
+##                </li>
+                <li class="list-group-item">
+                    <h4>属性</h4>
+                    <div class="meta_content">
+                        <div class="checkbox" style="margin-top: 6px;">
+                            <label><input name="isrecommended" type="checkbox">推荐</label>
+                            <label class="fnote">推荐的将会用红色字体显示</label>
+                        </div>
+                    </div>
+
+                </li>
+                <li class="list-group-item">
+                    <h4><em>*</em>封面图</h4>
+                    <div class="meta_content">
+                        #parse('/admin/_widgets/upload_con.vm')
+                        <p class="fnote">建议尺寸：240 x 180 像素；第一张图片默认为封面图。</p>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <h4>编辑人</h4>
+                    <div class="meta_content">
+                        <input type="text" name="editor" class="form-control" placeholder="设置新闻的编辑者" style="width:500px;"/>
+                    </div>
+                    <div class="meta_opr">设置新闻的编辑者</div>
+                </li>
+                <li class="list-group-item">
+                    <h4>摘要</h4>
+                    <div class="meta_content">
+                        <textarea class="form-control" name="summary" placeholder="请填写文章摘要，120字以内（若不填写，则自动生成）" style="width:700px;"></textarea>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <h4>内容</h4>
+                    <div class="meta_content">
+                        <textarea class="form-control" id="editor-content" style="width:700px;height: 200px;"></textarea>
+                        <input type="hidden" name="content" id="editor-input">
+                    </div>
+                </li>
+
+            </form>
+        </ul>
+        <div class="panel-footer">
+            <button id="model-form-submit" type="button" class="btn btn-success" >立即保存</button>
+            <button id="model-form-reset" type="button" class="btn btn-default" >重置</button>
+        </div>
+    </div>
+</div>
+#include('/admin/_widgets/upload_view.vm')
+<script src="/assets/js/admin/news/create.js"></script>
+

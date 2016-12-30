@@ -1,0 +1,19 @@
+
+@font-face {
+  font-family: "iconfont";
+  src: url('aui_iconfont_ud.ttf?t=1461829301') format('truetype');
+}
+
+.iconfont {
+position: relative;
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-phone:before { content: "\e612"; }
+.icon-qq:before { content: "\e67c"; }
+.icon-qqfill:before { content: "\e790"; }
+.icon-weixin:before { content: "\e648"; }
+.icon-weixinfill:before { content: "\e645"; }

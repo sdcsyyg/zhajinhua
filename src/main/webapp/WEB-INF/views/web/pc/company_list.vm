@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="format-detection" content="telephone=no">
+		<title>固原楼市_固原房产信息_固原房地产新闻 - 固原楼盘网</title>
+		<meta name="Keywords" content="固原楼市,固原房产信息,固原房地产新闻,固原房产政策">
+		<meta name="description" content="楼盘网固原楼市频道为您提供最新最全的固原房产信息、固原房地产新闻、固原房产政策，为您解读房地产行业动态、销售行情、房产时评、业界访谈、楼盘置业等。">
+		<link rel="stylesheet" media="all" href="/assets/css/pc/base.css">
+		<link rel="stylesheet" media="all" href="/assets/css/pc/home-news.css">
+        <link rel="stylesheet" media="all" href="/assets/css/pc/house-list.css">
+		<link rel="stylesheet" media="all" href="/assets/css/pc/swiper-3.3.1.min.css">
+        <script type="text/javascript" src="/assets/js/pc/jquery.min.js"></script>
+        <script type="text/javascript" src="/assets/js/pc/bootstrap-paginator.js"></script>
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="header">
+				<div class="site-nav">
+					#parse("/web/pc/_tags/_header.vm")
+				</div>
+				<div class="logo-search">
+					<div class="wrapper logo-search-box">
+						<div class="logo-box clearfix">
+							<h1><a class="logo" href="/web/pc/home" title="在线表决系统网" hidefocus="true" style="background-image:url(/assets/images/logo.png);"></a></h1>
+							<div class="citywrap">
+								<div id="city_hover_id" class="curcity clearfix">
+									<i class="city">$!{cityName}</i>
+								</div>
+							</div>
+						</div>
+##						<div class="search-box">
+##							<!-- js before submit validate and submit-->
+##							<div class="searchwrap clearfix">
+##								<form id="search_form_id" action="" method="post">
+##									<div id="search_pos_combox_id" class="combox" style="display:none">
+##										<p class="combox-text"><span data-search-type="4" id="search_combox_type_id">新闻</span></p>
+##									</div>
+##									<p>
+##										<input id="search_field_id" name="q" maxlength="20" class="key" type="text" placeholder="请输入新闻关键字">
+####										<input id="citypinyin" value="guyuan" type="hidden"></p>
+##                                    	<span data-search-type="1" id="search_combox_type_id"></span>
+##									<p id="search_house_id"><i></i>搜索</p>
+##								</form>
+##							</div>
+##						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="nav">
+				<div class="wrapper">
+					<ul class="main-nav clearfix">
+                        <li>
+                            <a href="/" target="_blank">首页</a>
+                        </li>
+                        <li>
+                            <a href="/web/house/search/xinfang?flag=1" target="_blank">一手盘</a>
+                        </li>
+                        <li>
+                            <a href="/web/news/news_list" target="_blank">楼盘资讯</a>
+                        </li>
+                        <li>
+                            <a href="/web/house/search/ershoufang?flag=1" target="_blank">二手房</a>
+                        </li>
+                        <li>
+                            <a href="/web/house/search/zufang?flag=1" target="_blank">租房</a>
+                        </li>
+                        <li class="cur">
+                            <a href="#">装修</a>
+                        </li>
+					</ul>
+				</div>
+			</div>
+			<div class="wrapper">
+				<div class="news clearfix">
+					<div class="main-news">
+						<div class="news-list-box">
+							<ul id="news_list_tab_id" class="column clearfix">
+								<li data-index="0" class="posleft cur">
+									<a target="_blank" href="#">家居家装</a>
+								</li>
+								<li data-index="1" class=" ">
+									<a target="_blank" href="#">家政服务</a>
+								</li>
+							</ul>
+							<div id="news_list_swipe_container_id" class="swiper-container" style="overflow: hidden; width: 860px; height: 1216px;">
+								<div id="news_list_swipe_wrap_id" class="swiper-wrapper clearfix" style="list-style: none; margin: 0px; width: 1720px; transition-duration: 500ms; transition-timing-function: linear; transform: translate(-860px, 0px);">
+									<div class="swiper-slide" style="width: 860px; height: 1216px; display: inline-block; vertical-align: top;">
+										<div id="content">
+
+										</div>
+                                        <div class="wrapper">
+                                            <div class="page clearfix" style="padding-left: 40%;">
+                                                <ul class="pagination" id="pagination"></ul>
+                                                <p id="curr_total" style="margin-left: 20px;"></p>
+												<input type="hidden" id="totalNums_jjjz" value="$!totalNums_jjjz">
+												<input type="hidden" id="ct_jjjz" value="jjjz">
+                                            </div>
+                                        </div>
+									</div>
+									<div class="swiper-slide" style="width: 860px; height: 1216px; display: block; vertical-align: top;">
+                                        <div id="content1">
+
+                                        </div>
+                                        <div class="wrapper">
+                                            <div class="page clearfix" style="padding-left: 40%;">
+												<ul class="pagination" id="pagination1"></ul>
+												<p id="curr_total1" style="margin-left: 20px;"></p>
+                                                <input type="hidden" id="totalNums_jzfw" value="$!totalNums_jzfw">
+                                                <input type="hidden" id="ct_jzfw" value="jzfw">
+                                            </div>
+                                        </div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--友联开始-->
+			<div class="footer clearfixed">
+				#parse("/web/pc/_tags/_footer.vm")
+			</div>
+			<!--友联结束-->
+		</div>
+		<a href="http://app.wanjiafdc.com/" target="_blank">
+			<div id="codes">&nbsp;</div>
+		</a>
+		<div id="backTop" title="回顶部" class="backTop" style="display: none;"></div>
+		<script src="/assets/js/pc/lpw.js"></script>
+		<script src="/assets/js/pc/base.js"></script>
+		<script type="text/javascript" src="/assets/js/pc/silder.js"></script>
+		<script type="text/javascript" src="/assets/js/pc/home-news.js"></script>
+		<script type="text/javascript" src="/assets/js/pc/friendLink.js"></script>
+
+        <script>
+            var pageSize = 10;
+            var options = {
+                bootstrapMajorVersion: 3,
+                alignment:'center',
+                currentPage:1,
+                numberOfPages:10,
+                totalPages: 10,
+                pageUrl: function(type, page, current){
+                    return "/web/company/paged/jjjz?page=" + page;
+                },
+                itemTexts: function(type, page, current) { //修改显示文字
+                    switch (type) {
+                        case "first":
+                            return "第一页";
+                        case "prev":
+                            return "上一页";
+                        case "next":
+                            return "下一页";
+                        case "last":
+                            return "最后一页";
+                        case "page":
+                            return page;
+                    }
+                },
+                onPageClicked: function (event, originalEvent, type, page) {
+                    originalEvent.preventDefault();
+                    originalEvent.stopPropagation();
+                    $.ajax({
+                        url:originalEvent.target.href,
+                        type:"GET",
+                        dataType:"json",
+                        success: function(data){
+                            $("#content li").remove();
+                            $(data.object.content).each(function(){
+                                //用 qq 代替 city
+								var labless = '';
+								var lables = this.labelItems;
+								if(lables != null && lables.length > 0){
+									for(var i=0; i< lables.length; i++){
+										labless += '<span style="font-size: 10px;color: #9b59b6; border: 1px solid #9b59b6;padding: 2px 6px;margin-left: 4px;">' + lables[i]+ '</span>';
+									}
+								}
+                                var item = '<div class="result-item clearfix" style="padding-top:15px;height:120px;">'
+                                        + '<a class="img" href="/web/company/detail/'+ this.id+'" target="_blank" hidefocus="true">'
+                                        + '<img src="'+ this.cover +'" width="200" height="140" alt="'+ this.title +'">'
+                                        + '</a>'
+                                        + '<div class="info">'
+                                        + '<h4 class="clearfix"><a href="/web/company/detail/'+ this.id+'" target="_blank" hidefocus="true">'+ this.title +'</a></h4>'
+                                        + '<p>城 市: '+ this.city + '</p>'
+                                        + '<p>地 址: ' + this.addr + '</p>'
+                                        + '<p>电 话：' + this.phone +'</p>'
+                                        + '<p>标 签：' + labless +'</p>'
+                                        + '</div>'
+                                        + '<div class="guide">'
+                                        + '<p class="preferential"></p>'
+                                        + '</div>';
+                                $("#content").append("<li>"+item+"</li>");
+                                $("#curr_total").html("共" + page + "/" + options.totalPages + "页");
+                            });
+
+                        },
+                        error: function(error){
+                            alert("error");
+                        }
+                    });
+                }
+            };
+            var options1 = {
+                bootstrapMajorVersion: 3,
+                alignment:'center',
+                currentPage:1,
+                numberOfPages:10,
+                totalPages: 10,
+                pageUrl: function(type, page, current){
+                    return "/web/company/paged/jzfw?page=" + page;
+                },
+                itemTexts: function(type, page, current) { //修改显示文字
+                    switch (type) {
+                        case "first":
+                            return "第一页";
+                        case "prev":
+                            return "上一页";
+                        case "next":
+                            return "下一页";
+                        case "last":
+                            return "最后一页";
+                        case "page":
+                            return page;
+                    }
+                },
+                onPageClicked: function (event, originalEvent, type, page) {
+                    originalEvent.preventDefault();
+                    originalEvent.stopPropagation();
+                    $.ajax({
+                        url:originalEvent.target.href,
+                        type:"GET",
+                        dataType:"json",
+                        success: function(data){
+                            $("#content1 li").remove();
+                            $(data.object.content).each(function(){
+                                var labless = '';
+                                var lables = this.labelItems;
+                                if(lables != null && lables.length > 0){
+                                    for(var i=0; i< lables.length; i++){
+                                        labless += '<span style="font-size: 10px;color: #9b59b6; border: 1px solid #9b59b6;padding: 2px 6px;margin-left: 4px;">' + lables[i]+ '</span>';
+                                    }
+                                }
+                                var item = '<div class="result-item clearfix" style="padding-top:15px;height:120px;">'
+                                        + '<a class="img" href="/web/company/detail/'+ this.id+'" target="_blank" hidefocus="true">'
+                                        + '<img src="'+ this.cover +'" width="200" height="140" alt="'+ this.title +'">'
+                                        + '</a>'
+                                        + '<div class="info">'
+                                        + '<h4 class="clearfix"><a href="/web/company/detail/'+ this.id+'" target="_blank" hidefocus="true">'+ this.title +'</a></h4>'
+                                        + '<p>城 市: '+ this.city + '</p>'
+                                        + '<p>地 址: ' + this.addr + '</p>'
+                                        + '<p>电 话：' + this.phone +'</p>'
+                                        + '<p>标 签：' + labless +'</p>'
+                                        + '</div>'
+                                        + '<div class="guide">'
+                                        + '<p class="preferential"></p>'
+                                        + '</div>';
+                                $("#content1").append("<li>"+item+"</li>");
+                                $("#curr_total1").html("共" + page + "/" + options.totalPages + "页");
+                            });
+
+                        },
+                        error: function(error){
+                            alert("error");
+                        }
+                    });
+                }
+            };
+            $(document).ready(function(){
+                var totalNums_jjjz = $("#totalNums_jjjz").val();
+                options.totalPages = Math.ceil(totalNums_jjjz /pageSize);
+                $("#pagination").bootstrapPaginator(options);
+                $("#pagination li:first a").trigger("click");
+
+                var totalNums_jzfw = $("#totalNums_jzfw").val();
+                options1.totalPages = Math.ceil(totalNums_jzfw /pageSize);
+                $("#pagination1").bootstrapPaginator(options1);
+                $("#pagination1 li:first a").trigger("click");
+
+            });
+        </script>
+	</body>
+
+</html>

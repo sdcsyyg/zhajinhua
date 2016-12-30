@@ -1,0 +1,15 @@
+<div class="head" id="head">
+    <div class="head_box">
+        <div class="inner wrp">
+            <div class="account">
+                <span class="account-meta">欢迎您，$!admin.name</span>
+                <span class="account-meta account-logout">
+                    <a id="logout" href="/admin/logout">退出</a>
+                </span>
+                <span class="account-meta account-logout">
+                    <a href="/" target="_blank" style="color:#459ae9;">站点首页</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>

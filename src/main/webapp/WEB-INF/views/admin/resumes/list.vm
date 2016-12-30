@@ -1,0 +1,11 @@
+#set($layout = '/admin/_tags/_layout.vm')
+
+#set($menu = "menu_resume")
+
+#set($submenu = 'submenu_resume_list')
+#parse("/admin/resumes/_tabs.vm")
+
+<div class="main_bd">
+    <table id="model-table-view"></table>
+</div>
+<script src="/assets/js/admin/resumes/list.js"></script>
